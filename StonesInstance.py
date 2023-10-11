@@ -21,7 +21,7 @@ class StoneInstance:
     def generateRandom(n, tCount):
         st = []
         for i in range(tCount):
-            st.append((r.randint(0,6),r.randint(0,6)))
+            st.append([r.randint(0,6),r.randint(0,6)])
         
         return StoneInstance(n, st)
     
@@ -43,7 +43,7 @@ class StoneInstance:
                     face = 0
                 elif placement < 0:
                     face = 1
-                stringGrid[x*2][y*2] = str(self.stones[abs(placement)][face])
+                stringGrid[x*2][y*2] = str(self.stones[abs(placement) - 1][face])
 
         # Second pass to add connections
         for x, line in enumerate(plc):
@@ -54,7 +54,7 @@ class StoneInstance:
                 if x < len(plc)-1:
                     if abs(placement) == abs(plc[x+1][y]) & placement != 0:
                         stringGrid[x*2+1][y*2] = "|"
-                        
+
         # Turn the grid into a single string and return it
         finalString = ""
         for line in stringGrid:

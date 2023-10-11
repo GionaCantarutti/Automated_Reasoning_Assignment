@@ -2,6 +2,7 @@ import StonesInstance
 
 class Solver:
 
-    def solveInstance(instance: StonesInstance):
-        ##Solve and add the solution to the instance, then return it
+    #Timeout given in seconds
+    def solveInstance(instance: StonesInstance, timeout):
+        #Solve and add the solution to the instance, then return it
         pass
