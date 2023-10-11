@@ -25,14 +25,14 @@ array [1..2, 1..n^2] of var 1..n: Coordinates;
 %A non-placement needs to be such on both sides
 constraint forall(i in 1..n^2)(Placements[1, i] = 0 <-> Placements[2, i] = 0);
 %Coordinates need to be all different
-constraint all_different(i in 1..(n^2) - non_placements)(Coordinates[1,i]*(n+1) + Coordinates[2,i]);
+constraint all_different(i in 1..max(1, (n^2) - non_placements))(Coordinates[1,i]*(n+1) + Coordinates[2,i]);
 %Even placements need to be from the same tile as the previous one , but opposite side
 constraint forall(i in (1..n^2 div 2))(Placements[1, 2*i] = Placements[2, 2*i - 1] /\ Placements[2, 2*i] = Placements[1, 2*i - 1]);
 %Odd placements need to have the same tile value as the previous one
 constraint forall(i in (1..(n^2-1) div 2))(Placements[1, 2*i + 1] = Placements[1, 2*i]
                                            \/ Placements[1, 2*i+1] = 0 \/ Placements[2, 2*i+1] = 0);
 %Coordinates of time-adjacent placements must also be space-adjacent
-constraint forall(i in 2..n^2 - non_placements)(abs(Coordinates[1, i] - Coordinates[1, i-1]) + abs(Coordinates[2,i] - Coordinates[2, i-1]) = 1);
+constraint forall(i in 2..max(2,n^2 - non_placements))(abs(Coordinates[1, i] - Coordinates[1, i-1]) + abs(Coordinates[2,i] - Coordinates[2, i-1]) = 1);
 %Tiles can only be used an amount of times equal to how many of that tile you have
 constraint forall(i in 1..6, j in 1..6)(
                                         sum(k in 1..n^2)(if (Placements[1,k] = i /\ Placements[2,k] = j)
