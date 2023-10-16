@@ -23,15 +23,16 @@ class MiniZincA(Solver):
             placements = rawSolution.__getitem__((i, "Placements"))
             coordinates = rawSolution.__getitem__((i, "Coordinates"))
             sides = rawSolution.__getitem__((i, "Sides"))
-            print(placements)
-            print("Empty spaces left: " + str(rawSolution.__getitem__(i).objective) + " of a minimum of " + str(max(instance.n**2 - len(instance.stones)*2,0)))
-            print("___________________________")
+#            print(placements)
+#            print("Empty spaces left: " + str(rawSolution.__getitem__(i).objective) + " of a minimum of " + str(max(instance.n**2 - len(instance.stones)*2,0)))
+#            print("___________________________")
 
         solution = [[0 for y in range(instance.n)] for x in range(instance.n)]
 
         for i in range(len(placements)):
-            # That somewhat convoluted operation on sides[i] simply maps 1->2 and 2->-1
-            solution[coordinates[0][i] - 1][coordinates[1][i] - 1] = ((2 - sides[i]) * 2 - 1) * placements[i]
+            if placements[i] != 0:
+                # That somewhat convoluted operation on sides[i] simply maps 1->2 and 2->-1
+                solution[coordinates[0][i] - 1][coordinates[1][i] - 1] = ((2 - sides[i]) * 2 - 1) * placements[i]
 
         instance.addSolution(StoneSolution(solution))
         return instance

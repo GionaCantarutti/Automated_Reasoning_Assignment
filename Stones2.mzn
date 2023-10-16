@@ -24,7 +24,7 @@ array [1..t,1..2] of 0..6: Stones;
 %                                       | 2, 4
 %                                       |];
 
-%Choice of stones to place in each square, in order
+%Choice of stones to place in each square, in order. 0 is a non-placement
 array [1..n^2] of var 0..t: Placements;
 %Side of stone on that placements, in order
 array [1..n^2] of var 1..2: Sides;

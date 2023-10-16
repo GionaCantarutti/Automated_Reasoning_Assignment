@@ -33,6 +33,8 @@ class StoneInstance:
         # Make a grid of characters with added spaces between tile values
         stringGrid = [[" " for x in range(self.n*2 - 1)] for y in range(self.n*2 - 1)]
 
+        print("Stones:\n" + str(self.stones) + "\n\nSolution:")
+
         # First pass to populate the tile values
         for x, line in enumerate(plc):
             for y, placement in enumerate(line):
@@ -49,10 +51,10 @@ class StoneInstance:
         for x, line in enumerate(plc):
             for y, placement in enumerate(line):
                 if y < len(line)-1:
-                    if abs(placement) == abs(line[y+1]) & placement != 0:
+                    if (abs(placement) == abs(line[y+1])) & (placement != 0):
                         stringGrid[x*2][y*2+1] = "-"
                 if x < len(plc)-1:
-                    if abs(placement) == abs(plc[x+1][y]) & placement != 0:
+                    if (abs(placement) == abs(plc[x+1][y])) & (placement != 0):
                         stringGrid[x*2+1][y*2] = "|"
 
         # Turn the grid into a single string and return it

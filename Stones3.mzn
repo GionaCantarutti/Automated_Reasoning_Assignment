@@ -18,7 +18,7 @@ par bool: symm = true;
 array [1..7,1..7] of int: Stones;
 
 %Choice of stones to place in each square, in order
-array [1..2, 1..n^2] of var 0..6: Placements;
+array [1..2, 1..n^2] of var 0..7: Placements;
 %Coordinates of each placement, in order
 array [1..2, 1..n^2] of var 1..n: Coordinates;
 
