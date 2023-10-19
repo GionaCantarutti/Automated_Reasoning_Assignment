@@ -45,12 +45,16 @@ constraint forall(i in 1..7, j in 1..7)(
 
 %If the board has an odd side length, the last placement is always empty
 constraint (n mod 2 = 1) -> (Placements[1, n^2] = 0);
+%There can be no "gaps" in the placement sequence where no tiles where placed
+constraint forall(i in 2..n^2)(Placements[1, i] != 0 -> Placements[1, i-1] != 0);
 %Force placing first tile in one quarter of the board to break vertical and horizontal symmetries
 constraint Coordinates[1,1] < n/2 + 1 /\ Coordinates[2,1] < n/2 + 1;
 %Break symmetry that would allow to place the same tiles but in reverse order
-constraint (n > 1) -> (Placements[1, 1] < Placements[1, n^2 - non_placements]);
-%Stop if all tiles have been used
-constraint non_placements >= n^2 - sum(i in 1..6, j in 1..6)(Stones[i,j]);
+constraint (n > 1) -> (Placements[1, 1] <= Placements[1, n^2 - non_placements]);
+%Stop if all tiles have been used or entire grid has been filled
+constraint non_placements >= max(n^2 - sum(i in 1..7, j in 1..7)(Stones[i,j]), 0);
+%Coordinates of non-placements are irrelevant. This has MASSIVE impact on performance
+constraint forall(i in 1..n^2)(Placements[1, i] = 0 -> (Coordinates[1,i] = 1 /\ Coordinates[2,i] = 1));
 %If grid is too large, ignore a portion of it
 %constraint forall(i in (1..n^2), j in 1..2)(Placements[i] != 0 -> Coordinates[j,i] <= sqrt(t)+1);
 %constraint forall(i in (1..n^2), j in 1..2)(Coordinates[j,i] < sqrt(t)+1);

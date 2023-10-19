@@ -30,11 +30,11 @@ class MiniZincB(Solver):
         for i in range(rawSolution.__len__()):
             placements = np.transpose(rawSolution.__getitem__((i, "Placements")))
             coordinates = rawSolution.__getitem__((i, "Coordinates"))
-            print("Empty spaces left: " + str(rawSolution.__getitem__(i).objective) + " of a minimum of " + str(max(instance.n**2 - len(instance.stones)*2,0)))
-            print("Placemnts:\n" + str(np.transpose(placements)))
-            print("Coodrds:\n" + str(np.matrix(coordinates)))
-            print("Stone matrix:\n" + str(np.matrix(stoneMatrix)))
-#            print("___________________________")
+            #print("Empty spaces left: " + str(rawSolution.__getitem__(i).objective) + " of a minimum of " + str(max(instance.n**2 - len(instance.stones)*2,0)))
+            #print("Placemnts:\n" + str(np.transpose(placements)))
+            #print("Coodrds:\n" + str(np.matrix(coordinates)))
+            #print("Stone matrix:\n" + str(np.matrix(stoneMatrix)))
+            #print("___________________________")
 
         solution = [[0 for y in range(instance.n)] for x in range(instance.n)]
 
