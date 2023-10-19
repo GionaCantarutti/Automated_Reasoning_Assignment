@@ -48,9 +48,11 @@ class MiniZincB(Solver):
                     if (pi % 2 == 0):
                         solution[coordinates[0][pi] - 1][coordinates[1][pi] - 1] = (i + 1)
                         solution[coordinates[0][pi + 1] - 1][coordinates[1][pi + 1] - 1] = -(i + 1)
+                        assigned[pi+1] = True
                     else:
                         solution[coordinates[0][pi] - 1][coordinates[1][pi] - 1] = (i + 1)
                         solution[coordinates[0][pi - 1] - 1][coordinates[1][pi - 1] - 1] = -(i + 1)
+                        assigned[pi-1] = True
                     assigned[pi] = True
                     break
 
