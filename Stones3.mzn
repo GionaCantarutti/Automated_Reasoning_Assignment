@@ -34,7 +34,7 @@ constraint forall(i in (1..(n^2-1) div 2))(Placements[1, 2*i + 1] = Placements[1
 %Coordinates of time-adjacent placements must also be space-adjacent
 constraint forall(i in 2..max(2,n^2 - non_placements))(abs(Coordinates[1, i] - Coordinates[1, i-1]) + abs(Coordinates[2,i] - Coordinates[2, i-1]) = 1);
 %Tiles can only be used an amount of times equal to how many of that tile you have
-constraint forall(i in 1..6, j in 1..6)(
+constraint forall(i in 1..7, j in 1..7)(
                                         sum(k in 1..n^2)(if (Placements[1,k] = i /\ Placements[2,k] = j)
                                                          then 1 else 0 endif)
                                         <= Stones[i,j]);

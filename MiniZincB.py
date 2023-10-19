@@ -30,15 +30,20 @@ class MiniZincB(Solver):
         for i in range(rawSolution.__len__()):
             placements = np.transpose(rawSolution.__getitem__((i, "Placements")))
             coordinates = rawSolution.__getitem__((i, "Coordinates"))
-#            print("Empty spaces left: " + str(rawSolution.__getitem__(i).objective) + " of a minimum of " + str(max(size**2 - len(st)*2,0)))
+            print("Empty spaces left: " + str(rawSolution.__getitem__(i).objective) + " of a minimum of " + str(max(instance.n**2 - len(instance.stones)*2,0)))
+            print("Placemnts:\n" + str(np.transpose(placements)))
+            print("Coodrds:\n" + str(np.matrix(coordinates)))
+            print("Stone matrix:\n" + str(np.matrix(stoneMatrix)))
 #            print("___________________________")
 
         solution = [[0 for y in range(instance.n)] for x in range(instance.n)]
 
+        assigned = [False for x in range(len(placements))]
+
         #Find where each stone has been placed, if anywhere
         for i, stone in enumerate(instance.stones):
             for pi, placement in enumerate(placements):
-                if (stone[0] == (placement[0] - 1)) & (stone[1] == (placement[1] - 1)):
+                if (not assigned[pi]) and (stone[0] == (placement[0] - 1)) and (stone[1] == (placement[1] - 1)):
                     #Stone matched to placement, now if placement index is even the next placement has the back side, the previous placement has it otherwise
                     if (pi % 2 == 0):
                         solution[coordinates[0][pi] - 1][coordinates[1][pi] - 1] = (i + 1)
@@ -46,7 +51,9 @@ class MiniZincB(Solver):
                     else:
                         solution[coordinates[0][pi] - 1][coordinates[1][pi] - 1] = (i + 1)
                         solution[coordinates[0][pi - 1] - 1][coordinates[1][pi - 1] - 1] = -(i + 1)
+                    assigned[pi] = True
                     break
 
+        #print(np.matrix(solution))
         instance.addSolution(StoneSolution(solution))
         return instance
