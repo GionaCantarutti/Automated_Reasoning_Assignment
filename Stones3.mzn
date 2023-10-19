@@ -45,8 +45,10 @@ constraint forall(i in 1..7, j in 1..7)(
 
 %If the board has an odd side length, the last placement is always empty
 constraint (n mod 2 = 1) -> (Placements[1, n^2] = 0);
-%There can be no "gaps" in the placement sequence where no tiles where placed
-constraint forall(i in 2..n^2)(Placements[1, i] != 0 -> Placements[1, i-1] != 0);
+%There can be no "gaps" in the placement sequence where no tiles where placed. Negligible impact on performance
+%constraint forall(i in 2..n^2)(Placements[1, i] != 0 -> Placements[1, i-1] != 0);
+%There can never be a placement following a non-placement (implied by previous heuristic)
+constraint forall(i in 1..n^2-1)(Placements[1, i] = 0 -> Placements[1, i+1] = 0);
 %Force placing first tile in one quarter of the board to break vertical and horizontal symmetries
 constraint Coordinates[1,1] < n/2 + 1 /\ Coordinates[2,1] < n/2 + 1;
 %Break symmetry that would allow to place the same tiles but in reverse order
