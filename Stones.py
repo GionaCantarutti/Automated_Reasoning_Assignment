@@ -46,6 +46,11 @@ BATCHES = [
     )
 ]
 
+def print_report():
+    progress = reps_done/total_reps
+    print("Spent " + "{:.2f}".format(elapsed/60.0) + " minutes out of " + "{:.2f}".format(max_time/60.0) + " aviable, " + "{:.2f}".format((max_time - elapsed)/60.0) + " left")
+    print("Current progress is " + "{:.2f}".format(progress*100) + "% by repetitions and " + "{:.2f}".format(elapsed/max_time * 100) + "% by maximum allowed time")
+
 local_path = os.getcwd()
 new_dir_path = os.path.join(local_path, "test_batches", datetime.now().strftime("%d-%m-%Y_%H.%M.%S"))
 os.mkdir(new_dir_path)
@@ -54,6 +59,14 @@ stats = [[StatisticsLogger(StatisticsLogger.createName(solver, batch), batch.siz
 
 StatisticsLogger.init_file(new_dir_path)
 
+elapsed = 0
+max_time = TOTAL_TIME_BUDGET_PER_SOLVER * len(SOLVERS)
+total_reps = 0
+for batch in BATCHES:
+    total_reps += 20
+total_reps *= len(SOLVERS)
+reps_done = 0
+
 for bi, batch in enumerate(BATCHES):    
     log_file = SolutionsLogger.open_logfile(new_dir_path)
     for i in range(batch.repetitions):
@@ -61,17 +74,24 @@ for bi, batch in enumerate(BATCHES):
         for si, solver in enumerate(SOLVERS):
 
             if solver.tBudget_left() <= 0:
+                print_report()
                 print(solver.label() + " solver ran out of time, moving on")
                 stats[bi][si].log_timeout()
+                reps_done += 1
                 continue
 
-            print(batch.label + " batch with " + solver.label() + " solver, repetition " + str(i + 1) + "/" + str(batch.repetitions) + " ...")
+            print_report()
+            print(batch.label + " batch with " + solver.label() + " solver, repetition " + str(i + 1) + "/" + str(batch.repetitions) + " ...\n")
             
             solved = solver.solveInstance(newInstance, min(solver.tBudget_left(), TIMEOUT))
-            solver.spend_time(solved.solution.solveTime.seconds + solved.solution.flatTime.seconds)
+            time_spent = solved.solution.solveTime.seconds + solved.solution.flatTime.seconds
+            solver.spend_time(time_spent)
+            elapsed += time_spent
 
             SolutionsLogger.log_new(solved, log_file)
             stats[bi][si].add_data(solved)
+            reps_done += 1
+        
 
     stats_file = StatisticsLogger.open_file(new_dir_path)
     for j in range(len(SOLVERS)):

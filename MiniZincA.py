@@ -38,10 +38,11 @@ class MiniZincA(Solver):
 
         solution = [[0 for y in range(instance.n)] for x in range(instance.n)]
 
-        for i in range(len(placements)):
-            if placements[i] != 0:
-                # That somewhat convoluted operation on sides[i] simply maps 1->2 and 2->-1
-                solution[coordinates[0][i] - 1][coordinates[1][i] - 1] = ((2 - sides[i]) * 2 - 1) * placements[i]
+        if placements is not None:
+            for i in range(len(placements)):
+                if placements[i] != 0:
+                    # That somewhat convoluted operation on sides[i] simply maps 1->2 and 2->-1
+                    solution[coordinates[0][i] - 1][coordinates[1][i] - 1] = ((2 - sides[i]) * 2 - 1) * placements[i]
 
         instance.addSolution(StoneSolution(solution, obj, solveTime, flatTime, self.name))
         return instance
