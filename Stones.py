@@ -4,13 +4,19 @@ from MiniZincB import MiniZincB
 from TestBatch import TestBatch
 from SolutionsLogger import SolutionsLogger
 from StatisticsLogger import StatisticsLogger
+import os
+from datetime import datetime
 
 TIMEOUT = 5 * 60
 TOTAL_TIME_BUDGET_PER_SOLVER = 15 * 60
 
 SOLVERS = [
-    MiniZincA("Stones2.mzn", "old", TOTAL_TIME_BUDGET_PER_SOLVER), 
-    MiniZincB("Stones3.mzn", "new", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/New/Basic dom_w_deg.mzn", "new dom_w_deg", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/New/Basic first_fail.mzn", "new first_fail", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/New/Basic max_regret.mzn", "new max_regret", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/New/Basic most_constrained.mzn", "new most_constrained", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincA("Models/Minizinc/Old/Basic dom_w_deg.mzn", "old dom_w_deg", TOTAL_TIME_BUDGET_PER_SOLVER), 
+    MiniZincA("Models/Minizinc/Old/Basic first_fail.mzn", "old first_fail", TOTAL_TIME_BUDGET_PER_SOLVER), 
     ]
 
 BATCHES = [
@@ -40,11 +46,16 @@ BATCHES = [
     )
 ]
 
-log_file = SolutionsLogger.init_logfile()
+local_path = os.getcwd()
+new_dir_path = os.path.join(local_path, "test_batches", datetime.now().strftime("%d-%m-%Y_%H.%M.%S"))
+os.mkdir(new_dir_path)
 
 stats = [[StatisticsLogger(StatisticsLogger.createName(solver, batch), batch.size, batch.tilecount, solver.label(), TIMEOUT) for solver in SOLVERS] for batch in BATCHES]
 
-for bi, batch in enumerate(BATCHES):
+StatisticsLogger.init_file(new_dir_path)
+
+for bi, batch in enumerate(BATCHES):    
+    log_file = SolutionsLogger.open_logfile(new_dir_path)
     for i in range(batch.repetitions):
         newInstance = StoneInstance.generateRandom(batch.size, batch.tilecount)
         for si, solver in enumerate(SOLVERS):
@@ -54,7 +65,7 @@ for bi, batch in enumerate(BATCHES):
                 stats[bi][si].log_timeout()
                 continue
 
-            print(batch.label + " batch with " + solver.label() + " solver, repetition " + str(i) + "/" + str(batch.repetitions) + " ...")
+            print(batch.label + " batch with " + solver.label() + " solver, repetition " + str(i + 1) + "/" + str(batch.repetitions) + " ...")
             
             solved = solver.solveInstance(newInstance, min(solver.tBudget_left(), TIMEOUT))
             solver.spend_time(solved.solution.solveTime.seconds + solved.solution.flatTime.seconds)
@@ -62,9 +73,13 @@ for bi, batch in enumerate(BATCHES):
             SolutionsLogger.log_new(solved, log_file)
             stats[bi][si].add_data(solved)
 
+    stats_file = StatisticsLogger.open_file(new_dir_path)
     for j in range(len(SOLVERS)):
-        stats[bi][j].close_and_save("stats/")
+        stats[bi][j].log_line(stats_file)
+    StatisticsLogger.close_file(stats_file)
+    SolutionsLogger.close_logfile(log_file)
         
+
 print("DONE!")
 
 #MiniZincB performa molto meglio quando gli vengono date abbastanza tiles. Oltre ad un certo punto aumentare le tiles smette di avere un costo sulla performance

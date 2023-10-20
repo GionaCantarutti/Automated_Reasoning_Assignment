@@ -1,9 +1,11 @@
 import numpy as np
+import os
 
 class SolutionsLogger:
 
-    def init_logfile():
-        return "test_log.txt"
+    def open_logfile(dirPath):
+        file = open(os.path.join(dirPath, "solutions.txt"), "a")
+        return file
 
     def make_log_string(StonesInstance):
 
@@ -23,5 +25,8 @@ class SolutionsLogger:
 
         return string
     
-    def log_new(StonesInstance, path):
-        print(SolutionsLogger.make_log_string(StonesInstance))
+    def log_new(StonesInstance, file):
+        file.write(SolutionsLogger.make_log_string(StonesInstance))
+
+    def close_logfile(file):
+        file.close()

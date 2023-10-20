@@ -1,8 +1,12 @@
+import os
+
 class StatisticsLogger:
 
+    FILE_NAME = "statistics.txt"
+
     def __init__(self, batchFileName, n, stoneCount, solverName, single_timeout):
-        self.samples = -1
-        self.cumulativeTime = -1
+        self.samples = 0
+        self.cumulativeTime = 0
         self.cumulativeCost = 0
         self.size = n
         self.stoneCount = stoneCount
@@ -12,6 +16,18 @@ class StatisticsLogger:
         self.solver = solverName
         self.file_name = batchFileName
         
+    def init_file(path):
+        file = open(os.path.join(path, StatisticsLogger.FILE_NAME), "a")
+        file.write("solver,n,stones,avgTime,avgCost,samples,ran_out_of_time,single_timeout")
+        StatisticsLogger.close_file(file)
+
+    def open_file(path):
+        file = open(os.path.join(path, StatisticsLogger.FILE_NAME), "a")
+        return file
+    
+    def close_file(file):
+        file.close()
+    
     def add_data(self, instance):
         self.samples += 1
         self.cumulativeTime += instance.solution.solveTime.seconds + instance.solution.flatTime.seconds + (instance.solution.solveTime.microseconds + instance.solution.flatTime.microseconds)/1000000
@@ -27,7 +43,7 @@ class StatisticsLogger:
         else:
             avgTime = -1
             avgCost = -1
-        return self.solver + "," + str(self.size) + "," + str(self.stoneCount) + "," + str(avgTime) + "," + str(avgCost) + "," + str(self.samples) + "," + str(self.timed_out) + "," + str(self.single_timeout)
+        return "\n" + self.solver + "," + str(self.size) + "," + str(self.stoneCount) + "," + str(avgTime) + "," + str(avgCost) + "," + str(self.samples) + "," + str(self.timed_out) + "," + str(self.single_timeout)
 
     def reset(self):
         self.samples = -1
@@ -40,14 +56,8 @@ class StatisticsLogger:
     def createName(solver, batch):
         return solver.label() + "_solver_on_" + batch.label + "_batch.txt"
 
-    def close_and_save(self, path):
+    def log_line(self, file):
         
-        #ToDo
-
-        print(self.file_name + ":")
-        print("solver,n,stones,avgTime,avgCost,samples,ran_out_of_time,single_timeout")
-        print(self.make_data_string() + "\n")
+        file.write(self.make_data_string())
 
         self.reset()
-
-        pass
