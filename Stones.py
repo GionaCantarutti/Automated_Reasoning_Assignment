@@ -63,7 +63,7 @@ elapsed = 0
 max_time = TOTAL_TIME_BUDGET_PER_SOLVER * len(SOLVERS)
 total_reps = 0
 for batch in BATCHES:
-    total_reps += 20
+    total_reps += batch.repetitions
 total_reps *= len(SOLVERS)
 reps_done = 0
 
@@ -75,7 +75,7 @@ for bi, batch in enumerate(BATCHES):
 
             if solver.tBudget_left() <= 0:
                 print_report()
-                print(solver.label() + " solver ran out of time, moving on")
+                print(solver.label() + " solver ran out of time, moving on\n")
                 stats[bi][si].log_timeout()
                 reps_done += 1
                 continue

@@ -1,0 +1,3676 @@
+
+#############################################
+Solver new dom_w_deg on instance of size 5 with stones:
+[[1, 2], [4, 1], [5, 6], [6, 6], [6, 1], [4, 4], [2, 0], [0, 2], [3, 4], [1, 6], [2, 3], [6, 2], [4, 6], [3, 6], [3, 5]]
+
+Solution with cost 1:
+4-1 1-2 2
+        |
+3-2 2-0 0
+         
+3-4 4-4 4
+        |
+3 3-5 6 6
+|     |  
+6 6-1 1 #
+
+Took a total of 0.335827, of which 0.013 spent solving and 0.322827 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 5 with stones:
+[[1, 2], [4, 1], [5, 6], [6, 6], [6, 1], [4, 4], [2, 0], [0, 2], [3, 4], [1, 6], [2, 3], [6, 2], [4, 6], [3, 6], [3, 5]]
+
+Solution with cost 1:
+0-2 2-1 1
+        |
+2-3 3-4 4
+         
+2-6 6-1 1
+        |
+6 6-4 6 6
+|     |  
+5 5-3 3 #
+
+Took a total of 0.312797, of which 0.008 spent solving and 0.304797 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 5 with stones:
+[[1, 2], [4, 1], [5, 6], [6, 6], [6, 1], [4, 4], [2, 0], [0, 2], [3, 4], [1, 6], [2, 3], [6, 2], [4, 6], [3, 6], [3, 5]]
+
+Solution with cost 1:
+0-2 2-1 1
+        |
+2-3 3-4 4
+         
+2-6 6-1 1
+        |
+6 6-4 6 6
+|     |  
+5 5-3 3 #
+
+Took a total of 0.314394, of which 0.008 spent solving and 0.306394 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 5 with stones:
+[[1, 2], [4, 1], [5, 6], [6, 6], [6, 1], [4, 4], [2, 0], [0, 2], [3, 4], [1, 6], [2, 3], [6, 2], [4, 6], [3, 6], [3, 5]]
+
+Solution with cost 1:
+2-0 0-2 2
+        |
+3-4 4-1 1
+         
+3-2 2-6 6
+        |
+5 5-6 1 1
+|     |  
+3 3-6 6 #
+
+Took a total of 0.310078, of which 0.007 spent solving and 0.303078 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 5 with stones:
+[[1, 2], [4, 1], [5, 6], [6, 6], [6, 1], [4, 4], [2, 0], [0, 2], [3, 4], [1, 6], [2, 3], [6, 2], [4, 6], [3, 6], [3, 5]]
+
+Solution with cost 1:
+2 2-3 3-4
+|        
+0 0-2 4-4
+         
+# 1-2 4-6
+         
+6 6-3 3 6
+|     | |
+1 1-4 5 5
+
+Took a total of 0.22011, of which 0.007 spent solving and 0.21311 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 5 with stones:
+[[1, 2], [4, 1], [5, 6], [6, 6], [6, 1], [4, 4], [2, 0], [0, 2], [3, 4], [1, 6], [2, 3], [6, 2], [4, 6], [3, 6], [3, 5]]
+
+Solution with cost 1:
+4 4-3 3-2
+|        
+4 4-1 0-2
+         
+# 2-1 0-2
+         
+3 3-5 5 2
+|     | |
+6 6-6 6 6
+
+Took a total of 0.202588, of which 0.004 spent solving and 0.198588 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 5 with stones:
+[[3, 6], [2, 0], [5, 1], [3, 3], [6, 0], [5, 0], [0, 2], [0, 2], [5, 0], [4, 6], [3, 6], [1, 2], [6, 1], [5, 5], [2, 3]]
+
+Solution with cost 1:
+0-2 2-0 0
+        |
+5-1 1-2 2
+         
+5-5 5-0 0
+        |
+6 6-1 6 6
+|     |  
+3 3-3 3 #
+
+Took a total of 0.33448100000000003, of which 0.014 spent solving and 0.320481 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 5 with stones:
+[[3, 6], [2, 0], [5, 1], [3, 3], [6, 0], [5, 0], [0, 2], [0, 2], [5, 0], [4, 6], [3, 6], [1, 2], [6, 1], [5, 5], [2, 3]]
+
+Solution with cost 1:
+3 3-3 3-6
+|        
+6 6-0 0 6
+      | |
+2-0 5 5 1
+    |    
+2-0 5 5-1
+         
+# 0-2 2-1
+
+Took a total of 0.31833100000000003, of which 0.009 spent solving and 0.309331 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 5 with stones:
+[[3, 6], [2, 0], [5, 1], [3, 3], [6, 0], [5, 0], [0, 2], [0, 2], [5, 0], [4, 6], [3, 6], [1, 2], [6, 1], [5, 5], [2, 3]]
+
+Solution with cost 1:
+3 3-3 3-6
+|        
+6 6-0 0 6
+      | |
+2-0 5 5 1
+    |    
+2-0 5 5-1
+         
+# 0-2 2-1
+
+Took a total of 0.322888, of which 0.01 spent solving and 0.312888 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 5 with stones:
+[[3, 6], [2, 0], [5, 1], [3, 3], [6, 0], [5, 0], [0, 2], [0, 2], [5, 0], [4, 6], [3, 6], [1, 2], [6, 1], [5, 5], [2, 3]]
+
+Solution with cost 1:
+2-0 0-2 2
+        |
+0-5 5-0 0
+         
+0-6 6-1 1
+        |
+6 6-3 2 2
+|     |  
+3 3-3 3 #
+
+Took a total of 0.321205, of which 0.006 spent solving and 0.315205 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 5 with stones:
+[[3, 6], [2, 0], [5, 1], [3, 3], [6, 0], [5, 0], [0, 2], [0, 2], [5, 0], [4, 6], [3, 6], [1, 2], [6, 1], [5, 5], [2, 3]]
+
+Solution with cost 1:
+2 2-0 0-5
+|        
+3 3-3 5-5
+         
+# 6-3 5-0
+         
+6 6-1 1 0
+|     | |
+0 0-2 2 2
+
+Took a total of 0.213921, of which 0.014 spent solving and 0.199921 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 5 with stones:
+[[3, 6], [2, 0], [5, 1], [3, 3], [6, 0], [5, 0], [0, 2], [0, 2], [5, 0], [4, 6], [3, 6], [1, 2], [6, 1], [5, 5], [2, 3]]
+
+Solution with cost 1:
+6 6-0 0-2
+|        
+3 3-3 0-2
+         
+# 6-3 0-5
+         
+0 0-2 2 5
+|     | |
+5 5-5 1 1
+
+Took a total of 0.197523, of which 0.005 spent solving and 0.192523 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 5 with stones:
+[[6, 4], [3, 4], [4, 5], [6, 3], [0, 0], [5, 2], [1, 1], [5, 2], [5, 2], [3, 2], [2, 5], [2, 5], [0, 1], [2, 1], [0, 2]]
+
+Solution with cost 1:
+4-3 3-2 2
+        |
+0-1 1-1 1
+         
+0-0 0-2 2
+        |
+2 2-5 5 5
+|     |  
+5 5-2 2 #
+
+Took a total of 0.334855, of which 0.012 spent solving and 0.322855 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 5 with stones:
+[[6, 4], [3, 4], [4, 5], [6, 3], [0, 0], [5, 2], [1, 1], [5, 2], [5, 2], [3, 2], [2, 5], [2, 5], [0, 1], [2, 1], [0, 2]]
+
+Solution with cost 1:
+0-0 0-1 1
+        |
+3-2 2-1 1
+         
+3-4 4-5 5
+        |
+5 5-2 2 2
+|     |  
+2 2-5 5 #
+
+Took a total of 0.315185, of which 0.008 spent solving and 0.307185 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 5 with stones:
+[[6, 4], [3, 4], [4, 5], [6, 3], [0, 0], [5, 2], [1, 1], [5, 2], [5, 2], [3, 2], [2, 5], [2, 5], [0, 1], [2, 1], [0, 2]]
+
+Solution with cost 1:
+0-0 0-1 1
+        |
+3-2 2-1 1
+         
+3-4 4-5 5
+        |
+5 5-2 2 2
+|     |  
+2 2-5 5 #
+
+Took a total of 0.332171, of which 0.007 spent solving and 0.325171 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 5 with stones:
+[[6, 4], [3, 4], [4, 5], [6, 3], [0, 0], [5, 2], [1, 1], [5, 2], [5, 2], [3, 2], [2, 5], [2, 5], [0, 1], [2, 1], [0, 2]]
+
+Solution with cost 1:
+0-0 0-1 1
+        |
+3-2 2-1 1
+         
+3-4 4-5 5
+        |
+5 5-2 2 2
+|     |  
+2 2-5 5 #
+
+Took a total of 0.309161, of which 0.007 spent solving and 0.302161 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 5 with stones:
+[[6, 4], [3, 4], [4, 5], [6, 3], [0, 0], [5, 2], [1, 1], [5, 2], [5, 2], [3, 2], [2, 5], [2, 5], [0, 1], [2, 1], [0, 2]]
+
+Solution with cost 1:
+2 2-5 5-2
+|        
+5 5-4 5-2
+         
+# 6-4 5-2
+         
+2 2-0 0 2
+|     | |
+3 3-4 1 1
+
+Took a total of 0.20572100000000001, of which 0.008 spent solving and 0.197721 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 5 with stones:
+[[6, 4], [3, 4], [4, 5], [6, 3], [0, 0], [5, 2], [1, 1], [5, 2], [5, 2], [3, 2], [2, 5], [2, 5], [0, 1], [2, 1], [0, 2]]
+
+Solution with cost 1:
+2 2-5 5-2
+|        
+3 3-4 5-2
+         
+# 6-4 5-2
+         
+0 0-1 1 2
+|     | |
+0 0-2 1 1
+
+Took a total of 0.203233, of which 0.005 spent solving and 0.198233 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 5 with stones:
+[[0, 2], [2, 5], [2, 2], [1, 0], [6, 0], [1, 5], [6, 1], [6, 5], [4, 3], [3, 2], [1, 3], [0, 3], [5, 6], [3, 5], [5, 6]]
+
+Solution with cost 1:
+0-2 2-2 2
+        |
+0-6 6-5 5
+         
+0-1 1-3 3
+        |
+5 5-6 5 5
+|     |  
+6 6-1 1 #
+
+Took a total of 0.33027, of which 0.017 spent solving and 0.31327 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 5 with stones:
+[[0, 2], [2, 5], [2, 2], [1, 0], [6, 0], [1, 5], [6, 1], [6, 5], [4, 3], [3, 2], [1, 3], [0, 3], [5, 6], [3, 5], [5, 6]]
+
+Solution with cost 1:
+0-1 1-3 3
+        |
+2-2 2-0 0
+         
+2-3 3-5 5
+        |
+6 6-0 1 1
+|     |  
+5 5-6 6 #
+
+Took a total of 0.31991, of which 0.007 spent solving and 0.31291 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 5 with stones:
+[[0, 2], [2, 5], [2, 2], [1, 0], [6, 0], [1, 5], [6, 1], [6, 5], [4, 3], [3, 2], [1, 3], [0, 3], [5, 6], [3, 5], [5, 6]]
+
+Solution with cost 1:
+0-1 1-3 3
+        |
+2-2 2-0 0
+         
+2-3 3-5 5
+        |
+6 6-0 1 1
+|     |  
+5 5-6 6 #
+
+Took a total of 0.32435, of which 0.008 spent solving and 0.31635 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 5 with stones:
+[[0, 2], [2, 5], [2, 2], [1, 0], [6, 0], [1, 5], [6, 1], [6, 5], [4, 3], [3, 2], [1, 3], [0, 3], [5, 6], [3, 5], [5, 6]]
+
+Solution with cost 1:
+1-0 0-2 2
+        |
+0-3 3-2 2
+         
+0-6 6-1 1
+        |
+5 5-1 3 3
+|     |  
+6 6-5 5 #
+
+Took a total of 0.330664, of which 0.007 spent solving and 0.323664 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 5 with stones:
+[[0, 2], [2, 5], [2, 2], [1, 0], [6, 0], [1, 5], [6, 1], [6, 5], [4, 3], [3, 2], [1, 3], [0, 3], [5, 6], [3, 5], [5, 6]]
+
+Solution with cost 1:
+3 3-1 1-5
+|        
+2 2-2 6-5
+         
+# 0-2 6-5
+         
+6 6-0 0 5
+|     | |
+5 5-2 3 3
+
+Took a total of 0.209955, of which 0.009 spent solving and 0.200955 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 5 with stones:
+[[0, 2], [2, 5], [2, 2], [1, 0], [6, 0], [1, 5], [6, 1], [6, 5], [4, 3], [3, 2], [1, 3], [0, 3], [5, 6], [3, 5], [5, 6]]
+
+Solution with cost 1:
+1 1-0 0-3
+|        
+5 5-2 1-3
+         
+# 0-2 1-6
+         
+5 5-6 6 6
+|     | |
+3 3-4 5 5
+
+Took a total of 0.204128, of which 0.009 spent solving and 0.195128 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 5 with stones:
+[[5, 0], [4, 3], [1, 1], [1, 2], [3, 0], [3, 6], [0, 4], [1, 0], [2, 6], [1, 1], [0, 3], [0, 0], [5, 0], [5, 0], [3, 4]]
+
+Solution with cost 1:
+0-0 0-1 1
+        |
+2-1 1-1 1
+         
+2-6 6-3 3
+        |
+0 0-5 0 0
+|     |  
+4 4-3 3 #
+
+Took a total of 0.323389, of which 0.01 spent solving and 0.313389 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 5 with stones:
+[[5, 0], [4, 3], [1, 1], [1, 2], [3, 0], [3, 6], [0, 4], [1, 0], [2, 6], [1, 1], [0, 3], [0, 0], [5, 0], [5, 0], [3, 4]]
+
+Solution with cost 1:
+0-0 0-1 1
+        |
+2-1 1-1 1
+         
+2-6 6-3 3
+        |
+0 0-5 0 0
+|     |  
+4 4-3 3 #
+
+Took a total of 0.310293, of which 0.006 spent solving and 0.304293 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 5 with stones:
+[[5, 0], [4, 3], [1, 1], [1, 2], [3, 0], [3, 6], [0, 4], [1, 0], [2, 6], [1, 1], [0, 3], [0, 0], [5, 0], [5, 0], [3, 4]]
+
+Solution with cost 1:
+0-0 0-1 1
+        |
+2-1 1-1 1
+         
+2-6 6-3 3
+        |
+0 0-5 0 0
+|     |  
+4 4-3 3 #
+
+Took a total of 0.320067, of which 0.007 spent solving and 0.313067 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 5 with stones:
+[[5, 0], [4, 3], [1, 1], [1, 2], [3, 0], [3, 6], [0, 4], [1, 0], [2, 6], [1, 1], [0, 3], [0, 0], [5, 0], [5, 0], [3, 4]]
+
+Solution with cost 1:
+0-0 0-1 1
+        |
+2-1 1-1 1
+         
+2-6 6-3 3
+        |
+0 0-5 0 0
+|     |  
+4 4-3 3 #
+
+Took a total of 0.314009, of which 0.007 spent solving and 0.307009 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 5 with stones:
+[[5, 0], [4, 3], [1, 1], [1, 2], [3, 0], [3, 6], [0, 4], [1, 0], [2, 6], [1, 1], [0, 3], [0, 0], [5, 0], [5, 0], [3, 4]]
+
+Solution with cost 1:
+3 3-6 6-2
+|        
+4 4-0 1-2
+         
+# 5-0 1-1
+         
+0 0-5 5 1
+|     | |
+3 3-4 0 0
+
+Took a total of 0.204317, of which 0.007 spent solving and 0.197317 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 5 with stones:
+[[5, 0], [4, 3], [1, 1], [1, 2], [3, 0], [3, 6], [0, 4], [1, 0], [2, 6], [1, 1], [0, 3], [0, 0], [5, 0], [5, 0], [3, 4]]
+
+Solution with cost 1:
+4 4-0 0-1
+|        
+3 3-0 1-1
+         
+# 5-0 1-2
+         
+0 0-3 3 2
+|     | |
+0 0-5 6 6
+
+Took a total of 0.201396, of which 0.005 spent solving and 0.196396 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 5 with stones:
+[[0, 4], [6, 6], [2, 2], [3, 6], [1, 2], [6, 6], [0, 5], [0, 2], [6, 2], [5, 1], [2, 4], [5, 6], [1, 4], [2, 2], [2, 2]]
+
+Solution with cost 1:
+0-2 2-1 1
+        |
+5-0 0-4 4
+         
+5-6 6-6 6
+        |
+2 2-4 2 2
+|     |  
+2 2-2 2 #
+
+Took a total of 0.329098, of which 0.014 spent solving and 0.315098 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 5 with stones:
+[[0, 4], [6, 6], [2, 2], [3, 6], [1, 2], [6, 6], [0, 5], [0, 2], [6, 2], [5, 1], [2, 4], [5, 6], [1, 4], [2, 2], [2, 2]]
+
+Solution with cost 1:
+0-2 2-1 1
+        |
+5-0 0-4 4
+         
+5 2-2 2-2
+|        
+6 2-4 2-2
+         
+6-6 6-2 #
+
+Took a total of 0.311347, of which 0.007 spent solving and 0.304347 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 5 with stones:
+[[0, 4], [6, 6], [2, 2], [3, 6], [1, 2], [6, 6], [0, 5], [0, 2], [6, 2], [5, 1], [2, 4], [5, 6], [1, 4], [2, 2], [2, 2]]
+
+Solution with cost 1:
+0-2 2-1 1
+        |
+5-0 0-4 4
+         
+5 2-2 2-2
+|        
+6 2-4 2-2
+         
+6-6 6-2 #
+
+Took a total of 0.31977, of which 0.008 spent solving and 0.31177 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 5 with stones:
+[[0, 4], [6, 6], [2, 2], [3, 6], [1, 2], [6, 6], [0, 5], [0, 2], [6, 2], [5, 1], [2, 4], [5, 6], [1, 4], [2, 2], [2, 2]]
+
+Solution with cost 1:
+2-0 0-4 4
+        |
+6-5 5-1 1
+         
+6-6 6-6 6
+        |
+2 2-4 2 2
+|     |  
+2 2-2 2 #
+
+Took a total of 0.316363, of which 0.01 spent solving and 0.306363 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 5 with stones:
+[[0, 4], [6, 6], [2, 2], [3, 6], [1, 2], [6, 6], [0, 5], [0, 2], [6, 2], [5, 1], [2, 4], [5, 6], [1, 4], [2, 2], [2, 2]]
+
+Solution with cost 1:
+2 2-2 2-1
+|        
+2 2-4 5-1
+         
+# 0-4 5-0
+         
+6 6-2 2 0
+|     | |
+6 6-6 2 2
+
+Took a total of 0.223159, of which 0.022 spent solving and 0.201159 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 5 with stones:
+[[0, 4], [6, 6], [2, 2], [3, 6], [1, 2], [6, 6], [0, 5], [0, 2], [6, 2], [5, 1], [2, 4], [5, 6], [1, 4], [2, 2], [2, 2]]
+
+Solution with cost 1:
+1 1-4 4-2
+|        
+5 5-0 2-2
+         
+# 4-0 2-2
+         
+6 6-6 6 2
+|     | |
+6 6-3 2 2
+
+Took a total of 0.209416, of which 0.015 spent solving and 0.194416 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 5 with stones:
+[[2, 2], [2, 6], [1, 6], [3, 4], [3, 1], [5, 3], [1, 0], [0, 1], [2, 0], [3, 1], [6, 0], [3, 4], [1, 2], [5, 4], [0, 5]]
+
+Solution with cost 1:
+0-1 1-0 0
+        |
+3-1 1-2 2
+         
+3-1 1-6 6
+        |
+4 4-3 0 0
+|     |  
+3 3-5 5 #
+
+Took a total of 0.320533, of which 0.012 spent solving and 0.308533 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 5 with stones:
+[[2, 2], [2, 6], [1, 6], [3, 4], [3, 1], [5, 3], [1, 0], [0, 1], [2, 0], [3, 1], [6, 0], [3, 4], [1, 2], [5, 4], [0, 5]]
+
+Solution with cost 1:
+0-1 1-0 0
+        |
+3-1 1-2 2
+         
+3-1 1-6 6
+        |
+4 4-3 0 0
+|     |  
+3 3-5 5 #
+
+Took a total of 0.321186, of which 0.007 spent solving and 0.314186 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 5 with stones:
+[[2, 2], [2, 6], [1, 6], [3, 4], [3, 1], [5, 3], [1, 0], [0, 1], [2, 0], [3, 1], [6, 0], [3, 4], [1, 2], [5, 4], [0, 5]]
+
+Solution with cost 1:
+0-1 1-0 0
+        |
+3-1 1-2 2
+         
+3-1 1-6 6
+        |
+4 4-3 0 0
+|     |  
+3 3-5 5 #
+
+Took a total of 0.314063, of which 0.009 spent solving and 0.305063 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 5 with stones:
+[[2, 2], [2, 6], [1, 6], [3, 4], [3, 1], [5, 3], [1, 0], [0, 1], [2, 0], [3, 1], [6, 0], [3, 4], [1, 2], [5, 4], [0, 5]]
+
+Solution with cost 1:
+1-0 0-1 1
+        |
+5-0 0-2 2
+         
+5-3 3-4 4
+        |
+2 2-2 3 3
+|     |  
+6 6-1 1 #
+
+Took a total of 0.320054, of which 0.007 spent solving and 0.313054 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 5 with stones:
+[[2, 2], [2, 6], [1, 6], [3, 4], [3, 1], [5, 3], [1, 0], [0, 1], [2, 0], [3, 1], [6, 0], [3, 4], [1, 2], [5, 4], [0, 5]]
+
+Solution with cost 1:
+6 6-1 1-3
+|        
+0 0-2 4-3
+         
+# 2-2 4-3
+         
+1 1-0 0 3
+|     | |
+2 2-6 5 5
+
+Took a total of 0.219639, of which 0.022 spent solving and 0.197639 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 5 with stones:
+[[2, 2], [2, 6], [1, 6], [3, 4], [3, 1], [5, 3], [1, 0], [0, 1], [2, 0], [3, 1], [6, 0], [3, 4], [1, 2], [5, 4], [0, 5]]
+
+Solution with cost 1:
+1 1-3 3-4
+|        
+6 6-2 3-4
+         
+# 2-2 3-5
+         
+0 0-1 1 5
+|     | |
+2 2-1 0 0
+
+Took a total of 0.199772, of which 0.005 spent solving and 0.194772 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 5 with stones:
+[[5, 2], [1, 4], [5, 3], [6, 3], [4, 5], [4, 0], [5, 0], [5, 0], [0, 4], [5, 2], [2, 6], [0, 6], [3, 0], [5, 5], [5, 6]]
+
+Solution with cost 1:
+2-5 5-5 5
+        |
+0-6 6-2 2
+         
+0-5 5-4 4
+        |
+0 0-4 0 0
+|     |  
+3 3-5 5 #
+
+Took a total of 0.324193, of which 0.013 spent solving and 0.311193 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 5 with stones:
+[[5, 2], [1, 4], [5, 3], [6, 3], [4, 5], [4, 0], [5, 0], [5, 0], [0, 4], [5, 2], [2, 6], [0, 6], [3, 0], [5, 5], [5, 6]]
+
+Solution with cost 1:
+4-5 5-5 5
+        |
+4-1 0-3 6
+         
+4-0 0 3 6
+    | | |
+4-0 5 5 2
+         
+# 0-5 5-2
+
+Took a total of 0.350735, of which 0.028 spent solving and 0.322735 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 5 with stones:
+[[5, 2], [1, 4], [5, 3], [6, 3], [4, 5], [4, 0], [5, 0], [5, 0], [0, 4], [5, 2], [2, 6], [0, 6], [3, 0], [5, 5], [5, 6]]
+
+Solution with cost 1:
+4-5 5-5 5
+        |
+4-1 0-3 6
+         
+4-0 0 3 6
+    | | |
+4-0 5 5 2
+         
+# 0-5 5-2
+
+Took a total of 0.346191, of which 0.029 spent solving and 0.317191 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 5 with stones:
+[[5, 2], [1, 4], [5, 3], [6, 3], [4, 5], [4, 0], [5, 0], [5, 0], [0, 4], [5, 2], [2, 6], [0, 6], [3, 0], [5, 5], [5, 6]]
+
+Solution with cost 1:
+3-0 0-4 4
+        |
+0-5 5-0 0
+         
+0-6 6-2 2
+        |
+5 5-4 5 5
+|     |  
+6 6-3 3 #
+
+Took a total of 0.31147400000000003, of which 0.007 spent solving and 0.304474 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 5 with stones:
+[[5, 2], [1, 4], [5, 3], [6, 3], [4, 5], [4, 0], [5, 0], [5, 0], [0, 4], [5, 2], [2, 6], [0, 6], [3, 0], [5, 5], [5, 6]]
+
+Solution with cost 1:
+4 4-0 0-5
+|        
+0 0-5 5-5
+         
+# 2-5 5-2
+         
+5 5-3 3 2
+|     | |
+4 4-1 6 6
+
+Took a total of 0.20474, of which 0.007 spent solving and 0.19774 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 5 with stones:
+[[5, 2], [1, 4], [5, 3], [6, 3], [4, 5], [4, 0], [5, 0], [5, 0], [0, 4], [5, 2], [2, 6], [0, 6], [3, 0], [5, 5], [5, 6]]
+
+Solution with cost 1:
+6 6-2 2-5
+|        
+3 3-5 4-5
+         
+# 2-5 4-0
+         
+6 6-0 0 0
+|     | |
+5 5-5 5 5
+
+Took a total of 0.20713900000000002, of which 0.005 spent solving and 0.202139 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 5 with stones:
+[[2, 1], [1, 3], [1, 2], [1, 6], [6, 6], [2, 3], [2, 1], [5, 6], [2, 1], [0, 0], [4, 3], [2, 6], [3, 1], [0, 4], [1, 4]]
+
+Solution with cost 1:
+0-0 0-4 4
+        |
+1-2 2-1 1
+         
+1-2 2-1 1
+        |
+2 2-3 3 3
+|     |  
+6 6-1 1 #
+
+Took a total of 0.319561, of which 0.011 spent solving and 0.308561 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 5 with stones:
+[[2, 1], [1, 3], [1, 2], [1, 6], [6, 6], [2, 3], [2, 1], [5, 6], [2, 1], [0, 0], [4, 3], [2, 6], [3, 1], [0, 4], [1, 4]]
+
+Solution with cost 1:
+0-0 0-4 4
+        |
+1-2 2-1 1
+         
+1-2 2-1 1
+        |
+2 2-3 3 3
+|     |  
+6 6-1 1 #
+
+Took a total of 0.315699, of which 0.006 spent solving and 0.309699 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 5 with stones:
+[[2, 1], [1, 3], [1, 2], [1, 6], [6, 6], [2, 3], [2, 1], [5, 6], [2, 1], [0, 0], [4, 3], [2, 6], [3, 1], [0, 4], [1, 4]]
+
+Solution with cost 1:
+0-0 0-4 4
+        |
+1-2 2-1 1
+         
+1-2 2-1 1
+        |
+2 2-3 3 3
+|     |  
+6 6-1 1 #
+
+Took a total of 0.327938, of which 0.007 spent solving and 0.320938 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 5 with stones:
+[[2, 1], [1, 3], [1, 2], [1, 6], [6, 6], [2, 3], [2, 1], [5, 6], [2, 1], [0, 0], [4, 3], [2, 6], [3, 1], [0, 4], [1, 4]]
+
+Solution with cost 1:
+0-0 0-4 4
+        |
+1-2 2-1 1
+         
+1-2 2-1 1
+        |
+2 2-3 3 3
+|     |  
+6 6-1 1 #
+
+Took a total of 0.320274, of which 0.008 spent solving and 0.312274 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 5 with stones:
+[[2, 1], [1, 3], [1, 2], [1, 6], [6, 6], [2, 3], [2, 1], [5, 6], [2, 1], [0, 0], [4, 3], [2, 6], [3, 1], [0, 4], [1, 4]]
+
+Solution with cost 1:
+6 6-6 6-2
+|        
+1 1-2 3-2
+         
+# 1-2 3-4
+         
+1 1-2 2 4
+|     | |
+3 3-1 1 1
+
+Took a total of 0.204289, of which 0.007 spent solving and 0.197289 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 5 with stones:
+[[2, 1], [1, 3], [1, 2], [1, 6], [6, 6], [2, 3], [2, 1], [5, 6], [2, 1], [0, 0], [4, 3], [2, 6], [3, 1], [0, 4], [1, 4]]
+
+Solution with cost 1:
+2 2-1 1-6
+|        
+3 3-1 6-6
+         
+# 2-1 6-2
+         
+4 4-3 3 2
+|     | |
+0 0-0 1 1
+
+Took a total of 0.196802, of which 0.004 spent solving and 0.192802 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 5 with stones:
+[[2, 3], [3, 4], [3, 5], [2, 4], [5, 3], [2, 0], [4, 1], [2, 3], [4, 1], [1, 1], [0, 5], [0, 2], [5, 2], [5, 6], [5, 2]]
+
+Solution with cost 1:
+0-2 2-0 0
+        |
+3-2 2-5 5
+         
+3-2 2-4 4
+        |
+3 3-5 1 1
+|     |  
+4 4-1 1 #
+
+Took a total of 0.319879, of which 0.012 spent solving and 0.307879 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 5 with stones:
+[[2, 3], [3, 4], [3, 5], [2, 4], [5, 3], [2, 0], [4, 1], [2, 3], [4, 1], [1, 1], [0, 5], [0, 2], [5, 2], [5, 6], [5, 2]]
+
+Solution with cost 1:
+0-2 2-0 0
+        |
+3-2 2-5 5
+         
+3-2 2-4 4
+        |
+3 3-5 1 1
+|     |  
+4 4-1 1 #
+
+Took a total of 0.31265, of which 0.007 spent solving and 0.30565 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 5 with stones:
+[[2, 3], [3, 4], [3, 5], [2, 4], [5, 3], [2, 0], [4, 1], [2, 3], [4, 1], [1, 1], [0, 5], [0, 2], [5, 2], [5, 6], [5, 2]]
+
+Solution with cost 1:
+0-2 2-0 0
+        |
+3-2 2-5 5
+         
+3-2 2-4 4
+        |
+3 3-5 1 1
+|     |  
+4 4-1 1 #
+
+Took a total of 0.31339300000000003, of which 0.007 spent solving and 0.306393 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 5 with stones:
+[[2, 3], [3, 4], [3, 5], [2, 4], [5, 3], [2, 0], [4, 1], [2, 3], [4, 1], [1, 1], [0, 5], [0, 2], [5, 2], [5, 6], [5, 2]]
+
+Solution with cost 1:
+2-0 0-2 2
+        |
+4-2 2-3 3
+         
+4-1 1-1 1
+        |
+2 2-5 4 4
+|     |  
+5 5-3 3 #
+
+Took a total of 0.320702, of which 0.006 spent solving and 0.314702 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 5 with stones:
+[[2, 3], [3, 4], [3, 5], [2, 4], [5, 3], [2, 0], [4, 1], [2, 3], [4, 1], [1, 1], [0, 5], [0, 2], [5, 2], [5, 6], [5, 2]]
+
+Solution with cost 1:
+3 3-5 5-2
+|        
+5 5-2 0-2
+         
+# 3-2 0-2
+         
+1 1-1 1 2
+|     | |
+4 4-3 4 4
+
+Took a total of 0.228706, of which 0.029 spent solving and 0.199706 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 5 with stones:
+[[2, 3], [3, 4], [3, 5], [2, 4], [5, 3], [2, 0], [4, 1], [2, 3], [4, 1], [1, 1], [0, 5], [0, 2], [5, 2], [5, 6], [5, 2]]
+
+Solution with cost 1:
+1 1-4 4-2
+|        
+4 4-3 0-2
+         
+# 2-3 0-5
+         
+2 2-5 5 5
+|     | |
+5 5-6 3 3
+
+Took a total of 0.233263, of which 0.036 spent solving and 0.197263 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 5 with stones:
+[[3, 0], [2, 5], [3, 4], [5, 3], [1, 1], [5, 6], [6, 4], [1, 2], [4, 5], [0, 4], [5, 0], [6, 2], [3, 0], [2, 2], [6, 0]]
+
+Solution with cost 1:
+0-3 3-0 0
+        |
+5-3 3-4 4
+         
+5-0 0-6 6
+        |
+4 4-6 2 2
+|     |  
+5 5-2 2 #
+
+Took a total of 0.333587, of which 0.015 spent solving and 0.318587 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 5 with stones:
+[[3, 0], [2, 5], [3, 4], [5, 3], [1, 1], [5, 6], [6, 4], [1, 2], [4, 5], [0, 4], [5, 0], [6, 2], [3, 0], [2, 2], [6, 0]]
+
+Solution with cost 1:
+0-3 3-0 0
+        |
+5-3 3-4 4
+         
+5-0 0-6 6
+        |
+4-5 5-2 2
+         
+4-6 # 2-2
+
+Took a total of 0.314599, of which 0.007 spent solving and 0.307599 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 5 with stones:
+[[3, 0], [2, 5], [3, 4], [5, 3], [1, 1], [5, 6], [6, 4], [1, 2], [4, 5], [0, 4], [5, 0], [6, 2], [3, 0], [2, 2], [6, 0]]
+
+Solution with cost 1:
+0-3 3-0 0
+        |
+5-3 3-4 4
+         
+5-0 0-6 6
+        |
+4-5 5-2 2
+         
+4-6 # 2-2
+
+Took a total of 0.324342, of which 0.008 spent solving and 0.316342 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 5 with stones:
+[[3, 0], [2, 5], [3, 4], [5, 3], [1, 1], [5, 6], [6, 4], [1, 2], [4, 5], [0, 4], [5, 0], [6, 2], [3, 0], [2, 2], [6, 0]]
+
+Solution with cost 1:
+3-0 0-3 3
+        |
+6-0 0-4 4
+         
+6-2 2-2 2
+        |
+5 5-3 5 5
+|     |  
+6 6-4 4 #
+
+Took a total of 0.317886, of which 0.009 spent solving and 0.308886 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 5 with stones:
+[[3, 0], [2, 5], [3, 4], [5, 3], [1, 1], [5, 6], [6, 4], [1, 2], [4, 5], [0, 4], [5, 0], [6, 2], [3, 0], [2, 2], [6, 0]]
+
+Solution with cost 1:
+4 4-3 3-5
+|        
+5 5-0 6-5
+         
+# 3-0 6-4
+         
+2 2-6 6 4
+|     | |
+2 2-5 0 0
+
+Took a total of 0.233968, of which 0.031 spent solving and 0.202968 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 5 with stones:
+[[3, 0], [2, 5], [3, 4], [5, 3], [1, 1], [5, 6], [6, 4], [1, 2], [4, 5], [0, 4], [5, 0], [6, 2], [3, 0], [2, 2], [6, 0]]
+
+Solution with cost 1:
+6 6-5 5-2
+|        
+4 4-3 6-2
+         
+# 0-3 6-0
+         
+3 3-5 5 0
+|     | |
+0 0-5 4 4
+
+Took a total of 0.199193, of which 0.004 spent solving and 0.195193 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 5 with stones:
+[[1, 6], [6, 4], [3, 3], [1, 1], [0, 3], [2, 4], [3, 6], [4, 2], [4, 1], [0, 4], [6, 3], [6, 2], [3, 4], [2, 1], [4, 2]]
+
+Solution with cost 1:
+1-1 1-4 4
+        |
+0-3 3-3 3
+         
+0-4 4-2 2
+        |
+4 4-2 1 1
+|     |  
+2 2-6 6 #
+
+Took a total of 0.328473, of which 0.013 spent solving and 0.315473 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 5 with stones:
+[[1, 6], [6, 4], [3, 3], [1, 1], [0, 3], [2, 4], [3, 6], [4, 2], [4, 1], [0, 4], [6, 3], [6, 2], [3, 4], [2, 1], [4, 2]]
+
+Solution with cost 1:
+0-3 3-3 3
+        |
+1-1 1-4 4
+         
+1-2 2-4 4
+        |
+3 3-6 2 2
+|     |  
+6 6-4 4 #
+
+Took a total of 0.318741, of which 0.007 spent solving and 0.311741 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 5 with stones:
+[[1, 6], [6, 4], [3, 3], [1, 1], [0, 3], [2, 4], [3, 6], [4, 2], [4, 1], [0, 4], [6, 3], [6, 2], [3, 4], [2, 1], [4, 2]]
+
+Solution with cost 1:
+0-3 3-3 3
+        |
+1-1 1-4 4
+         
+1-2 2-4 4
+        |
+3 3-6 2 2
+|     |  
+6 6-4 4 #
+
+Took a total of 0.321986, of which 0.007 spent solving and 0.314986 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 5 with stones:
+[[1, 6], [6, 4], [3, 3], [1, 1], [0, 3], [2, 4], [3, 6], [4, 2], [4, 1], [0, 4], [6, 3], [6, 2], [3, 4], [2, 1], [4, 2]]
+
+Solution with cost 1:
+3-0 0-4 4
+        |
+2-1 1-1 1
+         
+2-4 4-2 2
+        |
+6 6-3 4 4
+|     |  
+3 3-3 3 #
+
+Took a total of 0.314083, of which 0.005 spent solving and 0.309083 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 5 with stones:
+[[1, 6], [6, 4], [3, 3], [1, 1], [0, 3], [2, 4], [3, 6], [4, 2], [4, 1], [0, 4], [6, 3], [6, 2], [3, 4], [2, 1], [4, 2]]
+
+Solution with cost 1:
+4 4-2 2-4
+|        
+1 1-1 0-4
+         
+# 6-1 0-3
+         
+3 3-6 6 3
+|     | |
+4 4-6 3 3
+
+Took a total of 0.20447600000000002, of which 0.007 spent solving and 0.197476 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 5 with stones:
+[[1, 6], [6, 4], [3, 3], [1, 1], [0, 3], [2, 4], [3, 6], [4, 2], [4, 1], [0, 4], [6, 3], [6, 2], [3, 4], [2, 1], [4, 2]]
+
+Solution with cost 1:
+2 2-4 4-1
+|        
+4 4-6 1-1
+         
+# 1-6 1-2
+         
+3 3-3 3 2
+|     | |
+0 0-4 6 6
+
+Took a total of 0.196878, of which 0.005 spent solving and 0.191878 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 5 with stones:
+[[4, 5], [1, 4], [3, 2], [3, 1], [6, 4], [4, 5], [2, 3], [2, 1], [3, 5], [4, 3], [4, 2], [5, 1], [5, 2], [0, 2], [5, 1]]
+
+Solution with cost 1:
+1-5 5-2 2
+        |
+5-1 1-4 4
+         
+5-4 4-5 5
+        |
+3 3-2 3 3
+|     |  
+1 1-2 2 #
+
+Took a total of 0.327301, of which 0.017 spent solving and 0.310301 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 5 with stones:
+[[4, 5], [1, 4], [3, 2], [3, 1], [6, 4], [4, 5], [2, 3], [2, 1], [3, 5], [4, 3], [4, 2], [5, 1], [5, 2], [0, 2], [5, 1]]
+
+Solution with cost 1:
+0-2 2-1 1
+        |
+3-2 2-3 3
+         
+3-4 4-1 1
+        |
+5 5-1 5 5
+|     |  
+4 4-2 2 #
+
+Took a total of 0.311928, of which 0.006 spent solving and 0.305928 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 5 with stones:
+[[4, 5], [1, 4], [3, 2], [3, 1], [6, 4], [4, 5], [2, 3], [2, 1], [3, 5], [4, 3], [4, 2], [5, 1], [5, 2], [0, 2], [5, 1]]
+
+Solution with cost 1:
+0-2 2-1 1
+        |
+3-2 2-3 3
+         
+3-4 4-1 1
+        |
+5 5-1 5 5
+|     |  
+4 4-2 2 #
+
+Took a total of 0.32873, of which 0.007 spent solving and 0.32173 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 5 with stones:
+[[4, 5], [1, 4], [3, 2], [3, 1], [6, 4], [4, 5], [2, 3], [2, 1], [3, 5], [4, 3], [4, 2], [5, 1], [5, 2], [0, 2], [5, 1]]
+
+Solution with cost 1:
+2-1 1-3 3
+        |
+4-3 3-2 2
+         
+4-1 1-5 5
+        |
+4 4-6 2 2
+|     |  
+5 5-4 4 #
+
+Took a total of 0.313182, of which 0.008 spent solving and 0.305182 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 5 with stones:
+[[4, 5], [1, 4], [3, 2], [3, 1], [6, 4], [4, 5], [2, 3], [2, 1], [3, 5], [4, 3], [4, 2], [5, 1], [5, 2], [0, 2], [5, 1]]
+
+Solution with cost 1:
+3 3-5 5-1
+|        
+4 4-5 5-1
+         
+# 4-5 5-2
+         
+2 2-1 1 2
+|     | |
+4 4-1 3 3
+
+Took a total of 0.246276, of which 0.044 spent solving and 0.202276 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 5 with stones:
+[[4, 5], [1, 4], [3, 2], [3, 1], [6, 4], [4, 5], [2, 3], [2, 1], [3, 5], [4, 3], [4, 2], [5, 1], [5, 2], [0, 2], [5, 1]]
+
+Solution with cost 1:
+3 3-2 2-3
+|        
+1 1-4 5-3
+         
+# 5-4 5-4
+         
+5 5-1 1 4
+|     | |
+2 2-0 2 2
+
+Took a total of 0.20209, of which 0.005 spent solving and 0.19709 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 5 with stones:
+[[2, 6], [2, 4], [0, 1], [2, 0], [4, 2], [3, 4], [5, 5], [6, 6], [2, 0], [0, 3], [1, 5], [0, 0], [0, 4], [1, 6], [2, 0]]
+
+Solution with cost 1:
+0-0 0-1 1
+        |
+2-6 6-6 6
+         
+2-4 4-0 0
+        |
+0 0-2 3 3
+|     |  
+2 2-4 4 #
+
+Took a total of 0.323515, of which 0.013 spent solving and 0.310515 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 5 with stones:
+[[2, 6], [2, 4], [0, 1], [2, 0], [4, 2], [3, 4], [5, 5], [6, 6], [2, 0], [0, 3], [1, 5], [0, 0], [0, 4], [1, 6], [2, 0]]
+
+Solution with cost 1:
+0-0 0-1 1
+        |
+0-2 2-6 6
+         
+0-2 2-0 0
+        |
+4 4-0 3 3
+|     |  
+2 2-4 4 #
+
+Took a total of 0.312777, of which 0.007 spent solving and 0.305777 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 5 with stones:
+[[2, 6], [2, 4], [0, 1], [2, 0], [4, 2], [3, 4], [5, 5], [6, 6], [2, 0], [0, 3], [1, 5], [0, 0], [0, 4], [1, 6], [2, 0]]
+
+Solution with cost 1:
+0-0 0-1 1
+        |
+0-2 2-6 6
+         
+0-2 2-0 0
+        |
+4 4-0 3 3
+|     |  
+2 2-4 4 #
+
+Took a total of 0.312647, of which 0.007 spent solving and 0.305647 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 5 with stones:
+[[2, 6], [2, 4], [0, 1], [2, 0], [4, 2], [3, 4], [5, 5], [6, 6], [2, 0], [0, 3], [1, 5], [0, 0], [0, 4], [1, 6], [2, 0]]
+
+Solution with cost 1:
+0-0 0-1 1
+        |
+0-2 2-6 6
+         
+0-2 2-0 0
+        |
+4 4-0 3 3
+|     |  
+2 2-4 4 #
+
+Took a total of 0.320889, of which 0.007 spent solving and 0.313889 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 5 with stones:
+[[2, 6], [2, 4], [0, 1], [2, 0], [4, 2], [3, 4], [5, 5], [6, 6], [2, 0], [0, 3], [1, 5], [0, 0], [0, 4], [1, 6], [2, 0]]
+
+Solution with cost 1:
+1 1-0 0-3
+|        
+6 6-6 4-3
+         
+# 2-6 4-2
+         
+0 0-2 2 2
+|     | |
+4 4-2 0 0
+
+Took a total of 0.229706, of which 0.033 spent solving and 0.196706 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 5 with stones:
+[[2, 6], [2, 4], [0, 1], [2, 0], [4, 2], [3, 4], [5, 5], [6, 6], [2, 0], [0, 3], [1, 5], [0, 0], [0, 4], [1, 6], [2, 0]]
+
+Solution with cost 1:
+2 2-0 0-2
+|        
+4 4-2 0-2
+         
+# 6-2 0-3
+         
+1 1-0 0 3
+|     | |
+5 5-5 4 4
+
+Took a total of 0.208217, of which 0.005 spent solving and 0.203217 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 5 with stones:
+[[1, 5], [2, 2], [1, 1], [2, 4], [3, 3], [6, 3], [1, 0], [5, 4], [1, 1], [5, 2], [2, 2], [0, 3], [6, 0], [5, 6], [1, 6]]
+
+Solution with cost 1:
+0-1 1-1 1
+        |
+2-5 5-1 1
+         
+2-2 2-2 2
+        |
+0 0-3 4 4
+|     |  
+6 6-5 5 #
+
+Took a total of 0.325772, of which 0.012 spent solving and 0.313772 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 5 with stones:
+[[1, 5], [2, 2], [1, 1], [2, 4], [3, 3], [6, 3], [1, 0], [5, 4], [1, 1], [5, 2], [2, 2], [0, 3], [6, 0], [5, 6], [1, 6]]
+
+Solution with cost 1:
+0-1 1-1 1
+        |
+2-5 5-1 1
+         
+2-2 2-2 2
+        |
+0 0-3 4 4
+|     |  
+6 6-5 5 #
+
+Took a total of 0.318004, of which 0.006 spent solving and 0.312004 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 5 with stones:
+[[1, 5], [2, 2], [1, 1], [2, 4], [3, 3], [6, 3], [1, 0], [5, 4], [1, 1], [5, 2], [2, 2], [0, 3], [6, 0], [5, 6], [1, 6]]
+
+Solution with cost 1:
+0-1 1-1 1
+        |
+2-5 5-1 1
+         
+2-2 2-2 2
+        |
+0 0-3 4 4
+|     |  
+6 6-5 5 #
+
+Took a total of 0.31169800000000003, of which 0.007 spent solving and 0.304698 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 5 with stones:
+[[1, 5], [2, 2], [1, 1], [2, 4], [3, 3], [6, 3], [1, 0], [5, 4], [1, 1], [5, 2], [2, 2], [0, 3], [6, 0], [5, 6], [1, 6]]
+
+Solution with cost 1:
+1-0 0-3 3
+        |
+1-6 6-3 3
+         
+1-1 1-1 1
+        |
+2 2-4 5 5
+|     |  
+2 2-2 2 #
+
+Took a total of 0.339692, of which 0.008 spent solving and 0.331692 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 5 with stones:
+[[1, 5], [2, 2], [1, 1], [2, 4], [3, 3], [6, 3], [1, 0], [5, 4], [1, 1], [5, 2], [2, 2], [0, 3], [6, 0], [5, 6], [1, 6]]
+
+Solution with cost 1:
+1 1-6 6-0
+|        
+1 1-1 3-0
+         
+# 5-1 3-3
+         
+4 4-5 5 3
+|     | |
+2 2-2 6 6
+
+Took a total of 0.21237, of which 0.008 spent solving and 0.20437 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 5 with stones:
+[[1, 5], [2, 2], [1, 1], [2, 4], [3, 3], [6, 3], [1, 0], [5, 4], [1, 1], [5, 2], [2, 2], [0, 3], [6, 0], [5, 6], [1, 6]]
+
+Solution with cost 1:
+0 0-3 3-3
+|        
+1 1-1 6-3
+         
+# 5-1 6-5
+         
+2 2-2 2 5
+|     | |
+2 2-5 4 4
+
+Took a total of 0.1988, of which 0.004 spent solving and 0.1948 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 5 with stones:
+[[3, 6], [0, 6], [3, 2], [6, 5], [4, 5], [4, 5], [4, 6], [1, 0], [5, 6], [6, 1], [2, 6], [2, 2], [2, 3], [6, 5], [4, 5]]
+
+Solution with cost 1:
+2-2 2-6 6
+        |
+6-1 1-0 0
+         
+6-4 4-5 5
+        |
+3 3-2 4 4
+|     |  
+6 6-5 5 #
+
+Took a total of 0.32507, of which 0.01 spent solving and 0.31507 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 5 with stones:
+[[3, 6], [0, 6], [3, 2], [6, 5], [4, 5], [4, 5], [4, 6], [1, 0], [5, 6], [6, 1], [2, 6], [2, 2], [2, 3], [6, 5], [4, 5]]
+
+Solution with cost 1:
+0-1 1-6 6
+        |
+3-2 2-2 2
+         
+3-6 6-4 4
+        |
+6 6-0 5 5
+|     |  
+5 5-4 4 #
+
+Took a total of 0.32621100000000003, of which 0.007 spent solving and 0.319211 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 5 with stones:
+[[3, 6], [0, 6], [3, 2], [6, 5], [4, 5], [4, 5], [4, 6], [1, 0], [5, 6], [6, 1], [2, 6], [2, 2], [2, 3], [6, 5], [4, 5]]
+
+Solution with cost 1:
+0-1 1-6 6
+        |
+3-2 2-2 2
+         
+3-6 6-4 4
+        |
+6 6-0 5 5
+|     |  
+5 5-4 4 #
+
+Took a total of 0.32060700000000003, of which 0.007 spent solving and 0.313607 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 5 with stones:
+[[3, 6], [0, 6], [3, 2], [6, 5], [4, 5], [4, 5], [4, 6], [1, 0], [5, 6], [6, 1], [2, 6], [2, 2], [2, 3], [6, 5], [4, 5]]
+
+Solution with cost 1:
+1-0 0-6 6
+        |
+3-2 2-2 2
+         
+3-6 6-4 4
+        |
+6 6-1 5 5
+|     |  
+5 5-4 4 #
+
+Took a total of 0.325443, of which 0.007 spent solving and 0.318443 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 5 with stones:
+[[3, 6], [0, 6], [3, 2], [6, 5], [4, 5], [4, 5], [4, 6], [1, 0], [5, 6], [6, 1], [2, 6], [2, 2], [2, 3], [6, 5], [4, 5]]
+
+Solution with cost 1:
+2 2-6 6-4
+|        
+2 2-3 5-4
+         
+# 6-3 5-4
+         
+5 5-6 6 4
+|     | |
+6 6-0 5 5
+
+Took a total of 0.224442, of which 0.023 spent solving and 0.201442 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 5 with stones:
+[[3, 6], [0, 6], [3, 2], [6, 5], [4, 5], [4, 5], [4, 6], [1, 0], [5, 6], [6, 1], [2, 6], [2, 2], [2, 3], [6, 5], [4, 5]]
+
+Solution with cost 1:
+1 1-6 6-5
+|        
+0 0-6 4-5
+         
+# 3-6 4-5
+         
+5 5-4 4 5
+|     | |
+6 6-2 6 6
+
+Took a total of 0.200958, of which 0.004 spent solving and 0.196958 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 5 with stones:
+[[3, 1], [6, 4], [1, 1], [6, 6], [3, 6], [6, 3], [2, 3], [3, 4], [6, 4], [2, 5], [0, 0], [6, 1], [2, 5], [3, 1], [4, 0]]
+
+Solution with cost 1:
+0-0 0-4 4
+        |
+1-1 1-3 3
+         
+1-3 3-6 6
+        |
+2 2-5 4 4
+|     |  
+3 3-6 6 #
+
+Took a total of 0.323739, of which 0.011 spent solving and 0.312739 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 5 with stones:
+[[3, 1], [6, 4], [1, 1], [6, 6], [3, 6], [6, 3], [2, 3], [3, 4], [6, 4], [2, 5], [0, 0], [6, 1], [2, 5], [3, 1], [4, 0]]
+
+Solution with cost 1:
+6-3 3-2 2
+        |
+6 0-0 0 5
+|     |  
+4 3-1 4 4
+        |
+4 3 1 3 3
+| | | |  
+6 6 1 1 #
+
+Took a total of 0.351589, of which 0.013 spent solving and 0.338589 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 5 with stones:
+[[3, 1], [6, 4], [1, 1], [6, 6], [3, 6], [6, 3], [2, 3], [3, 4], [6, 4], [2, 5], [0, 0], [6, 1], [2, 5], [3, 1], [4, 0]]
+
+Solution with cost 1:
+6-3 3-2 2
+        |
+6 0-0 0 5
+|     |  
+4 3-1 4 4
+        |
+4 3 1 3 3
+| | | |  
+6 6 1 1 #
+
+Took a total of 0.353904, of which 0.014 spent solving and 0.339904 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 5 with stones:
+[[3, 1], [6, 4], [1, 1], [6, 6], [3, 6], [6, 3], [2, 3], [3, 4], [6, 4], [2, 5], [0, 0], [6, 1], [2, 5], [3, 1], [4, 0]]
+
+Solution with cost 1:
+0-0 0-4 4
+        |
+1-1 1-3 3
+         
+1-3 3-6 6
+        |
+2 2-5 4 4
+|     |  
+3 3-6 6 #
+
+Took a total of 0.327608, of which 0.008 spent solving and 0.319608 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 5 with stones:
+[[3, 1], [6, 4], [1, 1], [6, 6], [3, 6], [6, 3], [2, 3], [3, 4], [6, 4], [2, 5], [0, 0], [6, 1], [2, 5], [3, 1], [4, 0]]
+
+Solution with cost 1:
+6 6-4 4-3
+|        
+6 6-3 1-3
+         
+# 1-3 1-1
+         
+2 2-3 3 1
+|     | |
+5 5-2 6 6
+
+Took a total of 0.52712, of which 0.322 spent solving and 0.20512 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 5 with stones:
+[[3, 1], [6, 4], [1, 1], [6, 6], [3, 6], [6, 3], [2, 3], [3, 4], [6, 4], [2, 5], [0, 0], [6, 1], [2, 5], [3, 1], [4, 0]]
+
+Solution with cost 1:
+4 4-3 3-6
+|        
+6 6-3 6-6
+         
+# 1-3 6-1
+         
+2 2-3 3 1
+|     | |
+5 5-2 1 1
+
+Took a total of 0.245313, of which 0.043 spent solving and 0.202313 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 5 with stones:
+[[4, 1], [2, 2], [6, 2], [4, 4], [5, 5], [1, 0], [6, 3], [5, 4], [6, 6], [4, 2], [3, 0], [2, 1], [3, 4], [3, 2], [4, 2]]
+
+Solution with cost 1:
+1-4 4-2 2
+        |
+3-0 0-1 1
+         
+3-6 6-2 2
+        |
+4 4-2 2 2
+|     |  
+4 4-3 3 #
+
+Took a total of 0.35435500000000003, of which 0.019 spent solving and 0.335355 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 5 with stones:
+[[4, 1], [2, 2], [6, 2], [4, 4], [5, 5], [1, 0], [6, 3], [5, 4], [6, 6], [4, 2], [3, 0], [2, 1], [3, 4], [3, 2], [4, 2]]
+
+Solution with cost 1:
+1-0 6 6 #
+    | |  
+1 2 2 6 6
+| |     |
+2 4 4-4 3
+         
+2 4 4 4-3
+| | |    
+2 2 5 5-5
+
+Took a total of 0.35459799999999997, of which 0.034 spent solving and 0.320598 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 5 with stones:
+[[4, 1], [2, 2], [6, 2], [4, 4], [5, 5], [1, 0], [6, 3], [5, 4], [6, 6], [4, 2], [3, 0], [2, 1], [3, 4], [3, 2], [4, 2]]
+
+Solution with cost 1:
+1-0 6 6 #
+    | |  
+1 2 2 6 6
+| |     |
+2 4 4-4 3
+         
+2 4 4 4-3
+| | |    
+2 2 5 5-5
+
+Took a total of 0.34599599999999997, of which 0.034 spent solving and 0.311996 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 5 with stones:
+[[4, 1], [2, 2], [6, 2], [4, 4], [5, 5], [1, 0], [6, 3], [5, 4], [6, 6], [4, 2], [3, 0], [2, 1], [3, 4], [3, 2], [4, 2]]
+
+Solution with cost 1:
+1-0 0-3 3
+        |
+4-1 1-2 2
+         
+4-2 2-2 2
+        |
+6 6-2 4 4
+|     |  
+6 6-3 3 #
+
+Took a total of 0.32021900000000003, of which 0.008 spent solving and 0.312219 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 5 with stones:
+[[4, 1], [2, 2], [6, 2], [4, 4], [5, 5], [1, 0], [6, 3], [5, 4], [6, 6], [4, 2], [3, 0], [2, 1], [3, 4], [3, 2], [4, 2]]
+
+Solution with cost 1:
+3 3-2 2-4
+|        
+4 4-4 2-4
+         
+# 1-4 2-1
+         
+6 6-3 3 1
+|     | |
+2 2-2 0 0
+
+Took a total of 0.205287, of which 0.007 spent solving and 0.198287 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 5 with stones:
+[[4, 1], [2, 2], [6, 2], [4, 4], [5, 5], [1, 0], [6, 3], [5, 4], [6, 6], [4, 2], [3, 0], [2, 1], [3, 4], [3, 2], [4, 2]]
+
+Solution with cost 1:
+2 2-2 2-6
+|        
+4 4-4 3-6
+         
+# 1-4 3-0
+         
+3 3-2 2 0
+|     | |
+4 4-5 1 1
+
+Took a total of 0.199969, of which 0.005 spent solving and 0.194969 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 5 with stones:
+[[1, 4], [4, 3], [2, 1], [2, 3], [0, 3], [2, 6], [3, 6], [4, 1], [6, 4], [6, 4], [2, 6], [3, 5], [3, 2], [3, 5], [3, 6]]
+
+Solution with cost 1:
+0-3 3-5 5
+        |
+1-4 4-3 3
+         
+1-2 2-3 3
+        |
+6 6-2 2 2
+|     |  
+3 3-6 6 #
+
+Took a total of 0.32626, of which 0.012 spent solving and 0.31426 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 5 with stones:
+[[1, 4], [4, 3], [2, 1], [2, 3], [0, 3], [2, 6], [3, 6], [4, 1], [6, 4], [6, 4], [2, 6], [3, 5], [3, 2], [3, 5], [3, 6]]
+
+Solution with cost 1:
+0-3 3-2 2
+        |
+3-4 4-1 1
+         
+3-2 2-6 6
+        |
+6 6-2 3 3
+|     |  
+3 3-5 5 #
+
+Took a total of 0.323837, of which 0.007 spent solving and 0.316837 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 5 with stones:
+[[1, 4], [4, 3], [2, 1], [2, 3], [0, 3], [2, 6], [3, 6], [4, 1], [6, 4], [6, 4], [2, 6], [3, 5], [3, 2], [3, 5], [3, 6]]
+
+Solution with cost 1:
+0-3 3-2 2
+        |
+3-4 4-1 1
+         
+3-2 2-6 6
+        |
+6 6-2 3 3
+|     |  
+3 3-5 5 #
+
+Took a total of 0.32887900000000003, of which 0.007 spent solving and 0.321879 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 5 with stones:
+[[1, 4], [4, 3], [2, 1], [2, 3], [0, 3], [2, 6], [3, 6], [4, 1], [6, 4], [6, 4], [2, 6], [3, 5], [3, 2], [3, 5], [3, 6]]
+
+Solution with cost 1:
+2-1 1-4 4
+        |
+3-2 2-3 3
+         
+3-5 5-3 3
+        |
+4 4-6 6 6
+|     |  
+6 6-2 2 #
+
+Took a total of 0.31438900000000003, of which 0.008 spent solving and 0.306389 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 5 with stones:
+[[1, 4], [4, 3], [2, 1], [2, 3], [0, 3], [2, 6], [3, 6], [4, 1], [6, 4], [6, 4], [2, 6], [3, 5], [3, 2], [3, 5], [3, 6]]
+
+Solution with cost 1:
+3 3-6 6-2
+|        
+2 2-1 6-2
+         
+# 4-1 6-4
+         
+5 5-3 3 4
+|     | |
+3 3-4 6 6
+
+Took a total of 0.210459, of which 0.009 spent solving and 0.201459 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 5 with stones:
+[[1, 4], [4, 3], [2, 1], [2, 3], [0, 3], [2, 6], [3, 6], [4, 1], [6, 4], [6, 4], [2, 6], [3, 5], [3, 2], [3, 5], [3, 6]]
+
+Solution with cost 1:
+2 2-1 1-4
+|        
+3 3-4 6-4
+         
+# 1-4 6-2
+         
+5 5-3 3 2
+|     | |
+3 3-0 6 6
+
+Took a total of 0.205177, of which 0.005 spent solving and 0.200177 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 5 with stones:
+[[0, 4], [0, 4], [4, 1], [1, 4], [2, 4], [3, 6], [2, 4], [3, 6], [5, 4], [6, 3], [1, 6], [3, 6], [5, 5], [0, 5], [5, 0]]
+
+Solution with cost 1:
+0-4 4-0 0
+        |
+2-4 4-5 5
+         
+2-4 4-1 1
+        |
+3 3-6 6 6
+|     |  
+6 6-3 3 #
+
+Took a total of 0.333492, of which 0.013 spent solving and 0.320492 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 5 with stones:
+[[0, 4], [0, 4], [4, 1], [1, 4], [2, 4], [3, 6], [2, 4], [3, 6], [5, 4], [6, 3], [1, 6], [3, 6], [5, 5], [0, 5], [5, 0]]
+
+Solution with cost 1:
+0-4 4-0 0
+        |
+2-4 4-5 5
+         
+2-4 4-1 1
+        |
+6-3 3-6 6
+         
+6-3 3-6 #
+
+Took a total of 0.313649, of which 0.008 spent solving and 0.305649 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 5 with stones:
+[[0, 4], [0, 4], [4, 1], [1, 4], [2, 4], [3, 6], [2, 4], [3, 6], [5, 4], [6, 3], [1, 6], [3, 6], [5, 5], [0, 5], [5, 0]]
+
+Solution with cost 1:
+0-4 4-0 0
+        |
+2-4 4-5 5
+         
+2-4 4-1 1
+        |
+6-3 3-6 6
+         
+6-3 3-6 #
+
+Took a total of 0.31773, of which 0.008 spent solving and 0.30973 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 5 with stones:
+[[0, 4], [0, 4], [4, 1], [1, 4], [2, 4], [3, 6], [2, 4], [3, 6], [5, 4], [6, 3], [1, 6], [3, 6], [5, 5], [0, 5], [5, 0]]
+
+Solution with cost 1:
+4-0 0-5 5
+        |
+2-4 4-0 0
+         
+2-4 4-1 1
+        |
+3 3-6 6 6
+|     |  
+6 6-3 3 #
+
+Took a total of 0.31805300000000003, of which 0.007 spent solving and 0.311053 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 5 with stones:
+[[0, 4], [0, 4], [4, 1], [1, 4], [2, 4], [3, 6], [2, 4], [3, 6], [5, 4], [6, 3], [1, 6], [3, 6], [5, 5], [0, 5], [5, 0]]
+
+Solution with cost 1:
+4 4-5 5-5
+|        
+2 2-4 0-5
+         
+# 0-4 0-4
+         
+3 3-6 6 4
+|     | |
+6 6-3 1 1
+
+Took a total of 0.269334, of which 0.071 spent solving and 0.198334 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 5 with stones:
+[[0, 4], [0, 4], [4, 1], [1, 4], [2, 4], [3, 6], [2, 4], [3, 6], [5, 4], [6, 3], [1, 6], [3, 6], [5, 5], [0, 5], [5, 0]]
+
+Solution with cost 1:
+5 5-4 4-2
+|        
+0 0-4 4-2
+         
+# 0-4 4-1
+         
+6 6-3 3 1
+|     | |
+3 3-6 6 6
+
+Took a total of 0.225397, of which 0.025 spent solving and 0.200397 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 10 with stones:
+[[6, 4], [0, 5], [6, 3], [3, 3], [6, 6], [6, 4], [2, 0], [1, 1], [4, 0], [2, 1], [2, 2], [2, 1], [2, 3], [1, 3], [2, 5], [0, 3], [3, 0], [5, 5], [2, 5], [6, 5], [4, 0], [0, 0], [3, 1], [4, 5], [3, 0], [4, 0], [4, 5], [2, 3], [2, 3], [1, 1], [6, 3], [5, 5], [2, 0], [2, 5], [6, 2], [0, 3], [1, 3], [2, 2], [1, 4], [4, 3], [6, 0], [2, 1], [3, 3], [0, 4], [5, 5], [1, 0], [6, 3], [4, 3], [1, 1], [4, 2], [0, 0], [6, 1], [6, 0], [0, 0], [3, 0], [2, 0], [3, 5], [5, 3], [1, 1], [5, 4]]
+
+Solution with cost 0:
+3-3 3-2 2-2 2-2 4-0
+                   
+3 3 3 0 0-0 0 2-4 0
+| | | |     |     |
+4 3 2 0 1-1 0 0-4 4
+                   
+4 3-2 1-1 1-0 0-4 4
+|                 |
+3 5-2 1-1 1-1 1 1 1
+              | |  
+3 5 2 2-0 0-2 2 3 3
+| | |             |
+5 2 5 2-0 0-3 2-1 1
+                   
+5 2 5 4-6 6 3 2-1 1
+| | |     | |     |
+0 6 3 4-5 3 0 3-0 3
+                   
+0-6 3-6 6-3 0-3 0-3
+
+Took a total of 9.762683, of which 8.849 spent solving and 0.913683 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 10 with stones:
+[[6, 4], [0, 5], [6, 3], [3, 3], [6, 6], [6, 4], [2, 0], [1, 1], [4, 0], [2, 1], [2, 2], [2, 1], [2, 3], [1, 3], [2, 5], [0, 3], [3, 0], [5, 5], [2, 5], [6, 5], [4, 0], [0, 0], [3, 1], [4, 5], [3, 0], [4, 0], [4, 5], [2, 3], [2, 3], [1, 1], [6, 3], [5, 5], [2, 0], [2, 5], [6, 2], [0, 3], [1, 3], [2, 2], [1, 4], [4, 3], [6, 0], [2, 1], [3, 3], [0, 4], [5, 5], [1, 0], [6, 3], [4, 3], [1, 1], [4, 2], [0, 0], [6, 1], [6, 0], [0, 0], [3, 0], [2, 0], [3, 5], [5, 3], [1, 1], [5, 4]]
+
+Solution with cost 0:
+3-3 3-2 2-2 2-2 4-0
+                   
+3 3 3 0 0-0 0 2-4 0
+| | | |     |     |
+4 3 2 0 1-1 0 0-4 4
+                   
+4 3-2 1-1 1-0 0-4 4
+|                 |
+3 5-2 1-1 1-1 1 1 1
+              | |  
+3 5 2 2-0 0-2 2 3 3
+| | |             |
+5 2 5 2-0 0-3 2-1 1
+                   
+5 2 5 3 3-6 3 2-1 1
+| | | |     |     |
+0 6 3 6 5 6 0 3-0 3
+        | |        
+0-6 3-6 4 4 0-3 0-3
+
+Took a total of 5.703991, of which 4.801 spent solving and 0.902991 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 10 with stones:
+[[6, 4], [0, 5], [6, 3], [3, 3], [6, 6], [6, 4], [2, 0], [1, 1], [4, 0], [2, 1], [2, 2], [2, 1], [2, 3], [1, 3], [2, 5], [0, 3], [3, 0], [5, 5], [2, 5], [6, 5], [4, 0], [0, 0], [3, 1], [4, 5], [3, 0], [4, 0], [4, 5], [2, 3], [2, 3], [1, 1], [6, 3], [5, 5], [2, 0], [2, 5], [6, 2], [0, 3], [1, 3], [2, 2], [1, 4], [4, 3], [6, 0], [2, 1], [3, 3], [0, 4], [5, 5], [1, 0], [6, 3], [4, 3], [1, 1], [4, 2], [0, 0], [6, 1], [6, 0], [0, 0], [3, 0], [2, 0], [3, 5], [5, 3], [1, 1], [5, 4]]
+
+Solution with cost 0:
+3-3 3-2 2-2 2-2 4-0
+                   
+3 3 3 0 0-0 0 2-4 0
+| | | |     |     |
+4 3 2 0 1-1 0 0-4 4
+                   
+4 3-2 1-1 1-0 0-4 4
+|                 |
+3 5-2 1-1 1-1 1 1 1
+              | |  
+3 5 2 2-0 0-2 2 3 3
+| | |             |
+5 2 5 2-0 0-3 2-1 1
+                   
+5 2 5 3 3-6 3 2-1 1
+| | | |     |     |
+0 6 3 6 5 6 0 3-0 3
+        | |        
+0-6 3-6 4 4 0-3 0-3
+
+Took a total of 5.7020290000000005, of which 4.791 spent solving and 0.911029 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 10 with stones:
+[[6, 4], [0, 5], [6, 3], [3, 3], [6, 6], [6, 4], [2, 0], [1, 1], [4, 0], [2, 1], [2, 2], [2, 1], [2, 3], [1, 3], [2, 5], [0, 3], [3, 0], [5, 5], [2, 5], [6, 5], [4, 0], [0, 0], [3, 1], [4, 5], [3, 0], [4, 0], [4, 5], [2, 3], [2, 3], [1, 1], [6, 3], [5, 5], [2, 0], [2, 5], [6, 2], [0, 3], [1, 3], [2, 2], [1, 4], [4, 3], [6, 0], [2, 1], [3, 3], [0, 4], [5, 5], [1, 0], [6, 3], [4, 3], [1, 1], [4, 2], [0, 0], [6, 1], [6, 0], [0, 0], [3, 0], [2, 0], [3, 5], [5, 3], [1, 1], [5, 4]]
+
+Solution with cost 0:
+3-3 3-2 2-2 2-2 4-0
+                   
+3 3 3 0 0-0 0 2-4 0
+| | | |     |     |
+4 3 2 0 1-1 0 0-4 4
+                   
+4 3-2 1-1 1-0 0-4 4
+|                 |
+3 5-2 1-1 1-1 1 1 1
+              | |  
+3 5 2 2-0 0-2 2 3 3
+| | |             |
+5 2 5 2-0 0-3 2-1 1
+                   
+5 2 5 3 3-6 3 2-1 1
+| | | |     |     |
+0 6 3 6 5 6 0 3-0 3
+        | |        
+0-6 3-6 4 4 0-3 0-3
+
+Took a total of 5.715833, of which 4.802 spent solving and 0.913833 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 10 with stones:
+[[6, 4], [0, 5], [6, 3], [3, 3], [6, 6], [6, 4], [2, 0], [1, 1], [4, 0], [2, 1], [2, 2], [2, 1], [2, 3], [1, 3], [2, 5], [0, 3], [3, 0], [5, 5], [2, 5], [6, 5], [4, 0], [0, 0], [3, 1], [4, 5], [3, 0], [4, 0], [4, 5], [2, 3], [2, 3], [1, 1], [6, 3], [5, 5], [2, 0], [2, 5], [6, 2], [0, 3], [1, 3], [2, 2], [1, 4], [4, 3], [6, 0], [2, 1], [3, 3], [0, 4], [5, 5], [1, 0], [6, 3], [4, 3], [1, 1], [4, 2], [0, 0], [6, 1], [6, 0], [0, 0], [3, 0], [2, 0], [3, 5], [5, 3], [1, 1], [5, 4]]
+
+Solution with cost 2:
+3-0 4-5 5-5 5-2 2-2
+                   
+3 0-4 2 2-1 1-1 1-2
+|     |            
+1 # 5 5 6 6-3 3-3 3
+    |   |         |
+1 # 6 6 4 4-0 0-2 2
+|     |            
+3 3-0 6 6-4 1 1-3 3
+            |     |
+0 0-0 5 5-2 1 6-0 0
+|     |            
+3 6-2 5 5 2 1 6-3 3
+        | | |     |
+3 6 2 5 0 2 2 1-4 4
+| | | |            
+2 3 0 4 0 3 3 1-0 0
+        | | |     |
+2-3 0-4 0 0 3 3-4 4
+
+Took a total of 299.95848, of which 298.762 spent solving and 1.19648 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 10 with stones:
+[[6, 4], [0, 5], [6, 3], [3, 3], [6, 6], [6, 4], [2, 0], [1, 1], [4, 0], [2, 1], [2, 2], [2, 1], [2, 3], [1, 3], [2, 5], [0, 3], [3, 0], [5, 5], [2, 5], [6, 5], [4, 0], [0, 0], [3, 1], [4, 5], [3, 0], [4, 0], [4, 5], [2, 3], [2, 3], [1, 1], [6, 3], [5, 5], [2, 0], [2, 5], [6, 2], [0, 3], [1, 3], [2, 2], [1, 4], [4, 3], [6, 0], [2, 1], [3, 3], [0, 4], [5, 5], [1, 0], [6, 3], [4, 3], [1, 1], [4, 2], [0, 0], [6, 1], [6, 0], [0, 0], [3, 0], [2, 0], [3, 5], [5, 3], [1, 1], [5, 4]]
+
+Solution with cost 26:
+3-3 3-2 2-0 0-5 5-2
+                   
+3-6 6-4 # 1 1-1 1-2
+          |        
+6-2 2-0 0 2 2-2 2-5
+        |          
+6 0 0-3 3 3-1 1-1 5
+| |               |
+3 4 4 3-1 1-3 4-1 5
+    |              
+3-2 5 # 0 0-3 4-3 5
+        |         |
+3-2 5 # 4 4-6 6-6 6
+    |              
+3 4 4 # # # # # # #
+| |                
+0 0 # # # # # # # #
+                   
+0-0 # # # # # # # #
+
+Took a total of 299.95783, of which 298.771 spent solving and 1.18683 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 10 with stones:
+[[0, 6], [6, 3], [1, 4], [0, 5], [5, 3], [4, 3], [0, 4], [2, 5], [3, 3], [0, 0], [4, 4], [4, 4], [6, 1], [6, 1], [3, 3], [6, 5], [5, 4], [5, 3], [6, 1], [0, 4], [4, 5], [3, 1], [1, 1], [0, 6], [6, 0], [3, 5], [5, 5], [4, 3], [1, 2], [2, 6], [1, 4], [0, 5], [5, 4], [5, 2], [0, 5], [0, 6], [6, 3], [5, 6], [0, 1], [1, 3], [2, 2], [2, 3], [1, 2], [3, 6], [4, 3], [5, 0], [4, 6], [2, 5], [4, 6], [1, 6], [6, 0], [5, 2], [4, 4], [1, 3], [1, 2], [0, 4], [0, 0], [4, 5], [6, 3], [1, 4]]
+
+Solution with cost 0:
+5-2 6-1 1-6 6-1 4-1
+                   
+5 2 6 0 0-0 0 1-4 1
+| | | |     |     |
+3 5 2 0 2-1 1 0-6 6
+                   
+3 5-2 1-2 1-1 0-6 6
+|                 |
+3 4-4 1-2 2-2 2 0 0
+              | |  
+3 4 4 3-1 1-3 3 6 6
+| | |             |
+3 4 4 3-1 1-4 5-0 0
+                   
+3 4 4 5-4 4 4 5-0 0
+| | |     | |     |
+4 3 5 5-2 5 0 4-0 5
+                   
+4-3 5-3 3-5 0-4 0-5
+
+Took a total of 9.746856, of which 8.831 spent solving and 0.915856 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 10 with stones:
+[[0, 6], [6, 3], [1, 4], [0, 5], [5, 3], [4, 3], [0, 4], [2, 5], [3, 3], [0, 0], [4, 4], [4, 4], [6, 1], [6, 1], [3, 3], [6, 5], [5, 4], [5, 3], [6, 1], [0, 4], [4, 5], [3, 1], [1, 1], [0, 6], [6, 0], [3, 5], [5, 5], [4, 3], [1, 2], [2, 6], [1, 4], [0, 5], [5, 4], [5, 2], [0, 5], [0, 6], [6, 3], [5, 6], [0, 1], [1, 3], [2, 2], [2, 3], [1, 2], [3, 6], [4, 3], [5, 0], [4, 6], [2, 5], [4, 6], [1, 6], [6, 0], [5, 2], [4, 4], [1, 3], [1, 2], [0, 4], [0, 0], [4, 5], [6, 3], [1, 4]]
+
+Solution with cost 0:
+5-2 6-1 1-6 6-1 4-1
+                   
+5 2 6 0 0-0 0 1-4 1
+| | | |     |     |
+3 5 2 0 2-1 1 6-0 6
+                   
+3 5-2 1-2 1-1 6 0-6
+|             |    
+3 4-4 1-2 2-2 0 0-6
+                   
+3 4 4 1-3 3-2 4 4 6
+| | |         | | |
+3 4 4 1-3 3-1 1 0 0
+                   
+3 4 4-5 5-3 4 4-0 0
+| |         |     |
+4 3 4-5 5-3 0 5-0 5
+                   
+4-3 4-5 5-2 0-5 0-5
+
+Took a total of 2.0637220000000003, of which 1.159 spent solving and 0.904722 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 10 with stones:
+[[0, 6], [6, 3], [1, 4], [0, 5], [5, 3], [4, 3], [0, 4], [2, 5], [3, 3], [0, 0], [4, 4], [4, 4], [6, 1], [6, 1], [3, 3], [6, 5], [5, 4], [5, 3], [6, 1], [0, 4], [4, 5], [3, 1], [1, 1], [0, 6], [6, 0], [3, 5], [5, 5], [4, 3], [1, 2], [2, 6], [1, 4], [0, 5], [5, 4], [5, 2], [0, 5], [0, 6], [6, 3], [5, 6], [0, 1], [1, 3], [2, 2], [2, 3], [1, 2], [3, 6], [4, 3], [5, 0], [4, 6], [2, 5], [4, 6], [1, 6], [6, 0], [5, 2], [4, 4], [1, 3], [1, 2], [0, 4], [0, 0], [4, 5], [6, 3], [1, 4]]
+
+Solution with cost 0:
+5-2 6-1 1-6 6-1 4-1
+                   
+5 2 6 0 0-0 0 1-4 1
+| | | |     |     |
+3 5 2 0 2-1 1 6-0 6
+                   
+3 5-2 1-2 1-1 6 0-6
+|             |    
+3 4-4 1-2 2-2 0 0-6
+                   
+3 4 4 1-3 3-2 4 4 6
+| | |         | | |
+3 4 4 1-3 3-1 1 0 0
+                   
+3 4 4-5 5-3 4 4-0 0
+| |         |     |
+4 3 4-5 5-3 0 5-0 5
+                   
+4-3 4-5 5-2 0-5 0-5
+
+Took a total of 2.111679, of which 1.186 spent solving and 0.925679 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 10 with stones:
+[[0, 6], [6, 3], [1, 4], [0, 5], [5, 3], [4, 3], [0, 4], [2, 5], [3, 3], [0, 0], [4, 4], [4, 4], [6, 1], [6, 1], [3, 3], [6, 5], [5, 4], [5, 3], [6, 1], [0, 4], [4, 5], [3, 1], [1, 1], [0, 6], [6, 0], [3, 5], [5, 5], [4, 3], [1, 2], [2, 6], [1, 4], [0, 5], [5, 4], [5, 2], [0, 5], [0, 6], [6, 3], [5, 6], [0, 1], [1, 3], [2, 2], [2, 3], [1, 2], [3, 6], [4, 3], [5, 0], [4, 6], [2, 5], [4, 6], [1, 6], [6, 0], [5, 2], [4, 4], [1, 3], [1, 2], [0, 4], [0, 0], [4, 5], [6, 3], [1, 4]]
+
+Solution with cost 0:
+5-2 6-1 1-6 6-1 4-1
+                   
+5 2 6 0 0-0 0 1-4 1
+| | | |     |     |
+3 5 2 0 2-1 1 6-0 6
+                   
+3 5-2 1-2 1-1 6 0-6
+|             |    
+3 4-4 1-2 2-2 0 0-6
+                   
+3 4 4 1-3 3-2 4 4 6
+| | |         | | |
+3 4 4 1-3 3-1 1 0 0
+                   
+3 4 4-5 5-3 4 4-0 0
+| |         |     |
+4 3 4-5 5-3 0 5-0 5
+                   
+4-3 4-5 5-2 0-5 0-5
+
+Took a total of 2.163074, of which 1.21 spent solving and 0.953074 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 10 with stones:
+[[0, 6], [6, 3], [1, 4], [0, 5], [5, 3], [4, 3], [0, 4], [2, 5], [3, 3], [0, 0], [4, 4], [4, 4], [6, 1], [6, 1], [3, 3], [6, 5], [5, 4], [5, 3], [6, 1], [0, 4], [4, 5], [3, 1], [1, 1], [0, 6], [6, 0], [3, 5], [5, 5], [4, 3], [1, 2], [2, 6], [1, 4], [0, 5], [5, 4], [5, 2], [0, 5], [0, 6], [6, 3], [5, 6], [0, 1], [1, 3], [2, 2], [2, 3], [1, 2], [3, 6], [4, 3], [5, 0], [4, 6], [2, 5], [4, 6], [1, 6], [6, 0], [5, 2], [4, 4], [1, 3], [1, 2], [0, 4], [0, 0], [4, 5], [6, 3], [1, 4]]
+
+Solution with cost 2:
+4-0 0-4 4-5 5-3 3-3
+                   
+4 0-0 2 2-1 1-3 3-3
+|     |            
+4 # 5 5 0 0-5 5-3 3
+    |   |         |
+4 # 6 6 6 6-1 1-4 4
+|     |            
+4 4-5 1 1-6 5 5-0 0
+            |     |
+3 3-5 4 4-3 2 5-6 6
+|     |            
+4 0-6 5 3 3 2 5-0 0
+        | | |     |
+4 0 6 5 6 6 6 3-6 6
+| | | |            
+1 1 0 5 6 3 3 3-1 1
+        | | |     |
+1-1 0-5 1 1 2 2-2 2
+
+Took a total of 299.954, of which 298.681 spent solving and 1.2730000000000001 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 10 with stones:
+[[0, 6], [6, 3], [1, 4], [0, 5], [5, 3], [4, 3], [0, 4], [2, 5], [3, 3], [0, 0], [4, 4], [4, 4], [6, 1], [6, 1], [3, 3], [6, 5], [5, 4], [5, 3], [6, 1], [0, 4], [4, 5], [3, 1], [1, 1], [0, 6], [6, 0], [3, 5], [5, 5], [4, 3], [1, 2], [2, 6], [1, 4], [0, 5], [5, 4], [5, 2], [0, 5], [0, 6], [6, 3], [5, 6], [0, 1], [1, 3], [2, 2], [2, 3], [1, 2], [3, 6], [4, 3], [5, 0], [4, 6], [2, 5], [4, 6], [1, 6], [6, 0], [5, 2], [4, 4], [1, 3], [1, 2], [0, 4], [0, 0], [4, 5], [6, 3], [1, 4]]
+
+Solution with cost 16:
+6-3 3-5 5-0 0-4 4-1
+                   
+6 0-5 5-5 5-4 4-3 1
+|                 |
+0 0-6 6-0 0-0 0 3 6
+              | |  
+3 3-3 3-5 5-4 4 6 6
+|                 |
+3 6-0 0-5 5-2 2-6 1
+                   
+3 6 0 0 2-5 5-6 6-1
+| | | |            
+5 5 5 1 2-1 # # # #
+                   
+5 1 1-1 1 1 # # # #
+| |     | |        
+4 4 4-3 3 3 # # # #
+                   
+4-4 4-4 4-3 # # # #
+
+Took a total of 299.95939, of which 298.753 spent solving and 1.20639 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 10 with stones:
+[[1, 3], [0, 6], [5, 5], [1, 1], [2, 4], [2, 1], [2, 5], [6, 3], [4, 0], [5, 6], [2, 5], [0, 3], [5, 4], [1, 4], [1, 5], [5, 5], [0, 1], [3, 2], [5, 1], [0, 5], [3, 4], [1, 2], [3, 1], [6, 0], [3, 0], [1, 2], [0, 0], [6, 6], [3, 1], [1, 1], [1, 0], [5, 0], [3, 6], [4, 3], [1, 4], [5, 2], [2, 0], [4, 5], [6, 5], [2, 0], [5, 2], [1, 3], [2, 1], [5, 6], [4, 2], [5, 6], [2, 0], [2, 5], [6, 0], [4, 6], [3, 4], [5, 4], [1, 6], [2, 0], [6, 3], [4, 2], [4, 1], [3, 3], [0, 1], [6, 6]]
+
+Solution with cost 0:
+4-3 5-1 1-4 4-1 6-0
+                   
+4 3 5 0 0-1 1 1-6 0
+| | | |     |     |
+2 3 2 0 1-1 0 0-6 6
+                   
+2 3-2 1-1 1-0 0-5 5
+|                 |
+4 4-3 1-2 2-0 0 0 0
+              | |  
+4 4 3 2-0 0-2 2 4 4
+| | |             |
+2 5 4 2-1 1-2 3-1 1
+                   
+2 5 4 6 6-3 2 3-1 1
+| | | |     |     |
+5 2 5 4 3 3 1 3-0 3
+        | |        
+5-2 5-4 6 6 1-3 0-3
+
+Took a total of 5.953709, of which 5.024 spent solving and 0.929709 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 10 with stones:
+[[1, 3], [0, 6], [5, 5], [1, 1], [2, 4], [2, 1], [2, 5], [6, 3], [4, 0], [5, 6], [2, 5], [0, 3], [5, 4], [1, 4], [1, 5], [5, 5], [0, 1], [3, 2], [5, 1], [0, 5], [3, 4], [1, 2], [3, 1], [6, 0], [3, 0], [1, 2], [0, 0], [6, 6], [3, 1], [1, 1], [1, 0], [5, 0], [3, 6], [4, 3], [1, 4], [5, 2], [2, 0], [4, 5], [6, 5], [2, 0], [5, 2], [1, 3], [2, 1], [5, 6], [4, 2], [5, 6], [2, 0], [2, 5], [6, 0], [4, 6], [3, 4], [5, 4], [1, 6], [2, 0], [6, 3], [4, 2], [4, 1], [3, 3], [0, 1], [6, 6]]
+
+Solution with cost 0:
+4-3 5-1 1-4 4-1 6-0
+                   
+4 3 5 0 0-1 1 1-6 0
+| | | |     |     |
+2 3 2 0 1-1 0 5-0 6
+                   
+2 3-2 1-1 1-0 5 0-6
+|             |    
+4 4-3 1-2 2-0 0 0-4
+                   
+4 4 3 0-2 2-0 2 2 4
+| | |         | | |
+2 5 4 0-2 2-1 1 1 1
+                   
+2 5 4-5 5-4 3 3-1 1
+| |         |     |
+5 2 3-6 6-4 0 3-1 3
+                   
+5-2 3-6 6-3 0-3 1-3
+
+Took a total of 2.072165, of which 1.149 spent solving and 0.923165 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 10 with stones:
+[[1, 3], [0, 6], [5, 5], [1, 1], [2, 4], [2, 1], [2, 5], [6, 3], [4, 0], [5, 6], [2, 5], [0, 3], [5, 4], [1, 4], [1, 5], [5, 5], [0, 1], [3, 2], [5, 1], [0, 5], [3, 4], [1, 2], [3, 1], [6, 0], [3, 0], [1, 2], [0, 0], [6, 6], [3, 1], [1, 1], [1, 0], [5, 0], [3, 6], [4, 3], [1, 4], [5, 2], [2, 0], [4, 5], [6, 5], [2, 0], [5, 2], [1, 3], [2, 1], [5, 6], [4, 2], [5, 6], [2, 0], [2, 5], [6, 0], [4, 6], [3, 4], [5, 4], [1, 6], [2, 0], [6, 3], [4, 2], [4, 1], [3, 3], [0, 1], [6, 6]]
+
+Solution with cost 0:
+4-3 5-1 1-4 4-1 6-0
+                   
+4 3 5 0 0-1 1 1-6 0
+| | | |     |     |
+2 3 2 0 1-1 0 5-0 6
+                   
+2 3-2 1-1 1-0 5 0-6
+|             |    
+4 4-3 1-2 2-0 0 0-4
+                   
+4 4 3 0-2 2-0 2 2 4
+| | |         | | |
+2 5 4 0-2 2-1 1 1 1
+                   
+2 5 4-5 5-4 3 3-1 1
+| |         |     |
+5 2 3-6 6-4 0 3-1 3
+                   
+5-2 3-6 6-3 0-3 1-3
+
+Took a total of 2.074116, of which 1.149 spent solving and 0.925116 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 10 with stones:
+[[1, 3], [0, 6], [5, 5], [1, 1], [2, 4], [2, 1], [2, 5], [6, 3], [4, 0], [5, 6], [2, 5], [0, 3], [5, 4], [1, 4], [1, 5], [5, 5], [0, 1], [3, 2], [5, 1], [0, 5], [3, 4], [1, 2], [3, 1], [6, 0], [3, 0], [1, 2], [0, 0], [6, 6], [3, 1], [1, 1], [1, 0], [5, 0], [3, 6], [4, 3], [1, 4], [5, 2], [2, 0], [4, 5], [6, 5], [2, 0], [5, 2], [1, 3], [2, 1], [5, 6], [4, 2], [5, 6], [2, 0], [2, 5], [6, 0], [4, 6], [3, 4], [5, 4], [1, 6], [2, 0], [6, 3], [4, 2], [4, 1], [3, 3], [0, 1], [6, 6]]
+
+Solution with cost 0:
+4-3 5-1 1-4 4-1 6-0
+                   
+4 3 5 0 0-1 1 1-6 0
+| | | |     |     |
+2 3 2 0 1-1 0 5-0 6
+                   
+2 3-2 1-1 1-0 5 0-6
+|             |    
+4 4-3 1-2 2-0 0 0-4
+                   
+4 4 3 0-2 2-0 2 2 4
+| | |         | | |
+2 5 4 0-2 2-1 1 1 1
+                   
+2 5 4-5 5-4 3 3-1 1
+| |         |     |
+5 2 3-6 6-4 0 3-1 3
+                   
+5-2 3-6 6-3 0-3 1-3
+
+Took a total of 2.080993, of which 1.15 spent solving and 0.930993 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 10 with stones:
+[[1, 3], [0, 6], [5, 5], [1, 1], [2, 4], [2, 1], [2, 5], [6, 3], [4, 0], [5, 6], [2, 5], [0, 3], [5, 4], [1, 4], [1, 5], [5, 5], [0, 1], [3, 2], [5, 1], [0, 5], [3, 4], [1, 2], [3, 1], [6, 0], [3, 0], [1, 2], [0, 0], [6, 6], [3, 1], [1, 1], [1, 0], [5, 0], [3, 6], [4, 3], [1, 4], [5, 2], [2, 0], [4, 5], [6, 5], [2, 0], [5, 2], [1, 3], [2, 1], [5, 6], [4, 2], [5, 6], [2, 0], [2, 5], [6, 0], [4, 6], [3, 4], [5, 4], [1, 6], [2, 0], [6, 3], [4, 2], [4, 1], [3, 3], [0, 1], [6, 6]]
+
+Solution with cost 2:
+0-0 5-4 4-1 1-3 3-6
+                   
+0 0-5 0 0-2 2-4 4-6
+|     |            
+1 # 6 6 1 1-2 2-0 0
+    |   |         |
+1 # 5 5 3 6-5 5-2 2
+|     |            
+1 1-3 6 6-6 6 6-5 5
+            |     |
+0 0-3 5 5-5 0 5-2 2
+|     |            
+5 3-4 1 0 5 0 5-5 5
+        | | |     |
+5 3 4 1 6 1 1 1-4 4
+| | | |            
+2 1 3 2 6 0 0 1-1 1
+        | | |     |
+2-1 3-2 3 3 4 4-2 2
+
+Took a total of 281.95957000000004, of which 280.766 spent solving and 1.19357 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 10 with stones:
+[[1, 3], [0, 6], [5, 5], [1, 1], [2, 4], [2, 1], [2, 5], [6, 3], [4, 0], [5, 6], [2, 5], [0, 3], [5, 4], [1, 4], [1, 5], [5, 5], [0, 1], [3, 2], [5, 1], [0, 5], [3, 4], [1, 2], [3, 1], [6, 0], [3, 0], [1, 2], [0, 0], [6, 6], [3, 1], [1, 1], [1, 0], [5, 0], [3, 6], [4, 3], [1, 4], [5, 2], [2, 0], [4, 5], [6, 5], [2, 0], [5, 2], [1, 3], [2, 1], [5, 6], [4, 2], [5, 6], [2, 0], [2, 5], [6, 0], [4, 6], [3, 4], [5, 4], [1, 6], [2, 0], [6, 3], [4, 2], [4, 1], [3, 3], [0, 1], [6, 6]]
+
+Solution with cost 10:
+4-3 3-1 1-2 2-3 3 #
+                |  
+4 2 2-5 5-6 6-0 0 #
+| |                
+3 5 # # 1-5 5-0 0 #
+                |  
+3 5 # # 1-5 5-5 5 #
+| |                
+1 5 # 3-1 1-1 2-4 #
+                   
+1 5-4 4-1 1 1 2 6 6
+|         | | | | |
+2 1-1 6-3 0 2 1 6 5
+                   
+2 1 1 6 3-0 2 1 6 5
+| | | |     | | | |
+5 4 0 0 0-4 4 3 3 2
+                   
+5-4 0-0 0-2 2-0 0-2
+
+Took a total of 281.95823, of which 280.765 spent solving and 1.19323 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 10 with stones:
+[[6, 1], [1, 0], [6, 3], [0, 3], [6, 0], [1, 6], [5, 3], [0, 4], [1, 5], [2, 3], [4, 6], [6, 1], [0, 5], [3, 1], [6, 0], [1, 6], [5, 1], [2, 5], [5, 5], [1, 2], [6, 1], [5, 2], [4, 1], [2, 5], [4, 2], [1, 5], [1, 1], [3, 4], [4, 5], [1, 0], [2, 3], [6, 1], [5, 1], [2, 0], [5, 5], [6, 4], [6, 1], [2, 2], [4, 5], [0, 6], [0, 4], [3, 2], [1, 1], [5, 4], [5, 1], [1, 1], [2, 2], [0, 3], [6, 6], [2, 6], [5, 1], [2, 4], [1, 2], [4, 3], [0, 5], [2, 6], [4, 2], [2, 6], [1, 3], [5, 4]]
+
+Solution with cost 0:
+1-6 0-6 6-1 1-5 1-5
+                   
+1 6 0 1 1-0 0 5-1 5
+| | | |     |     |
+6 1 6 0 1-1 2 0-5 1
+                   
+6 1-6 1-1 1-2 0 5-1
+|             |    
+1 4-3 1-1 1-2 5 5-1
+                   
+1 4 3 2-2 2-2 3 3 1
+| | |         | | |
+6 2 5 2-3 3-0 0 1 4
+                   
+6 2 5-2 2-5 3 3-1 4
+| |         |     |
+2 4 6-2 2-5 2 3-4 0
+                   
+2-4 6-4 4-5 2-3 4-0
+
+Took a total of 2.330535, of which 1.4 spent solving and 0.930535 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 10 with stones:
+[[6, 1], [1, 0], [6, 3], [0, 3], [6, 0], [1, 6], [5, 3], [0, 4], [1, 5], [2, 3], [4, 6], [6, 1], [0, 5], [3, 1], [6, 0], [1, 6], [5, 1], [2, 5], [5, 5], [1, 2], [6, 1], [5, 2], [4, 1], [2, 5], [4, 2], [1, 5], [1, 1], [3, 4], [4, 5], [1, 0], [2, 3], [6, 1], [5, 1], [2, 0], [5, 5], [6, 4], [6, 1], [2, 2], [4, 5], [0, 6], [0, 4], [3, 2], [1, 1], [5, 4], [5, 1], [1, 1], [2, 2], [0, 3], [6, 6], [2, 6], [5, 1], [2, 4], [1, 2], [4, 3], [0, 5], [2, 6], [4, 2], [2, 6], [1, 3], [5, 4]]
+
+Solution with cost 0:
+1-6 0-6 6-1 1-5 1-5
+                   
+1 6 0 1 1-0 0 5-1 5
+| | | |     |     |
+6 1 6 0 1-1 2 5-1 1
+                   
+6 1-6 1-1 1-2 5-0 0
+|                 |
+1 4-3 1-1 1-2 2 5 5
+              | |  
+1 4 3 3-2 2-2 2 1 1
+| | |             |
+6 2 5 3-0 0-3 0-4 4
+                   
+6 2 5 2 2-6 3 0-4 4
+| | | |     |     |
+2 4 2 5 5 6 1 3-2 3
+        | |        
+2-4 2-5 4 4 1-3 2-3
+
+Took a total of 5.71781, of which 4.8 spent solving and 0.91781 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 10 with stones:
+[[6, 1], [1, 0], [6, 3], [0, 3], [6, 0], [1, 6], [5, 3], [0, 4], [1, 5], [2, 3], [4, 6], [6, 1], [0, 5], [3, 1], [6, 0], [1, 6], [5, 1], [2, 5], [5, 5], [1, 2], [6, 1], [5, 2], [4, 1], [2, 5], [4, 2], [1, 5], [1, 1], [3, 4], [4, 5], [1, 0], [2, 3], [6, 1], [5, 1], [2, 0], [5, 5], [6, 4], [6, 1], [2, 2], [4, 5], [0, 6], [0, 4], [3, 2], [1, 1], [5, 4], [5, 1], [1, 1], [2, 2], [0, 3], [6, 6], [2, 6], [5, 1], [2, 4], [1, 2], [4, 3], [0, 5], [2, 6], [4, 2], [2, 6], [1, 3], [5, 4]]
+
+Solution with cost 0:
+1-6 0-6 6-1 1-5 1-5
+                   
+1 6 0 1 1-0 0 5-1 5
+| | | |     |     |
+6 1 6 0 1-1 2 5-1 1
+                   
+6 1-6 1-1 1-2 5-0 0
+|                 |
+1 4-3 1-1 1-2 2 5 5
+              | |  
+1 4 3 3-2 2-2 2 1 1
+| | |             |
+6 2 5 3-0 0-3 0-4 4
+                   
+6 2 5 2 2-6 3 0-4 4
+| | | |     |     |
+2 4 2 5 5 6 1 3-2 3
+        | |        
+2-4 2-5 4 4 1-3 2-3
+
+Took a total of 5.680999, of which 4.782 spent solving and 0.898999 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 10 with stones:
+[[6, 1], [1, 0], [6, 3], [0, 3], [6, 0], [1, 6], [5, 3], [0, 4], [1, 5], [2, 3], [4, 6], [6, 1], [0, 5], [3, 1], [6, 0], [1, 6], [5, 1], [2, 5], [5, 5], [1, 2], [6, 1], [5, 2], [4, 1], [2, 5], [4, 2], [1, 5], [1, 1], [3, 4], [4, 5], [1, 0], [2, 3], [6, 1], [5, 1], [2, 0], [5, 5], [6, 4], [6, 1], [2, 2], [4, 5], [0, 6], [0, 4], [3, 2], [1, 1], [5, 4], [5, 1], [1, 1], [2, 2], [0, 3], [6, 6], [2, 6], [5, 1], [2, 4], [1, 2], [4, 3], [0, 5], [2, 6], [4, 2], [2, 6], [1, 3], [5, 4]]
+
+Solution with cost 0:
+1-6 1-5 5-1 1-5 1-4
+                   
+1 6 1 0 0-1 1 5-1 4
+| | | |     |     |
+6 1 5 1 1-1 1 2-3 3
+                   
+6 1-5 2-1 1-1 2-3 3
+|                 |
+1 4-3 2-0 0-3 3 1 1
+              | |  
+1 4 3 0-4 4-0 0 3 3
+| | |             |
+6 2 5 0 6 6-0 0-6 2
+      | |          
+6 2 5 5 0 6 6 1-6 2
+| | |     | |     |
+2 4 2 5-0 2 4 1-2 2
+                   
+2-4 2-5 5-2 4-5 2-2
+
+Took a total of 4.4233080000000005, of which 3.498 spent solving and 0.925308 spent flattening
+
+#############################################
+Solver old dom_w_deg on instance of size 10 with stones:
+[[6, 1], [1, 0], [6, 3], [0, 3], [6, 0], [1, 6], [5, 3], [0, 4], [1, 5], [2, 3], [4, 6], [6, 1], [0, 5], [3, 1], [6, 0], [1, 6], [5, 1], [2, 5], [5, 5], [1, 2], [6, 1], [5, 2], [4, 1], [2, 5], [4, 2], [1, 5], [1, 1], [3, 4], [4, 5], [1, 0], [2, 3], [6, 1], [5, 1], [2, 0], [5, 5], [6, 4], [6, 1], [2, 2], [4, 5], [0, 6], [0, 4], [3, 2], [1, 1], [5, 4], [5, 1], [1, 1], [2, 2], [0, 3], [6, 6], [2, 6], [5, 1], [2, 4], [1, 2], [4, 3], [0, 5], [2, 6], [4, 2], [2, 6], [1, 3], [5, 4]]
+
+No solution was found in time
+Took a total of 1.0, of which 1.0 spent solving and 0.0 spent flattening
+
+#############################################
+Solver old first_fail on instance of size 10 with stones:
+[[6, 1], [1, 0], [6, 3], [0, 3], [6, 0], [1, 6], [5, 3], [0, 4], [1, 5], [2, 3], [4, 6], [6, 1], [0, 5], [3, 1], [6, 0], [1, 6], [5, 1], [2, 5], [5, 5], [1, 2], [6, 1], [5, 2], [4, 1], [2, 5], [4, 2], [1, 5], [1, 1], [3, 4], [4, 5], [1, 0], [2, 3], [6, 1], [5, 1], [2, 0], [5, 5], [6, 4], [6, 1], [2, 2], [4, 5], [0, 6], [0, 4], [3, 2], [1, 1], [5, 4], [5, 1], [1, 1], [2, 2], [0, 3], [6, 6], [2, 6], [5, 1], [2, 4], [1, 2], [4, 3], [0, 5], [2, 6], [4, 2], [2, 6], [1, 3], [5, 4]]
+
+No solution was found in time
+Took a total of 1.0, of which 1.0 spent solving and 0.0 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 10 with stones:
+[[2, 0], [1, 3], [3, 3], [1, 5], [6, 4], [1, 2], [4, 1], [4, 5], [1, 1], [4, 2], [4, 2], [1, 5], [5, 6], [6, 6], [6, 2], [4, 0], [5, 4], [5, 2], [6, 3], [3, 0], [5, 3], [4, 2], [2, 2], [4, 0], [0, 1], [3, 5], [1, 5], [5, 5], [3, 3], [5, 0], [4, 6], [2, 0], [4, 4], [0, 6], [3, 2], [1, 5], [6, 1], [2, 5], [0, 3], [5, 0], [0, 5], [5, 4], [3, 3], [0, 2], [6, 4], [2, 5], [3, 2], [6, 4], [2, 2], [3, 6], [6, 3], [5, 0], [4, 3], [6, 4], [4, 4], [3, 1], [2, 5], [2, 3], [1, 5], [4, 0]]
+
+Solution with cost 0:
+4-2 3-3 3-3 3-2 3-2
+                   
+4 2 3 1 1-1 1 2-3 2
+| | | |     |     |
+2 4 3 0 2-0 2 2-2 2
+                   
+2 4-3 0-2 0-2 2-5 5
+|                 |
+5 4-4 0-3 3-0 0 1 1
+              | |  
+5 4 4 4-0 0-4 4 5 5
+| | |             |
+2 5 4 4-1 1-3 5-1 1
+                   
+2 5 4 6 6-3 3 5-0 0
+| | | |     |     |
+5 3 5 4 0 3 1 5-0 5
+        | |        
+5-3 5-4 6 6 1-5 0-5
+
+Took a total of 5.942581000000001, of which 5.022 spent solving and 0.920581 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 10 with stones:
+[[2, 0], [1, 3], [3, 3], [1, 5], [6, 4], [1, 2], [4, 1], [4, 5], [1, 1], [4, 2], [4, 2], [1, 5], [5, 6], [6, 6], [6, 2], [4, 0], [5, 4], [5, 2], [6, 3], [3, 0], [5, 3], [4, 2], [2, 2], [4, 0], [0, 1], [3, 5], [1, 5], [5, 5], [3, 3], [5, 0], [4, 6], [2, 0], [4, 4], [0, 6], [3, 2], [1, 5], [6, 1], [2, 5], [0, 3], [5, 0], [0, 5], [5, 4], [3, 3], [0, 2], [6, 4], [2, 5], [3, 2], [6, 4], [2, 2], [3, 6], [6, 3], [5, 0], [4, 3], [6, 4], [4, 4], [3, 1], [2, 5], [2, 3], [1, 5], [4, 0]]
+
+Solution with cost 0:
+4-2 3-3 3-3 3-2 3-2
+                   
+4 2 3 1 1-1 1 2-3 2
+| | | |     |     |
+2 4 3 0 2-0 2 5-2 2
+                   
+2 4-3 0-2 0-2 5 2-2
+|             |    
+5 4-4 0-3 3-0 1 1-5
+                   
+5 4 4 0-4 4-0 3 3 5
+| | |         | | |
+2 5 4 0-4 4-1 1 1 1
+                   
+2 5 4-5 5-4 5 5-1 1
+| |         |     |
+5 3 3-6 6-4 0 5-0 5
+                   
+5-3 3-6 6-0 0-5 0-5
+
+Took a total of 2.051717, of which 1.152 spent solving and 0.899717 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 10 with stones:
+[[2, 0], [1, 3], [3, 3], [1, 5], [6, 4], [1, 2], [4, 1], [4, 5], [1, 1], [4, 2], [4, 2], [1, 5], [5, 6], [6, 6], [6, 2], [4, 0], [5, 4], [5, 2], [6, 3], [3, 0], [5, 3], [4, 2], [2, 2], [4, 0], [0, 1], [3, 5], [1, 5], [5, 5], [3, 3], [5, 0], [4, 6], [2, 0], [4, 4], [0, 6], [3, 2], [1, 5], [6, 1], [2, 5], [0, 3], [5, 0], [0, 5], [5, 4], [3, 3], [0, 2], [6, 4], [2, 5], [3, 2], [6, 4], [2, 2], [3, 6], [6, 3], [5, 0], [4, 3], [6, 4], [4, 4], [3, 1], [2, 5], [2, 3], [1, 5], [4, 0]]
+
+Solution with cost 0:
+4-2 3-3 3-3 3-2 3-2
+                   
+4 2 3 1 1-1 1 2-3 2
+| | | |     |     |
+2 4 3 0 2-0 2 5-2 2
+                   
+2 4-3 0-2 0-2 5 2-2
+|             |    
+5 4-4 0-3 3-0 1 1-5
+                   
+5 4 4 0-4 4-0 3 3 5
+| | |         | | |
+2 5 4 0-4 4-1 1 1 1
+                   
+2 5 4-5 5-4 5 5-1 1
+| |         |     |
+5 3 3-6 6-4 0 5-0 5
+                   
+5-3 3-6 6-0 0-5 0-5
+
+Took a total of 2.06007, of which 1.147 spent solving and 0.91307 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 10 with stones:
+[[2, 0], [1, 3], [3, 3], [1, 5], [6, 4], [1, 2], [4, 1], [4, 5], [1, 1], [4, 2], [4, 2], [1, 5], [5, 6], [6, 6], [6, 2], [4, 0], [5, 4], [5, 2], [6, 3], [3, 0], [5, 3], [4, 2], [2, 2], [4, 0], [0, 1], [3, 5], [1, 5], [5, 5], [3, 3], [5, 0], [4, 6], [2, 0], [4, 4], [0, 6], [3, 2], [1, 5], [6, 1], [2, 5], [0, 3], [5, 0], [0, 5], [5, 4], [3, 3], [0, 2], [6, 4], [2, 5], [3, 2], [6, 4], [2, 2], [3, 6], [6, 3], [5, 0], [4, 3], [6, 4], [4, 4], [3, 1], [2, 5], [2, 3], [1, 5], [4, 0]]
+
+Solution with cost 0:
+4-3 3-2 2-3 3-2 2-2
+                   
+4 3 3 0 0-2 2 2-2 2
+| | | |     |     |
+2 3 3 1 1-2 0 5-1 5
+                   
+2 3-3 1-1 2-0 5 1-5
+|             |    
+4 3-5 1-3 3-0 1 1-5
+                   
+4 3 5 1-3 3-0 4 4 5
+| | |         | | |
+2 5 4 1-4 4-0 0 0 1
+                   
+2 5 4-4 4-4 5 5-0 1
+| |         |     |
+5 2 4-5 5-4 0 5-0 6
+                   
+5-2 4-6 6-2 0-5 0-6
+
+Took a total of 2.0445130000000002, of which 1.139 spent solving and 0.905513 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 10 with stones:
+[[0, 5], [2, 1], [6, 4], [0, 5], [4, 5], [1, 0], [1, 5], [3, 2], [1, 0], [2, 6], [6, 6], [6, 1], [5, 4], [2, 2], [5, 6], [4, 2], [5, 1], [1, 5], [3, 3], [1, 4], [5, 4], [0, 6], [3, 4], [0, 4], [4, 2], [1, 0], [1, 2], [2, 2], [0, 4], [0, 5], [1, 5], [6, 0], [2, 2], [3, 6], [4, 5], [0, 3], [5, 3], [2, 1], [1, 1], [0, 1], [1, 0], [3, 2], [5, 0], [6, 2], [1, 3], [4, 4], [6, 0], [3, 3], [0, 6], [1, 3], [5, 1], [2, 2], [2, 6], [6, 0], [0, 5], [3, 3], [1, 4], [4, 6], [6, 5], [2, 6]]
+
+Solution with cost 0:
+0-6 1-5 5-1 1-5 1-4
+                   
+0 6 1 1 1-0 0 5-1 4
+| | | |     |     |
+6 0 6 0 1-0 1 1-3 1
+                   
+6 0-6 1-1 0-1 1 3-1
+|             |    
+2 4-2 1-2 2-1 5 5-0
+                   
+2 4 2 2-2 2-1 2 2 0
+| | |         | | |
+3 3 4 2-2 2-2 2 3 5
+                   
+3 3 4-4 4-5 0 0-3 5
+| |         |     |
+3 3 6-3 3-5 4 0-5 0
+                   
+3-3 6-2 2-6 4-0 5-0
+
+Took a total of 2.304211, of which 1.388 spent solving and 0.916211 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 10 with stones:
+[[0, 5], [2, 1], [6, 4], [0, 5], [4, 5], [1, 0], [1, 5], [3, 2], [1, 0], [2, 6], [6, 6], [6, 1], [5, 4], [2, 2], [5, 6], [4, 2], [5, 1], [1, 5], [3, 3], [1, 4], [5, 4], [0, 6], [3, 4], [0, 4], [4, 2], [1, 0], [1, 2], [2, 2], [0, 4], [0, 5], [1, 5], [6, 0], [2, 2], [3, 6], [4, 5], [0, 3], [5, 3], [2, 1], [1, 1], [0, 1], [1, 0], [3, 2], [5, 0], [6, 2], [1, 3], [4, 4], [6, 0], [3, 3], [0, 6], [1, 3], [5, 1], [2, 2], [2, 6], [6, 0], [0, 5], [3, 3], [1, 4], [4, 6], [6, 5], [2, 6]]
+
+Solution with cost 0:
+0-6 1-5 5-1 1-5 1-4
+                   
+0 6 1 1 1-0 0 5-1 4
+| | | |     |     |
+6 0 6 0 1-0 1 3-1 1
+                   
+6 0-6 1-1 0-1 3-1 1
+|                 |
+2 4-2 1-2 2-1 1 5 5
+              | |  
+2 4 2 2-2 2-2 2 0 0
+| | |             |
+3 3 4 2-2 2-2 0-5 5
+                   
+3 3 4 3 3-6 2 0-5 5
+| | | |     |     |
+3 3 4 5 6 6 3 0-4 0
+        | |        
+3-3 4-5 2 2 3-0 4-0
+
+Took a total of 5.685197, of which 4.781 spent solving and 0.904197 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 10 with stones:
+[[0, 5], [2, 1], [6, 4], [0, 5], [4, 5], [1, 0], [1, 5], [3, 2], [1, 0], [2, 6], [6, 6], [6, 1], [5, 4], [2, 2], [5, 6], [4, 2], [5, 1], [1, 5], [3, 3], [1, 4], [5, 4], [0, 6], [3, 4], [0, 4], [4, 2], [1, 0], [1, 2], [2, 2], [0, 4], [0, 5], [1, 5], [6, 0], [2, 2], [3, 6], [4, 5], [0, 3], [5, 3], [2, 1], [1, 1], [0, 1], [1, 0], [3, 2], [5, 0], [6, 2], [1, 3], [4, 4], [6, 0], [3, 3], [0, 6], [1, 3], [5, 1], [2, 2], [2, 6], [6, 0], [0, 5], [3, 3], [1, 4], [4, 6], [6, 5], [2, 6]]
+
+Solution with cost 0:
+0-6 1-5 5-1 1-5 1-4
+                   
+0 6 1 1 1-0 0 5-1 4
+| | | |     |     |
+6 0 6 0 1-0 1 3-1 1
+                   
+6 0-6 1-1 0-1 3-1 1
+|                 |
+2 4-2 1-2 2-1 1 5 5
+              | |  
+2 4 2 2-2 2-2 2 0 0
+| | |             |
+3 3 4 2-2 2-2 0-5 5
+                   
+3 3 4 3 3-6 2 0-5 5
+| | | |     |     |
+3 3 4 5 6 6 3 0-4 0
+        | |        
+3-3 4-5 2 2 3-0 4-0
+
+Took a total of 5.69928, of which 4.785 spent solving and 0.91428 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 10 with stones:
+[[0, 5], [2, 1], [6, 4], [0, 5], [4, 5], [1, 0], [1, 5], [3, 2], [1, 0], [2, 6], [6, 6], [6, 1], [5, 4], [2, 2], [5, 6], [4, 2], [5, 1], [1, 5], [3, 3], [1, 4], [5, 4], [0, 6], [3, 4], [0, 4], [4, 2], [1, 0], [1, 2], [2, 2], [0, 4], [0, 5], [1, 5], [6, 0], [2, 2], [3, 6], [4, 5], [0, 3], [5, 3], [2, 1], [1, 1], [0, 1], [1, 0], [3, 2], [5, 0], [6, 2], [1, 3], [4, 4], [6, 0], [3, 3], [0, 6], [1, 3], [5, 1], [2, 2], [2, 6], [6, 0], [0, 5], [3, 3], [1, 4], [4, 6], [6, 5], [2, 6]]
+
+Solution with cost 0:
+1-5 0-6 6-0 0-6 0-5
+                   
+1 5 0 0 0-1 1 6-0 5
+| | | |     |     |
+5 1 6 1 0-1 0 5-0 0
+                   
+5 1-6 3-0 1-0 5-0 0
+|                 |
+3 2-6 3-1 1-1 1 5 5
+              | |  
+3 2 6 2-1 1-2 2 1 1
+| | |             |
+2 6 3 2-2 2-2 2-2 4
+                   
+2 6 3 3 3-4 2 2-2 4
+| | | |     |     |
+4 2 3 3 4-4 3 1-4 0
+                   
+4-2 3-3 4-5 3-1 4-0
+
+Took a total of 5.106606, of which 4.19 spent solving and 0.916606 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 10 with stones:
+[[0, 2], [3, 3], [0, 3], [2, 5], [3, 5], [1, 1], [2, 4], [3, 0], [4, 0], [4, 6], [1, 1], [1, 1], [5, 3], [3, 6], [4, 5], [2, 5], [6, 6], [1, 1], [5, 2], [6, 6], [4, 0], [3, 5], [3, 0], [6, 6], [5, 6], [4, 0], [4, 0], [5, 2], [4, 1], [0, 5], [4, 2], [0, 5], [4, 0], [3, 0], [2, 6], [6, 0], [3, 4], [2, 3], [1, 4], [1, 5], [6, 1], [4, 3], [6, 1], [4, 1], [6, 5], [1, 3], [6, 0], [6, 5], [6, 0], [1, 6], [2, 6], [5, 0], [3, 6], [0, 5], [5, 5], [3, 4], [2, 3], [6, 6], [3, 6], [4, 5]]
+
+Solution with cost 0:
+3-4 3-3 3-2 2-5 1-4
+                   
+3 4 3 2 2-3 3 5-1 4
+| | | |     |     |
+4 2 4 0 0-3 0 0-6 1
+                   
+4 2-4 3-0 3-0 0 6-1
+|             |    
+5 1-6 3-1 1-1 6 6-0
+                   
+5 1 6 1-1 1-1 0 0 0
+| | |         | | |
+2 6 3 1-1 1-4 4 4 5
+                   
+2 6 3-5 5-3 0 0-4 5
+| |         |     |
+5 2 4-5 5-3 4 0-5 0
+                   
+5-2 4-6 6-2 4-0 5-0
+
+Took a total of 2.3119370000000004, of which 1.374 spent solving and 0.937937 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 10 with stones:
+[[0, 2], [3, 3], [0, 3], [2, 5], [3, 5], [1, 1], [2, 4], [3, 0], [4, 0], [4, 6], [1, 1], [1, 1], [5, 3], [3, 6], [4, 5], [2, 5], [6, 6], [1, 1], [5, 2], [6, 6], [4, 0], [3, 5], [3, 0], [6, 6], [5, 6], [4, 0], [4, 0], [5, 2], [4, 1], [0, 5], [4, 2], [0, 5], [4, 0], [3, 0], [2, 6], [6, 0], [3, 4], [2, 3], [1, 4], [1, 5], [6, 1], [4, 3], [6, 1], [4, 1], [6, 5], [1, 3], [6, 0], [6, 5], [6, 0], [1, 6], [2, 6], [5, 0], [3, 6], [0, 5], [5, 5], [3, 4], [2, 3], [6, 6], [3, 6], [4, 5]]
+
+Solution with cost 0:
+3-4 3-3 3-2 2-5 1-4
+                   
+3 4 3 2 2-3 3 5-1 4
+| | | |     |     |
+4 2 4 0 0-3 0 0-6 1
+                   
+4 2-4 3-0 3-0 0 6-1
+|             |    
+5 1-6 3-1 1-1 6 6-0
+                   
+5 1 6 1-1 1-1 0 0 0
+| | |         | | |
+2 6 3 1-1 1-4 4 4 5
+                   
+2 6 3-5 5-3 0 0-4 5
+| |         |     |
+5 2 4-5 5-3 4 0-5 0
+                   
+5-2 4-6 6-2 4-0 5-0
+
+Took a total of 2.051185, of which 1.148 spent solving and 0.903185 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 10 with stones:
+[[0, 2], [3, 3], [0, 3], [2, 5], [3, 5], [1, 1], [2, 4], [3, 0], [4, 0], [4, 6], [1, 1], [1, 1], [5, 3], [3, 6], [4, 5], [2, 5], [6, 6], [1, 1], [5, 2], [6, 6], [4, 0], [3, 5], [3, 0], [6, 6], [5, 6], [4, 0], [4, 0], [5, 2], [4, 1], [0, 5], [4, 2], [0, 5], [4, 0], [3, 0], [2, 6], [6, 0], [3, 4], [2, 3], [1, 4], [1, 5], [6, 1], [4, 3], [6, 1], [4, 1], [6, 5], [1, 3], [6, 0], [6, 5], [6, 0], [1, 6], [2, 6], [5, 0], [3, 6], [0, 5], [5, 5], [3, 4], [2, 3], [6, 6], [3, 6], [4, 5]]
+
+Solution with cost 0:
+3-4 3-3 3-2 2-5 1-4
+                   
+3 4 3 2 2-3 3 5-1 4
+| | | |     |     |
+4 2 4 0 0-3 0 0-6 1
+                   
+4 2-4 3-0 3-0 0 6-1
+|             |    
+5 1-6 3-1 1-1 6 6-0
+                   
+5 1 6 1-1 1-1 0 0 0
+| | |         | | |
+2 6 3 1-1 1-4 4 4 5
+                   
+2 6 3-5 5-3 0 0-4 5
+| |         |     |
+5 2 4-5 5-3 4 0-5 0
+                   
+5-2 4-6 6-2 4-0 5-0
+
+Took a total of 2.05335, of which 1.142 spent solving and 0.91135 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 10 with stones:
+[[0, 2], [3, 3], [0, 3], [2, 5], [3, 5], [1, 1], [2, 4], [3, 0], [4, 0], [4, 6], [1, 1], [1, 1], [5, 3], [3, 6], [4, 5], [2, 5], [6, 6], [1, 1], [5, 2], [6, 6], [4, 0], [3, 5], [3, 0], [6, 6], [5, 6], [4, 0], [4, 0], [5, 2], [4, 1], [0, 5], [4, 2], [0, 5], [4, 0], [3, 0], [2, 6], [6, 0], [3, 4], [2, 3], [1, 4], [1, 5], [6, 1], [4, 3], [6, 1], [4, 1], [6, 5], [1, 3], [6, 0], [6, 5], [6, 0], [1, 6], [2, 6], [5, 0], [3, 6], [0, 5], [5, 5], [3, 4], [2, 3], [6, 6], [3, 6], [4, 5]]
+
+Solution with cost 0:
+6-0 5-0 0-5 5-0 5-4
+                   
+6 0 5 0 0-3 3 0-5 4
+| | | |     |     |
+1 6 1 2 0-3 0 2-4 3
+                   
+1 6-1 4-0 3-0 2 4-3
+|             |    
+6 2-6 4-0 0-4 4 4-1
+                   
+6 2 6 4-0 0-4 1 1 1
+| | |         | | |
+2 5 3 4-1 1-1 1 1 4
+                   
+2 5 3-5 5-3 1 1-1 4
+| |         |     |
+5 2 4-5 5-3 3 2-3 3
+                   
+5-2 4-6 6-3 3-2 3-3
+
+Took a total of 2.031833, of which 1.129 spent solving and 0.902833 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 10 with stones:
+[[1, 1], [2, 4], [6, 2], [5, 2], [3, 5], [1, 2], [2, 5], [6, 3], [0, 4], [0, 3], [3, 3], [3, 1], [4, 4], [5, 5], [1, 0], [5, 0], [4, 3], [0, 0], [0, 6], [1, 6], [2, 1], [3, 2], [3, 1], [3, 2], [6, 3], [2, 6], [4, 1], [5, 3], [5, 1], [0, 2], [1, 5], [3, 2], [5, 6], [5, 1], [1, 1], [1, 2], [0, 4], [2, 3], [1, 0], [4, 3], [1, 4], [0, 0], [1, 2], [1, 2], [4, 5], [1, 5], [5, 2], [3, 2], [5, 1], [6, 6], [2, 2], [0, 5], [1, 4], [0, 5], [1, 5], [5, 5], [6, 6], [3, 4], [6, 5], [0, 6]]
+
+Solution with cost 0:
+1-5 1-4 4-1 1-4 2-3
+                   
+1 5 1 0 0-0 0 4-2 3
+| | | |     |     |
+5 1 5 0 2-0 1 3-2 2
+                   
+5 1-5 1-2 0-1 3-2 2
+|                 |
+2 6-3 1-1 1-1 1 2 2
+              | |  
+2 6 3 2-1 1-2 2 3 3
+| | |             |
+5 0 3 2-1 1-3 5-1 1
+                   
+5 0 3 4 4-4 3 5-0 0
+| | | |     |     |
+2 6 4 3 3 4 0 4-0 5
+        | |        
+2-6 4-3 5 5 0-4 0-5
+
+Took a total of 5.9169659999999995, of which 5.012 spent solving and 0.904966 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 10 with stones:
+[[1, 1], [2, 4], [6, 2], [5, 2], [3, 5], [1, 2], [2, 5], [6, 3], [0, 4], [0, 3], [3, 3], [3, 1], [4, 4], [5, 5], [1, 0], [5, 0], [4, 3], [0, 0], [0, 6], [1, 6], [2, 1], [3, 2], [3, 1], [3, 2], [6, 3], [2, 6], [4, 1], [5, 3], [5, 1], [0, 2], [1, 5], [3, 2], [5, 6], [5, 1], [1, 1], [1, 2], [0, 4], [2, 3], [1, 0], [4, 3], [1, 4], [0, 0], [1, 2], [1, 2], [4, 5], [1, 5], [5, 2], [3, 2], [5, 1], [6, 6], [2, 2], [0, 5], [1, 4], [0, 5], [1, 5], [5, 5], [6, 6], [3, 4], [6, 5], [0, 6]]
+
+Solution with cost 0:
+1-5 1-4 4-1 1-4 2-3
+                   
+1 5 1 0 0-0 0 4-2 3
+| | | |     |     |
+5 1 5 0 2-0 1 2-3 2
+                   
+5 1-5 1-2 0-1 2 3-2
+|             |    
+2 6-3 1-1 1-1 2 2-3
+                   
+2 6 3 1-2 2-1 3 3 3
+| | |         | | |
+5 0 3 1-2 2-1 1 0 1
+                   
+5 0 3-4 4-3 4 4-0 1
+| |         |     |
+2 6 4-4 4-3 0 5-0 5
+                   
+2-6 4-5 5-3 0-5 0-5
+
+Took a total of 2.078822, of which 1.151 spent solving and 0.927822 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 10 with stones:
+[[1, 1], [2, 4], [6, 2], [5, 2], [3, 5], [1, 2], [2, 5], [6, 3], [0, 4], [0, 3], [3, 3], [3, 1], [4, 4], [5, 5], [1, 0], [5, 0], [4, 3], [0, 0], [0, 6], [1, 6], [2, 1], [3, 2], [3, 1], [3, 2], [6, 3], [2, 6], [4, 1], [5, 3], [5, 1], [0, 2], [1, 5], [3, 2], [5, 6], [5, 1], [1, 1], [1, 2], [0, 4], [2, 3], [1, 0], [4, 3], [1, 4], [0, 0], [1, 2], [1, 2], [4, 5], [1, 5], [5, 2], [3, 2], [5, 1], [6, 6], [2, 2], [0, 5], [1, 4], [0, 5], [1, 5], [5, 5], [6, 6], [3, 4], [6, 5], [0, 6]]
+
+Solution with cost 0:
+1-5 1-4 4-1 1-4 2-3
+                   
+1 5 1 0 0-0 0 4-2 3
+| | | |     |     |
+5 1 5 0 2-0 1 2-3 2
+                   
+5 1-5 1-2 0-1 2 3-2
+|             |    
+2 6-3 1-1 1-1 2 2-3
+                   
+2 6 3 1-2 2-1 3 3 3
+| | |         | | |
+5 0 3 1-2 2-1 1 0 1
+                   
+5 0 3-4 4-3 4 4-0 1
+| |         |     |
+2 6 4-4 4-3 0 5-0 5
+                   
+2-6 4-5 5-3 0-5 0-5
+
+Took a total of 2.067162, of which 1.151 spent solving and 0.916162 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 10 with stones:
+[[1, 1], [2, 4], [6, 2], [5, 2], [3, 5], [1, 2], [2, 5], [6, 3], [0, 4], [0, 3], [3, 3], [3, 1], [4, 4], [5, 5], [1, 0], [5, 0], [4, 3], [0, 0], [0, 6], [1, 6], [2, 1], [3, 2], [3, 1], [3, 2], [6, 3], [2, 6], [4, 1], [5, 3], [5, 1], [0, 2], [1, 5], [3, 2], [5, 6], [5, 1], [1, 1], [1, 2], [0, 4], [2, 3], [1, 0], [4, 3], [1, 4], [0, 0], [1, 2], [1, 2], [4, 5], [1, 5], [5, 2], [3, 2], [5, 1], [6, 6], [2, 2], [0, 5], [1, 4], [0, 5], [1, 5], [5, 5], [6, 6], [3, 4], [6, 5], [0, 6]]
+
+Solution with cost 0:
+1-5 1-4 4-1 1-4 2-3
+                   
+1 5 1 0 0-0 0 4-2 3
+| | | |     |     |
+5 1 5 0 2-0 1 2-3 2
+                   
+5 1-5 1-2 0-1 2 3-2
+|             |    
+2 6-3 1-1 1-1 2 2-3
+                   
+2 6 3 1-2 2-1 3 3 3
+| | |         | | |
+5 0 3 1-2 2-1 1 0 1
+                   
+5 0 3-4 4-3 4 4-0 1
+| |         |     |
+2 6 4-4 4-3 0 5-0 5
+                   
+2-6 4-5 5-3 0-5 0-5
+
+Took a total of 2.052397, of which 1.156 spent solving and 0.896397 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 10 with stones:
+[[2, 4], [3, 5], [2, 5], [3, 6], [6, 1], [1, 6], [6, 3], [2, 2], [6, 3], [3, 0], [5, 2], [5, 0], [6, 3], [5, 5], [2, 1], [5, 2], [0, 5], [3, 3], [3, 5], [4, 3], [5, 0], [5, 5], [0, 4], [6, 4], [0, 1], [0, 0], [2, 1], [0, 5], [2, 1], [2, 2], [0, 1], [3, 4], [6, 0], [4, 2], [4, 2], [3, 4], [1, 5], [1, 1], [6, 5], [0, 6], [3, 1], [4, 2], [6, 5], [3, 0], [5, 1], [0, 2], [4, 0], [4, 6], [6, 3], [4, 1], [6, 6], [0, 6], [4, 0], [1, 6], [6, 4], [4, 4], [1, 3], [1, 1], [0, 1], [2, 5]]
+
+Solution with cost 0:
+2-2 3-3 3-6 6-1 6-0
+                   
+2 2 3 0 0-1 1 1-6 0
+| | | |     |     |
+4 2 4 0 1-1 0 1-6 6
+                   
+4 2-4 1-1 1-0 1-5 5
+|                 |
+2 6-3 1-2 2-0 0 0 0
+              | |  
+2 6 3 4-0 0-3 3 5 5
+| | |             |
+4 4 5 4-0 0-4 5-0 0
+                   
+4 4 5 2 2-5 4 5-1 1
+| | | |     |     |
+3 4 2 5 6 5 1 2-1 3
+        | |        
+3-4 2-5 3 3 1-2 1-3
+
+Took a total of 5.904218, of which 5.001 spent solving and 0.903218 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 10 with stones:
+[[2, 4], [3, 5], [2, 5], [3, 6], [6, 1], [1, 6], [6, 3], [2, 2], [6, 3], [3, 0], [5, 2], [5, 0], [6, 3], [5, 5], [2, 1], [5, 2], [0, 5], [3, 3], [3, 5], [4, 3], [5, 0], [5, 5], [0, 4], [6, 4], [0, 1], [0, 0], [2, 1], [0, 5], [2, 1], [2, 2], [0, 1], [3, 4], [6, 0], [4, 2], [4, 2], [3, 4], [1, 5], [1, 1], [6, 5], [0, 6], [3, 1], [4, 2], [6, 5], [3, 0], [5, 1], [0, 2], [4, 0], [4, 6], [6, 3], [4, 1], [6, 6], [0, 6], [4, 0], [1, 6], [6, 4], [4, 4], [1, 3], [1, 1], [0, 1], [2, 5]]
+
+Solution with cost 0:
+2-2 3-3 3-6 6-1 6-0
+                   
+2 2 3 0 0-1 1 1-6 0
+| | | |     |     |
+4 2 4 0 1-1 0 1-6 6
+                   
+4 2-4 1-1 1-0 1-5 5
+|                 |
+2 6-3 1-2 2-0 0 0 0
+              | |  
+2 6 3 4-0 0-3 3 5 5
+| | |             |
+4 4 5 4-0 0-4 5-0 0
+                   
+4 4 5 2 2-5 4 5-1 1
+| | | |     |     |
+3 4 2 5 6 5 1 2-1 3
+        | |        
+3-4 2-5 3 3 1-2 1-3
+
+Took a total of 5.704071, of which 4.806 spent solving and 0.898071 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 10 with stones:
+[[2, 4], [3, 5], [2, 5], [3, 6], [6, 1], [1, 6], [6, 3], [2, 2], [6, 3], [3, 0], [5, 2], [5, 0], [6, 3], [5, 5], [2, 1], [5, 2], [0, 5], [3, 3], [3, 5], [4, 3], [5, 0], [5, 5], [0, 4], [6, 4], [0, 1], [0, 0], [2, 1], [0, 5], [2, 1], [2, 2], [0, 1], [3, 4], [6, 0], [4, 2], [4, 2], [3, 4], [1, 5], [1, 1], [6, 5], [0, 6], [3, 1], [4, 2], [6, 5], [3, 0], [5, 1], [0, 2], [4, 0], [4, 6], [6, 3], [4, 1], [6, 6], [0, 6], [4, 0], [1, 6], [6, 4], [4, 4], [1, 3], [1, 1], [0, 1], [2, 5]]
+
+Solution with cost 0:
+2-2 3-3 3-6 6-1 6-0
+                   
+2 2 3 0 0-1 1 1-6 0
+| | | |     |     |
+4 2 4 0 1-1 0 1-6 6
+                   
+4 2-4 1-1 1-0 1-5 5
+|                 |
+2 6-3 1-2 2-0 0 0 0
+              | |  
+2 6 3 4-0 0-3 3 5 5
+| | |             |
+4 4 5 4-0 0-4 5-0 0
+                   
+4 4 5 2 2-5 4 5-1 1
+| | | |     |     |
+3 4 2 5 6 5 1 2-1 3
+        | |        
+3-4 2-5 3 3 1-2 1-3
+
+Took a total of 5.740399, of which 4.799 spent solving and 0.941399 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 10 with stones:
+[[2, 4], [3, 5], [2, 5], [3, 6], [6, 1], [1, 6], [6, 3], [2, 2], [6, 3], [3, 0], [5, 2], [5, 0], [6, 3], [5, 5], [2, 1], [5, 2], [0, 5], [3, 3], [3, 5], [4, 3], [5, 0], [5, 5], [0, 4], [6, 4], [0, 1], [0, 0], [2, 1], [0, 5], [2, 1], [2, 2], [0, 1], [3, 4], [6, 0], [4, 2], [4, 2], [3, 4], [1, 5], [1, 1], [6, 5], [0, 6], [3, 1], [4, 2], [6, 5], [3, 0], [5, 1], [0, 2], [4, 0], [4, 6], [6, 3], [4, 1], [6, 6], [0, 6], [4, 0], [1, 6], [6, 4], [4, 4], [1, 3], [1, 1], [0, 1], [2, 5]]
+
+Solution with cost 0:
+2-2 3-3 3-6 6-1 6-0
+                   
+2 2 3 0 0-1 1 1-6 0
+| | | |     |     |
+4 2 4 0 1-1 0 1-6 6
+                   
+4 2-4 1-1 1-0 1-5 5
+|                 |
+2 6-3 1-2 2-0 0 0 0
+              | |  
+2 6 3 4-0 0-3 3 5 5
+| | |             |
+4 4 5 4-0 0-4 5-0 0
+                   
+4 4 5 2 2-5 4 5-1 1
+| | | |     |     |
+3 4 2 5 6 5 1 2-1 3
+        | |        
+3-4 2-5 3 3 1-2 1-3
+
+Took a total of 5.708809, of which 4.8 spent solving and 0.908809 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 10 with stones:
+[[0, 2], [0, 3], [5, 2], [4, 4], [5, 6], [5, 1], [5, 1], [3, 3], [3, 1], [4, 0], [0, 5], [4, 6], [4, 2], [6, 0], [4, 0], [0, 5], [4, 4], [6, 2], [6, 0], [0, 6], [4, 6], [5, 3], [3, 0], [2, 0], [6, 2], [1, 0], [4, 2], [2, 4], [5, 4], [1, 1], [3, 5], [6, 1], [3, 3], [5, 3], [3, 2], [4, 5], [0, 3], [0, 2], [6, 6], [6, 2], [5, 4], [4, 5], [3, 1], [6, 4], [4, 5], [0, 3], [2, 4], [3, 3], [1, 3], [6, 1], [6, 3], [1, 1], [5, 5], [6, 3], [2, 6], [1, 5], [5, 0], [6, 5], [5, 5], [0, 4]]
+
+Solution with cost 0:
+2-5 1-3 3-1 1-6 0-6
+                   
+2 5 1 1 1-1 1 6-0 6
+| | | |     |     |
+6 1 5 0 0-3 1 0-5 0
+                   
+6 1-5 2-0 3-1 0 5-0
+|             |    
+2 3-5 2-0 0-2 5 5-4
+                   
+2 3 5 0-3 3-2 4 4 4
+| | |         | | |
+6 3 3 0-3 3-0 0 0 4
+                   
+6 3 3-5 5-4 4 4-0 4
+| |         |     |
+3 3 4-5 5-4 2 4-2 4
+                   
+3-3 4-5 5-5 2-4 2-4
+
+Took a total of 2.2930729999999997, of which 1.376 spent solving and 0.917073 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 10 with stones:
+[[0, 2], [0, 3], [5, 2], [4, 4], [5, 6], [5, 1], [5, 1], [3, 3], [3, 1], [4, 0], [0, 5], [4, 6], [4, 2], [6, 0], [4, 0], [0, 5], [4, 4], [6, 2], [6, 0], [0, 6], [4, 6], [5, 3], [3, 0], [2, 0], [6, 2], [1, 0], [4, 2], [2, 4], [5, 4], [1, 1], [3, 5], [6, 1], [3, 3], [5, 3], [3, 2], [4, 5], [0, 3], [0, 2], [6, 6], [6, 2], [5, 4], [4, 5], [3, 1], [6, 4], [4, 5], [0, 3], [2, 4], [3, 3], [1, 3], [6, 1], [6, 3], [1, 1], [5, 5], [6, 3], [2, 6], [1, 5], [5, 0], [6, 5], [5, 5], [0, 4]]
+
+Solution with cost 0:
+2-5 1-3 3-1 1-6 0-6
+                   
+2 5 1 1 1-1 1 6-0 6
+| | | |     |     |
+6 1 5 0 0-3 1 0-5 0
+                   
+6 1-5 2-0 3-1 0 5-0
+|             |    
+2 3-5 2-0 0-2 5 5-4
+                   
+2 3 5 0-3 3-2 4 4 4
+| | |         | | |
+6 3 3 0-3 3-0 0 0 4
+                   
+6 3 3-5 5-4 4 4-0 4
+| |         |     |
+3 3 4-5 5-4 2 4-2 4
+                   
+3-3 4-5 5-5 2-4 2-4
+
+Took a total of 2.063079, of which 1.147 spent solving and 0.916079 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 10 with stones:
+[[0, 2], [0, 3], [5, 2], [4, 4], [5, 6], [5, 1], [5, 1], [3, 3], [3, 1], [4, 0], [0, 5], [4, 6], [4, 2], [6, 0], [4, 0], [0, 5], [4, 4], [6, 2], [6, 0], [0, 6], [4, 6], [5, 3], [3, 0], [2, 0], [6, 2], [1, 0], [4, 2], [2, 4], [5, 4], [1, 1], [3, 5], [6, 1], [3, 3], [5, 3], [3, 2], [4, 5], [0, 3], [0, 2], [6, 6], [6, 2], [5, 4], [4, 5], [3, 1], [6, 4], [4, 5], [0, 3], [2, 4], [3, 3], [1, 3], [6, 1], [6, 3], [1, 1], [5, 5], [6, 3], [2, 6], [1, 5], [5, 0], [6, 5], [5, 5], [0, 4]]
+
+Solution with cost 0:
+2-5 1-3 3-1 1-6 0-6
+                   
+2 5 1 1 1-1 1 6-0 6
+| | | |     |     |
+6 1 5 0 0-3 1 0-5 0
+                   
+6 1-5 2-0 3-1 0 5-0
+|             |    
+2 3-5 2-0 0-2 5 5-4
+                   
+2 3 5 0-3 3-2 4 4 4
+| | |         | | |
+6 3 3 0-3 3-0 0 0 4
+                   
+6 3 3-5 5-4 4 4-0 4
+| |         |     |
+3 3 4-5 5-4 2 4-2 4
+                   
+3-3 4-5 5-5 2-4 2-4
+
+Took a total of 2.06675, of which 1.155 spent solving and 0.91175 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 10 with stones:
+[[0, 2], [0, 3], [5, 2], [4, 4], [5, 6], [5, 1], [5, 1], [3, 3], [3, 1], [4, 0], [0, 5], [4, 6], [4, 2], [6, 0], [4, 0], [0, 5], [4, 4], [6, 2], [6, 0], [0, 6], [4, 6], [5, 3], [3, 0], [2, 0], [6, 2], [1, 0], [4, 2], [2, 4], [5, 4], [1, 1], [3, 5], [6, 1], [3, 3], [5, 3], [3, 2], [4, 5], [0, 3], [0, 2], [6, 6], [6, 2], [5, 4], [4, 5], [3, 1], [6, 4], [4, 5], [0, 3], [2, 4], [3, 3], [1, 3], [6, 1], [6, 3], [1, 1], [5, 5], [6, 3], [2, 6], [1, 5], [5, 0], [6, 5], [5, 5], [0, 4]]
+
+Solution with cost 0:
+1-6 2-5 5-1 1-5 0-5
+                   
+1 6 2 0 0-2 2 5-0 5
+| | | |     |     |
+6 0 6 1 3-2 0 4-4 4
+                   
+6 0-6 0-3 2-0 4 4-4
+|             |    
+2 3-5 0-3 3-0 2 2-4
+                   
+2 3 5 1-3 3-0 3 3 4
+| | |         | | |
+6 3 3 1-1 1-1 1 1 2
+                   
+6 3 3-5 5-4 5 5-1 2
+| |         |     |
+3 3 4-5 5-4 0 4-0 4
+                   
+3-3 4-5 5-5 0-4 0-4
+
+Took a total of 2.033331, of which 1.133 spent solving and 0.900331 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 11 with stones:
+[[2, 4], [4, 2], [5, 3], [4, 0], [3, 3], [5, 6], [0, 0], [6, 6], [1, 3], [1, 1], [4, 2], [3, 4], [0, 2], [2, 6], [6, 4], [6, 1], [6, 0], [5, 1], [4, 3], [5, 3], [1, 0], [0, 3], [4, 6], [0, 5], [4, 1], [3, 3], [3, 0], [5, 6], [4, 3], [1, 4], [3, 0], [5, 2], [6, 3], [1, 4], [1, 3], [3, 6], [3, 2], [3, 6], [6, 3], [4, 4], [2, 3], [6, 1], [0, 0], [6, 0], [3, 3], [3, 1], [3, 2], [2, 4], [1, 1], [6, 4], [6, 6], [2, 1], [3, 0], [0, 0], [1, 4], [2, 4], [1, 6], [0, 5], [3, 5], [4, 3], [6, 0], [4, 2], [2, 0], [4, 4], [4, 4], [4, 6], [0, 6], [5, 2], [1, 0], [0, 0], [5, 1], [1, 6], [5, 4], [3, 3], [0, 0], [4, 4], [5, 0], [0, 0], [1, 5], [0, 2], [0, 6], [5, 1], [0, 4], [0, 3], [4, 6], [2, 3], [3, 4], [2, 3], [2, 2], [0, 5], [0, 5], [2, 5], [4, 0], [0, 1], [3, 3], [5, 5], [4, 1], [6, 0], [5, 5], [3, 2]]
+
+Solution with cost 1:
+0-2 2-0 0-2 2-1 1-1 1
+                    |
+0 0 0-0 0-1 1-0 0-1 1
+| |                  
+3 0 0-0 1 1-3 3-1 1-4
+        |            
+3 0 0-0 3 0-4 4-0 0-4
+| |                  
+0 0 0-0 3 0-5 5-0 0-5
+        |            
+0-3 3-0 0 1-5 5-0 0-5
+                     
+1-4 1-4 4-1 2 2-4 4-2
+            |        
+1 4-1 2 2-3 4 4 4 4-2
+|     |       | |    
+5 5-2 3 2-3 2 2 2 2 #
+            |     |  
+5 5 2 3 2-3 3 0-6 5 5
+| | | |             |
+1 1 2 2 0-6 6-0 6-2 2
+
+Took a total of 24.55498, of which 23.477 spent solving and 1.07798 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 11 with stones:
+[[2, 4], [4, 2], [5, 3], [4, 0], [3, 3], [5, 6], [0, 0], [6, 6], [1, 3], [1, 1], [4, 2], [3, 4], [0, 2], [2, 6], [6, 4], [6, 1], [6, 0], [5, 1], [4, 3], [5, 3], [1, 0], [0, 3], [4, 6], [0, 5], [4, 1], [3, 3], [3, 0], [5, 6], [4, 3], [1, 4], [3, 0], [5, 2], [6, 3], [1, 4], [1, 3], [3, 6], [3, 2], [3, 6], [6, 3], [4, 4], [2, 3], [6, 1], [0, 0], [6, 0], [3, 3], [3, 1], [3, 2], [2, 4], [1, 1], [6, 4], [6, 6], [2, 1], [3, 0], [0, 0], [1, 4], [2, 4], [1, 6], [0, 5], [3, 5], [4, 3], [6, 0], [4, 2], [2, 0], [4, 4], [4, 4], [4, 6], [0, 6], [5, 2], [1, 0], [0, 0], [5, 1], [1, 6], [5, 4], [3, 3], [0, 0], [4, 4], [5, 0], [0, 0], [1, 5], [0, 2], [0, 6], [5, 1], [0, 4], [0, 3], [4, 6], [2, 3], [3, 4], [2, 3], [2, 2], [0, 5], [0, 5], [2, 5], [4, 0], [0, 1], [3, 3], [5, 5], [4, 1], [6, 0], [5, 5], [3, 2]]
+
+Solution with cost 3:
+0-2 2-0 0-2 2-1 1-1 1
+                    |
+0 0 0-0 0-1 1-0 0-1 1
+| |                  
+3 0 0-0 1 1-3 3-1 1-4
+        |            
+3 0 0-0 3 0-4 4-0 0-4
+| |                  
+0 0 0-0 3 0-5 5-0 0-5
+        |            
+0-3 3-0 0 1-5 5-0 0-5
+                     
+4-1 1-4 4-1 2 2 2 2-4
+            | | |    
+4-1 1-5 5-1 3 4 4 2-4
+                     
+2-2 2-5 5-1 3 4 4 2-5
+            | | |    
+2 2 2-3 3-2 2 2 2 2-5
+| |                  
+3 3 # # 6-0 0-6 6-2 #
+
+Took a total of 299.95898, of which 298.898 spent solving and 1.06098 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 11 with stones:
+[[2, 4], [4, 2], [5, 3], [4, 0], [3, 3], [5, 6], [0, 0], [6, 6], [1, 3], [1, 1], [4, 2], [3, 4], [0, 2], [2, 6], [6, 4], [6, 1], [6, 0], [5, 1], [4, 3], [5, 3], [1, 0], [0, 3], [4, 6], [0, 5], [4, 1], [3, 3], [3, 0], [5, 6], [4, 3], [1, 4], [3, 0], [5, 2], [6, 3], [1, 4], [1, 3], [3, 6], [3, 2], [3, 6], [6, 3], [4, 4], [2, 3], [6, 1], [0, 0], [6, 0], [3, 3], [3, 1], [3, 2], [2, 4], [1, 1], [6, 4], [6, 6], [2, 1], [3, 0], [0, 0], [1, 4], [2, 4], [1, 6], [0, 5], [3, 5], [4, 3], [6, 0], [4, 2], [2, 0], [4, 4], [4, 4], [4, 6], [0, 6], [5, 2], [1, 0], [0, 0], [5, 1], [1, 6], [5, 4], [3, 3], [0, 0], [4, 4], [5, 0], [0, 0], [1, 5], [0, 2], [0, 6], [5, 1], [0, 4], [0, 3], [4, 6], [2, 3], [3, 4], [2, 3], [2, 2], [0, 5], [0, 5], [2, 5], [4, 0], [0, 1], [3, 3], [5, 5], [4, 1], [6, 0], [5, 5], [3, 2]]
+
+Solution with cost 3:
+0-2 2-0 0-2 2-1 1-1 1
+                    |
+0 0 0-0 0-1 1-0 0-1 1
+| |                  
+3 0 0-0 1 1-3 3-1 1-4
+        |            
+3 0 0-0 3 0-4 4-0 0-4
+| |                  
+0 0 0-0 3 0-5 5-0 0-5
+        |            
+0-3 3-0 0 1-5 5-0 0-5
+                     
+4-1 1-4 4-1 2 2 2 2-4
+            | | |    
+4-1 1-5 5-1 3 4 4 2-4
+                     
+2-2 2-5 5-1 3 4 4 2-5
+            | | |    
+2 2 2-3 3-2 2 2 2 2-5
+| |                  
+3 3 # # 6-0 0-6 6-2 #
+
+Took a total of 299.95784899999995, of which 298.936 spent solving and 1.021849 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 11 with stones:
+[[2, 4], [4, 2], [5, 3], [4, 0], [3, 3], [5, 6], [0, 0], [6, 6], [1, 3], [1, 1], [4, 2], [3, 4], [0, 2], [2, 6], [6, 4], [6, 1], [6, 0], [5, 1], [4, 3], [5, 3], [1, 0], [0, 3], [4, 6], [0, 5], [4, 1], [3, 3], [3, 0], [5, 6], [4, 3], [1, 4], [3, 0], [5, 2], [6, 3], [1, 4], [1, 3], [3, 6], [3, 2], [3, 6], [6, 3], [4, 4], [2, 3], [6, 1], [0, 0], [6, 0], [3, 3], [3, 1], [3, 2], [2, 4], [1, 1], [6, 4], [6, 6], [2, 1], [3, 0], [0, 0], [1, 4], [2, 4], [1, 6], [0, 5], [3, 5], [4, 3], [6, 0], [4, 2], [2, 0], [4, 4], [4, 4], [4, 6], [0, 6], [5, 2], [1, 0], [0, 0], [5, 1], [1, 6], [5, 4], [3, 3], [0, 0], [4, 4], [5, 0], [0, 0], [1, 5], [0, 2], [0, 6], [5, 1], [0, 4], [0, 3], [4, 6], [2, 3], [3, 4], [2, 3], [2, 2], [0, 5], [0, 5], [2, 5], [4, 0], [0, 1], [3, 3], [5, 5], [4, 1], [6, 0], [5, 5], [3, 2]]
+
+Solution with cost 3:
+0-2 2-0 0-2 2-1 1-1 1
+                    |
+0 0 0-0 0-1 1-0 0-1 1
+| |                  
+3 0 0-0 1 1-3 3-1 1-4
+        |            
+3 0 0-0 3 0-4 4-0 0-4
+| |                  
+0 0 0-0 3 0-5 5-0 0-5
+        |            
+0-3 3-0 0 1-5 5-0 0-5
+                     
+4-1 1-4 4-1 2 2 2 2-4
+            | | |    
+4-1 1-5 5-1 3 4 4 2-4
+                     
+2-2 2-5 5-1 3 4 4 2-5
+            | | |    
+2 2 2-3 3-2 2 2 2 2-5
+| |                  
+3 3 # # 6-0 0-6 6-2 #
+
+Took a total of 299.9586, of which 298.877 spent solving and 1.0816 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 11 with stones:
+[[5, 4], [6, 4], [2, 0], [1, 0], [1, 0], [6, 5], [1, 6], [2, 5], [5, 0], [4, 3], [6, 4], [2, 6], [1, 2], [5, 4], [1, 6], [3, 0], [3, 5], [4, 4], [1, 1], [6, 5], [1, 1], [5, 4], [6, 1], [4, 6], [2, 1], [2, 4], [3, 2], [2, 3], [6, 0], [1, 1], [2, 5], [3, 6], [1, 1], [1, 4], [1, 4], [0, 4], [2, 2], [4, 5], [3, 4], [0, 0], [5, 1], [2, 3], [2, 4], [4, 4], [4, 3], [4, 0], [1, 5], [2, 0], [0, 5], [4, 2], [1, 3], [0, 6], [2, 6], [0, 1], [2, 6], [0, 2], [6, 6], [5, 2], [2, 3], [4, 2], [1, 1], [4, 2], [0, 3], [3, 3], [5, 1], [1, 6], [1, 0], [4, 1], [0, 5], [5, 5], [3, 4], [2, 0], [0, 5], [6, 3], [6, 1], [3, 4], [5, 5], [3, 3], [3, 4], [1, 5], [1, 4], [2, 1], [3, 4], [3, 1], [2, 5], [6, 5], [1, 6], [3, 1], [0, 1], [5, 3], [5, 5], [6, 6], [4, 5], [0, 0], [1, 0], [2, 5], [2, 2], [2, 6], [5, 0], [1, 3]]
+
+Solution with cost 1:
+4-0 0-3 3-0 0-2 2-0 0
+                    |
+4 1 1-0 0-1 1-0 0-2 2
+| |                  
+0 0 0-1 5 5-1 1-1 1-1
+        |            
+0 0 0-1 0 1-1 1-1 1-1
+| |                  
+5 0 0-0 0 1-2 2-1 1-2
+        |            
+5-0 0-5 5 3-2 2-2 2-2
+                     
+3-1 3-1 1-3 3 3-3 3-3
+            |        
+3 1-3 1 1-4 4 4 4 4-3
+|     |       | |    
+2 2-4 4 2-4 2 2 3 3 #
+            |     |  
+2 2 4 4 2-4 4 3-4 4 4
+| | | |             |
+3 3 1 1 1-5 5-3 4-3 3
+
+Took a total of 24.61274, of which 23.543 spent solving and 1.06974 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 11 with stones:
+[[5, 4], [6, 4], [2, 0], [1, 0], [1, 0], [6, 5], [1, 6], [2, 5], [5, 0], [4, 3], [6, 4], [2, 6], [1, 2], [5, 4], [1, 6], [3, 0], [3, 5], [4, 4], [1, 1], [6, 5], [1, 1], [5, 4], [6, 1], [4, 6], [2, 1], [2, 4], [3, 2], [2, 3], [6, 0], [1, 1], [2, 5], [3, 6], [1, 1], [1, 4], [1, 4], [0, 4], [2, 2], [4, 5], [3, 4], [0, 0], [5, 1], [2, 3], [2, 4], [4, 4], [4, 3], [4, 0], [1, 5], [2, 0], [0, 5], [4, 2], [1, 3], [0, 6], [2, 6], [0, 1], [2, 6], [0, 2], [6, 6], [5, 2], [2, 3], [4, 2], [1, 1], [4, 2], [0, 3], [3, 3], [5, 1], [1, 6], [1, 0], [4, 1], [0, 5], [5, 5], [3, 4], [2, 0], [0, 5], [6, 3], [6, 1], [3, 4], [5, 5], [3, 3], [3, 4], [1, 5], [1, 4], [2, 1], [3, 4], [3, 1], [2, 5], [6, 5], [1, 6], [3, 1], [0, 1], [5, 3], [5, 5], [6, 6], [4, 5], [0, 0], [1, 0], [2, 5], [2, 2], [2, 6], [5, 0], [1, 3]]
+
+Solution with cost 3:
+4-0 0-3 3-0 0-2 2-0 0
+                    |
+4 1 1-0 0-1 1-0 0-2 2
+| |                  
+0 0 0-1 5 5-1 1-1 1-1
+        |            
+0 0 0-1 0 1-1 1-1 1-1
+| |                  
+5 0 0-0 0 1-2 2-1 1-2
+        |            
+5-0 0-5 5 3-2 2-2 2-2
+                     
+1-3 3-1 1-3 2 2 3 3-4
+            | | |    
+1-3 3-2 2-3 4 4 3 3-4
+                     
+1-4 4-2 2-3 4 4 3 3-4
+            | | |    
+1 1 1-4 4-2 2 3 3 3-4
+| |                  
+4 4 # # 5-3 3-4 4-3 #
+
+Took a total of 299.9577, of which 298.896 spent solving and 1.0617 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 11 with stones:
+[[5, 4], [6, 4], [2, 0], [1, 0], [1, 0], [6, 5], [1, 6], [2, 5], [5, 0], [4, 3], [6, 4], [2, 6], [1, 2], [5, 4], [1, 6], [3, 0], [3, 5], [4, 4], [1, 1], [6, 5], [1, 1], [5, 4], [6, 1], [4, 6], [2, 1], [2, 4], [3, 2], [2, 3], [6, 0], [1, 1], [2, 5], [3, 6], [1, 1], [1, 4], [1, 4], [0, 4], [2, 2], [4, 5], [3, 4], [0, 0], [5, 1], [2, 3], [2, 4], [4, 4], [4, 3], [4, 0], [1, 5], [2, 0], [0, 5], [4, 2], [1, 3], [0, 6], [2, 6], [0, 1], [2, 6], [0, 2], [6, 6], [5, 2], [2, 3], [4, 2], [1, 1], [4, 2], [0, 3], [3, 3], [5, 1], [1, 6], [1, 0], [4, 1], [0, 5], [5, 5], [3, 4], [2, 0], [0, 5], [6, 3], [6, 1], [3, 4], [5, 5], [3, 3], [3, 4], [1, 5], [1, 4], [2, 1], [3, 4], [3, 1], [2, 5], [6, 5], [1, 6], [3, 1], [0, 1], [5, 3], [5, 5], [6, 6], [4, 5], [0, 0], [1, 0], [2, 5], [2, 2], [2, 6], [5, 0], [1, 3]]
+
+Solution with cost 3:
+4-0 0-3 3-0 0-2 2-0 0
+                    |
+4 1 1-0 0-1 1-0 0-2 2
+| |                  
+0 0 0-1 5 5-1 1-1 1-1
+        |            
+0 0 0-1 0 1-1 1-1 1-1
+| |                  
+5 0 0-0 0 1-2 2-1 1-2
+        |            
+5-0 0-5 5 3-2 2-2 2-2
+                     
+1-3 3-1 1-3 2 2 3 3-4
+            | | |    
+1-3 3-2 2-3 4 4 3 3-4
+                     
+1-4 4-2 2-3 4 4 3 3-4
+            | | |    
+1 1 1-4 4-2 2 3 3 3-4
+| |                  
+4 4 # # 5-3 3-4 4-3 #
+
+Took a total of 299.95829000000003, of which 298.891 spent solving and 1.06729 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 11 with stones:
+[[5, 4], [6, 4], [2, 0], [1, 0], [1, 0], [6, 5], [1, 6], [2, 5], [5, 0], [4, 3], [6, 4], [2, 6], [1, 2], [5, 4], [1, 6], [3, 0], [3, 5], [4, 4], [1, 1], [6, 5], [1, 1], [5, 4], [6, 1], [4, 6], [2, 1], [2, 4], [3, 2], [2, 3], [6, 0], [1, 1], [2, 5], [3, 6], [1, 1], [1, 4], [1, 4], [0, 4], [2, 2], [4, 5], [3, 4], [0, 0], [5, 1], [2, 3], [2, 4], [4, 4], [4, 3], [4, 0], [1, 5], [2, 0], [0, 5], [4, 2], [1, 3], [0, 6], [2, 6], [0, 1], [2, 6], [0, 2], [6, 6], [5, 2], [2, 3], [4, 2], [1, 1], [4, 2], [0, 3], [3, 3], [5, 1], [1, 6], [1, 0], [4, 1], [0, 5], [5, 5], [3, 4], [2, 0], [0, 5], [6, 3], [6, 1], [3, 4], [5, 5], [3, 3], [3, 4], [1, 5], [1, 4], [2, 1], [3, 4], [3, 1], [2, 5], [6, 5], [1, 6], [3, 1], [0, 1], [5, 3], [5, 5], [6, 6], [4, 5], [0, 0], [1, 0], [2, 5], [2, 2], [2, 6], [5, 0], [1, 3]]
+
+Solution with cost 3:
+4-0 0-3 3-0 0-2 2-0 0
+                    |
+4 1 1-0 0-1 1-0 0-2 2
+| |                  
+0 0 0-1 5 5-1 1-1 1-1
+        |            
+0 0 0-1 0 1-1 1-1 1-1
+| |                  
+5 0 0-0 0 1-2 2-1 1-2
+        |            
+5-0 0-5 5 3-2 2-2 2-2
+                     
+1-3 3-1 1-3 2 2 3 3-4
+            | | |    
+1-3 3-2 2-3 4 4 3 3-4
+                     
+1-4 4-2 2-3 4 4 3 3-4
+            | | |    
+1 1 1-4 4-2 2 3 3 3-4
+| |                  
+4 4 # # 5-3 3-4 4-3 #
+
+Took a total of 299.95787, of which 298.892 spent solving and 1.06587 spent flattening
+
+#############################################
+Solver new dom_w_deg on instance of size 15 with stones:
+[[2, 1], [4, 6], [2, 4], [0, 6], [6, 1], [5, 6], [4, 0], [0, 4], [6, 4], [4, 4], [2, 6], [4, 3], [1, 2], [3, 5], [6, 4], [1, 5], [3, 1], [1, 6], [5, 4], [3, 6], [0, 3], [3, 0], [0, 1], [5, 2], [1, 1], [0, 4], [0, 0], [6, 0], [1, 5], [2, 2], [6, 1], [1, 0], [5, 1], [3, 4], [3, 0], [5, 3], [5, 1], [2, 6], [0, 5], [5, 5], [5, 0], [0, 2], [1, 4], [5, 6], [3, 3], [1, 0], [1, 0], [1, 3], [6, 4], [6, 1], [5, 1], [3, 0], [0, 0], [2, 3], [4, 5], [1, 4], [6, 6], [3, 6], [3, 6], [2, 4], [5, 0], [0, 4], [4, 5], [1, 1], [5, 2], [3, 3], [2, 3], [5, 6], [2, 1], [5, 6], [4, 4], [1, 2], [6, 1], [5, 3], [3, 4], [6, 6], [4, 5], [1, 2], [1, 5], [4, 6], [3, 1], [4, 3], [1, 0], [3, 1], [1, 3], [4, 4], [4, 5], [0, 5], [4, 0], [0, 4], [5, 5], [1, 5], [3, 3], [5, 4], [4, 1], [6, 4], [1, 4], [4, 1], [1, 1], [0, 1], [2, 3], [5, 4], [5, 1], [4, 2], [1, 3], [0, 4], [2, 4], [2, 4], [4, 2], [4, 2], [5, 2], [5, 4], [4, 6], [6, 0], [6, 4], [4, 3], [2, 2], [5, 6], [1, 4], [4, 2]]
+
+Solution with cost 155:
+0 0 0-1 1-0 0-1 1 1 1-0 0-2 2
+| |             | |         |
+0 0 4-1 1-3 3 # 0 0 1-1 1-1 1
+            |                
+0 0 4-0 0-4 1 2-1 1-1 # # # #
+| |                          
+4 4 4-0 0-4 1 2-1 1 # # # # #
+            |     |          
+4 3 3-1 1-3 3 1-2 2 # # # # #
+| |                          
+0 0 3-0 0-3 3-1 # # # # # # #
+                             
+# 0-3 # # # # # # # # # # # #
+                             
+# # # # # # # # # # # # # # #
+                             
+# # # # # # # # # # # # # # #
+                             
+# # # # # # # # # # # # # # #
+                             
+# # # # # # # # # # # # # # #
+                             
+# # # # # # # # # # # # # # #
+                             
+# # # # # # # # # # # # # # #
+                             
+# # # # # # # # # # # # # # #
+                             
+# # # # # # # # # # # # # # #
+
+Took a total of 299.95835, of which 298.06 spent solving and 1.89835 spent flattening
+
+#############################################
+Solver new first_fail on instance of size 15 with stones:
+[[2, 1], [4, 6], [2, 4], [0, 6], [6, 1], [5, 6], [4, 0], [0, 4], [6, 4], [4, 4], [2, 6], [4, 3], [1, 2], [3, 5], [6, 4], [1, 5], [3, 1], [1, 6], [5, 4], [3, 6], [0, 3], [3, 0], [0, 1], [5, 2], [1, 1], [0, 4], [0, 0], [6, 0], [1, 5], [2, 2], [6, 1], [1, 0], [5, 1], [3, 4], [3, 0], [5, 3], [5, 1], [2, 6], [0, 5], [5, 5], [5, 0], [0, 2], [1, 4], [5, 6], [3, 3], [1, 0], [1, 0], [1, 3], [6, 4], [6, 1], [5, 1], [3, 0], [0, 0], [2, 3], [4, 5], [1, 4], [6, 6], [3, 6], [3, 6], [2, 4], [5, 0], [0, 4], [4, 5], [1, 1], [5, 2], [3, 3], [2, 3], [5, 6], [2, 1], [5, 6], [4, 4], [1, 2], [6, 1], [5, 3], [3, 4], [6, 6], [4, 5], [1, 2], [1, 5], [4, 6], [3, 1], [4, 3], [1, 0], [3, 1], [1, 3], [4, 4], [4, 5], [0, 5], [4, 0], [0, 4], [5, 5], [1, 5], [3, 3], [5, 4], [4, 1], [6, 4], [1, 4], [4, 1], [1, 1], [0, 1], [2, 3], [5, 4], [5, 1], [4, 2], [1, 3], [0, 4], [2, 4], [2, 4], [4, 2], [4, 2], [5, 2], [5, 4], [4, 6], [6, 0], [6, 4], [4, 3], [2, 2], [5, 6], [1, 4], [4, 2]]
+
+Solution with cost 113:
+2 2-2 2-4 4-1 1-4 4-1 1-4 4 #
+|                         |  
+2 0-5 5-0 0-6 6-0 0-6 6-1 1 #
+                             
+2 0 1 1 1 1 # # # # # # # # #
+| | | | | |                  
+3 5 3 3 1 2 # # # # # # # # #
+                             
+3 5 3 3 1 2 # # # # # # # # #
+| | | | | |                  
+2 0 1 0 1 0 # # # # # # # # #
+                             
+2 0 1 0 1 0 0 # # # # # # # #
+| | | | | | |                
+3 4 3 3 1 1 0 # # # # # # # #
+                             
+3 4 3 3 1 1 0 # # # # # # # #
+| | | | | | |                
+3 0 1 0 2 0 0 # # # # # # # #
+                             
+3 0 1 0 2 0 0 # # # # # # # #
+| | | | | | |                
+3 4 4 3 1 1 1 # # # # # # # #
+                             
+0-4 4 3 1 1 1 # # # # # # # #
+    | | | | |                
+0 0 0 1 2 0 0 # # # # # # # #
+| |                          
+4 4 # 1-2 # # # # # # # # # #
+
+Took a total of 259.95688, of which 257.92 spent solving and 2.03688 spent flattening
+
+#############################################
+Solver new max_regret on instance of size 15 with stones:
+[[2, 1], [4, 6], [2, 4], [0, 6], [6, 1], [5, 6], [4, 0], [0, 4], [6, 4], [4, 4], [2, 6], [4, 3], [1, 2], [3, 5], [6, 4], [1, 5], [3, 1], [1, 6], [5, 4], [3, 6], [0, 3], [3, 0], [0, 1], [5, 2], [1, 1], [0, 4], [0, 0], [6, 0], [1, 5], [2, 2], [6, 1], [1, 0], [5, 1], [3, 4], [3, 0], [5, 3], [5, 1], [2, 6], [0, 5], [5, 5], [5, 0], [0, 2], [1, 4], [5, 6], [3, 3], [1, 0], [1, 0], [1, 3], [6, 4], [6, 1], [5, 1], [3, 0], [0, 0], [2, 3], [4, 5], [1, 4], [6, 6], [3, 6], [3, 6], [2, 4], [5, 0], [0, 4], [4, 5], [1, 1], [5, 2], [3, 3], [2, 3], [5, 6], [2, 1], [5, 6], [4, 4], [1, 2], [6, 1], [5, 3], [3, 4], [6, 6], [4, 5], [1, 2], [1, 5], [4, 6], [3, 1], [4, 3], [1, 0], [3, 1], [1, 3], [4, 4], [4, 5], [0, 5], [4, 0], [0, 4], [5, 5], [1, 5], [3, 3], [5, 4], [4, 1], [6, 4], [1, 4], [4, 1], [1, 1], [0, 1], [2, 3], [5, 4], [5, 1], [4, 2], [1, 3], [0, 4], [2, 4], [2, 4], [4, 2], [4, 2], [5, 2], [5, 4], [4, 6], [6, 0], [6, 4], [4, 3], [2, 2], [5, 6], [1, 4], [4, 2]]
+
+Solution with cost 113:
+2 2-2 2-4 4-1 1-4 4-1 1-4 4 #
+|                         |  
+2 0-5 5-0 0-6 6-0 0-6 6-1 1 #
+                             
+2 0 1 1 1 1 # # # # # # # # #
+| | | | | |                  
+3 5 3 3 1 2 # # # # # # # # #
+                             
+3 5 3 3 1 2 # # # # # # # # #
+| | | | | |                  
+2 0 1 0 1 0 # # # # # # # # #
+                             
+2 0 1 0 1 0 0 # # # # # # # #
+| | | | | | |                
+3 4 3 3 1 1 0 # # # # # # # #
+                             
+3 4 3 3 1 1 0 # # # # # # # #
+| | | | | | |                
+3 0 1 0 2 0 0 # # # # # # # #
+                             
+3 0 1 0 2 0 0 # # # # # # # #
+| | | | | | |                
+3 4 4 3 1 1 1 # # # # # # # #
+                             
+0-4 4 3 1 1 1 # # # # # # # #
+    | | | | |                
+0 0 0 1 2 0 0 # # # # # # # #
+| |                          
+4 4 # 1-2 # # # # # # # # # #
+
+Took a total of 259.95673, of which 257.95 spent solving and 2.00673 spent flattening
+
+#############################################
+Solver new most_constrained on instance of size 15 with stones:
+[[2, 1], [4, 6], [2, 4], [0, 6], [6, 1], [5, 6], [4, 0], [0, 4], [6, 4], [4, 4], [2, 6], [4, 3], [1, 2], [3, 5], [6, 4], [1, 5], [3, 1], [1, 6], [5, 4], [3, 6], [0, 3], [3, 0], [0, 1], [5, 2], [1, 1], [0, 4], [0, 0], [6, 0], [1, 5], [2, 2], [6, 1], [1, 0], [5, 1], [3, 4], [3, 0], [5, 3], [5, 1], [2, 6], [0, 5], [5, 5], [5, 0], [0, 2], [1, 4], [5, 6], [3, 3], [1, 0], [1, 0], [1, 3], [6, 4], [6, 1], [5, 1], [3, 0], [0, 0], [2, 3], [4, 5], [1, 4], [6, 6], [3, 6], [3, 6], [2, 4], [5, 0], [0, 4], [4, 5], [1, 1], [5, 2], [3, 3], [2, 3], [5, 6], [2, 1], [5, 6], [4, 4], [1, 2], [6, 1], [5, 3], [3, 4], [6, 6], [4, 5], [1, 2], [1, 5], [4, 6], [3, 1], [4, 3], [1, 0], [3, 1], [1, 3], [4, 4], [4, 5], [0, 5], [4, 0], [0, 4], [5, 5], [1, 5], [3, 3], [5, 4], [4, 1], [6, 4], [1, 4], [4, 1], [1, 1], [0, 1], [2, 3], [5, 4], [5, 1], [4, 2], [1, 3], [0, 4], [2, 4], [2, 4], [4, 2], [4, 2], [5, 2], [5, 4], [4, 6], [6, 0], [6, 4], [4, 3], [2, 2], [5, 6], [1, 4], [4, 2]]
+
+Solution with cost 113:
+2 2-2 2-4 4-1 1-4 4-1 1-4 4 #
+|                         |  
+2 0-5 5-0 0-6 6-0 0-6 6-1 1 #
+                             
+2 0 1 1 1 1 # # # # # # # # #
+| | | | | |                  
+3 5 3 3 1 2 # # # # # # # # #
+                             
+3 5 3 3 1 2 # # # # # # # # #
+| | | | | |                  
+2 0 1 0 1 0 # # # # # # # # #
+                             
+2 0 1 0 1 0 0 # # # # # # # #
+| | | | | | |                
+3 4 3 3 1 1 0 # # # # # # # #
+                             
+3 4 3 3 1 1 0 # # # # # # # #
+| | | | | | |                
+3 0 1 0 2 0 0 # # # # # # # #
+                             
+3 0 1 0 2 0 0 # # # # # # # #
+| | | | | | |                
+3 4 4 3 1 1 1 # # # # # # # #
+                             
+0-4 4 3 1 1 1 # # # # # # # #
+    | | | | |                
+0 0 0 1 2 0 0 # # # # # # # #
+| |                          
+4 4 # 1-2 # # # # # # # # # #
+
+Took a total of 260.9576, of which 259.074 spent solving and 1.8836 spent flattening
