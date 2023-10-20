@@ -52,7 +52,7 @@ def print_report():
     print("Current progress is " + "{:.2f}".format(progress*100) + "% by repetitions and " + "{:.2f}".format(elapsed/max_time * 100) + "% by maximum allowed time")
 
 local_path = os.getcwd()
-new_dir_path = os.path.join(local_path, "test_batches", datetime.now().strftime("%d-%m-%Y_%H.%M.%S"))
+new_dir_path = os.path.join(local_path, "benchmarks", datetime.now().strftime("%d-%m-%Y_%H.%M.%S"))
 os.mkdir(new_dir_path)
 
 stats = [[StatisticsLogger(StatisticsLogger.createName(solver, batch), batch.size, batch.tilecount, solver.label(), TIMEOUT) for solver in SOLVERS] for batch in BATCHES]
