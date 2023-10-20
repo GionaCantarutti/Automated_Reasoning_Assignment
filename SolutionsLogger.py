@@ -14,8 +14,11 @@ class SolutionsLogger:
         string += "Solver " + StonesInstance.solution.solverUsed + " on instance of size " + str(StonesInstance.n) + " with stones:\n"
         string += str(StonesInstance.stones) + "\n\n"
 
-        string += "Solution with cost " + str(StonesInstance.solution.objective) + ":\n"
-        string += StonesInstance.solutionString() + "\n"
+        if StonesInstance.solution.objective is not None:
+            string += "Solution with cost " + str(StonesInstance.solution.objective) + ":\n"
+            string += StonesInstance.solutionString() + "\n"
+        else:
+            string += "No solution was found in time\n"
 
         totalSolve = StonesInstance.solution.solveTime.seconds + StonesInstance.solution.solveTime.microseconds/1000000
         totalFlat = StonesInstance.solution.flatTime.seconds + StonesInstance.solution.flatTime.microseconds/1000000

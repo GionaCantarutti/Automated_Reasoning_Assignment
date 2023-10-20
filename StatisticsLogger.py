@@ -2,7 +2,7 @@ import os
 
 class StatisticsLogger:
 
-    FILE_NAME = "statistics.txt"
+    FILE_NAME = "statistics.csv"
 
     def __init__(self, batchFileName, n, stoneCount, solverName, single_timeout):
         self.samples = 0
@@ -31,7 +31,8 @@ class StatisticsLogger:
     def add_data(self, instance):
         self.samples += 1
         self.cumulativeTime += instance.solution.solveTime.seconds + instance.solution.flatTime.seconds + (instance.solution.solveTime.microseconds + instance.solution.flatTime.microseconds)/1000000
-        self.cumulativeCost += instance.solution.objective
+        if instance.solution.objective is not None:
+            self.cumulativeCost += instance.solution.objective
 
     def log_timeout(self):
         self.timed_out = True
@@ -46,8 +47,8 @@ class StatisticsLogger:
         return "\n" + self.solver + "," + str(self.size) + "," + str(self.stoneCount) + "," + str(avgTime) + "," + str(avgCost) + "," + str(self.samples) + "," + str(self.timed_out) + "," + str(self.single_timeout)
 
     def reset(self):
-        self.samples = -1
-        self.cumulativeTime = -1
+        self.samples = 0
+        self.cumulativeTime = 0
         self.size = 0
         self.stoneCount = 0
         self.timed_out = False

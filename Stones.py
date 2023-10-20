@@ -84,7 +84,7 @@ for bi, batch in enumerate(BATCHES):
             print(batch.label + " batch with " + solver.label() + " solver, repetition " + str(i + 1) + "/" + str(batch.repetitions) + " ...\n")
             
             solved = solver.solveInstance(newInstance, min(solver.tBudget_left(), TIMEOUT))
-            time_spent = solved.solution.solveTime.seconds + solved.solution.flatTime.seconds
+            time_spent = max(1, solved.solution.solveTime.seconds + solved.solution.flatTime.seconds)
             solver.spend_time(time_spent)
             elapsed += time_spent
 

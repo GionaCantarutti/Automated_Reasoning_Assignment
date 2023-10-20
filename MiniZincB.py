@@ -1,7 +1,7 @@
 from Solver import Solver
 from StonesInstance import StoneInstance, StoneSolution
 import minizinc as mzn
-import datetime
+import datetime as dt
 import numpy as np
 
 class MiniZincB(Solver):
@@ -30,14 +30,12 @@ class MiniZincB(Solver):
 
         #print(np.array(stoneMatrix))
 
-        rawSolution = inst.solve(intermediate_solutions=True, timeout=datetime.timedelta(seconds=tmo))
+        rawSolution = inst.solve(intermediate_solutions=True, timeout=dt.timedelta(seconds=tmo))
 
         for i in range(rawSolution.__len__()):
             placements = np.transpose(rawSolution.__getitem__((i, "Placements")))
             coordinates = rawSolution.__getitem__((i, "Coordinates"))
             obj = rawSolution.__getitem__(i).objective
-            solveTime = rawSolution.statistics["solveTime"]
-            flatTime = rawSolution.statistics["flatTime"]
             #print("Empty spaces left: " + str(rawSolution.__getitem__(i).objective) + " of a minimum of " + str(max(instance.n**2 - len(instance.stones)*2,0)))
             #print("Placemnts:\n" + str(np.transpose(placements)))
             #print("Coodrds:\n" + str(np.matrix(coordinates)))
@@ -45,6 +43,14 @@ class MiniZincB(Solver):
             #print("___________________________")
 
         solution = [[0 for y in range(instance.n)] for x in range(instance.n)]
+
+
+        if rawSolution.__len__() <= 0:
+            instance.addSolution(StoneSolution(solution, None, dt.timedelta(seconds=min(tmo, self.time_budget)), dt.timedelta(seconds=0), self.name))
+            return instance
+        
+        flatTime = rawSolution.statistics["flatTime"]
+        solveTime = rawSolution.statistics["solveTime"]
 
         assigned = [False for x in range(len(placements))]
 
@@ -64,6 +70,5 @@ class MiniZincB(Solver):
                     assigned[pi] = True
                     break
 
-        #print(np.matrix(solution))
         instance.addSolution(StoneSolution(solution, obj, solveTime, flatTime, self.name))
         return instance
