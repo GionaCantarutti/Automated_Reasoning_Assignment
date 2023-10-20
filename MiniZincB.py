@@ -6,9 +6,14 @@ import numpy as np
 
 class MiniZincB(Solver):
 
-    def solveInstance(instance: StoneInstance, tmo):
+    def __init__(self, path, label, timeBudget):
+        self.file = path
+        self.name = label
+        self.time_budget = timeBudget
+        
+    def solveInstance(self, instance: StoneInstance, tmo):
         model = mzn.Model()
-        model.add_file("Stones3.mzn")
+        model.add_file(self.file)
 
         gecode = mzn.Solver.lookup("gecode")
 
@@ -30,6 +35,9 @@ class MiniZincB(Solver):
         for i in range(rawSolution.__len__()):
             placements = np.transpose(rawSolution.__getitem__((i, "Placements")))
             coordinates = rawSolution.__getitem__((i, "Coordinates"))
+            obj = rawSolution.__getitem__(i).objective
+            solveTime = rawSolution.statistics["solveTime"]
+            flatTime = rawSolution.statistics["flatTime"]
             #print("Empty spaces left: " + str(rawSolution.__getitem__(i).objective) + " of a minimum of " + str(max(instance.n**2 - len(instance.stones)*2,0)))
             #print("Placemnts:\n" + str(np.transpose(placements)))
             #print("Coodrds:\n" + str(np.matrix(coordinates)))
@@ -57,5 +65,5 @@ class MiniZincB(Solver):
                     break
 
         #print(np.matrix(solution))
-        instance.addSolution(StoneSolution(solution))
+        instance.addSolution(StoneSolution(solution, obj, solveTime, flatTime, self.name))
         return instance

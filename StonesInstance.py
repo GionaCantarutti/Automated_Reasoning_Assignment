@@ -2,11 +2,15 @@ import random as r
 
 class StoneSolution:
 
-    def __init__(self, placements):
+    def __init__(self, placements, objective, solveTime, flatTime, solverLabel):
         # Bidimensional array of stone indexes. Negative if it's supposed to point at the "back side" of a stone
         # 0 means no placement
         # the index is that of an array that starts at 1
         self.placements = placements
+        self.solveTime = solveTime
+        self.flatTime = flatTime
+        self.solverUsed = solverLabel
+        self.objective = objective
 
 class StoneInstance:
     
@@ -33,7 +37,7 @@ class StoneInstance:
         # Make a grid of characters with added spaces between tile values
         stringGrid = [[" " for x in range(self.n*2 - 1)] for y in range(self.n*2 - 1)]
 
-        print("Stones:\n" + str(self.stones) + "\n\nSolution:")
+        #print("Stones:\n" + str(self.stones) + "\n\nSolution:")
 
         # First pass to populate the tile values
         for x, line in enumerate(plc):

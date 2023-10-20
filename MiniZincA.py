@@ -5,9 +5,14 @@ import datetime
 
 class MiniZincA(Solver):
 
-    def solveInstance(instance: StoneInstance, tmo):
+    def __init__(self, path, label, timeBudget):
+        self.file = path
+        self.name = label
+        self.time_budget = timeBudget
+
+    def solveInstance(self, instance: StoneInstance, tmo):
         model = mzn.Model()
-        model.add_file("Stones2.mzn")
+        model.add_file(self.file)
 
         gecode = mzn.Solver.lookup("gecode")
 
@@ -19,10 +24,14 @@ class MiniZincA(Solver):
 
         rawSolution = inst.solve(intermediate_solutions=True, timeout=datetime.timedelta(seconds=tmo))
 
+        #Log all partial solutions (legacy, to remove)
         for i in range(rawSolution.__len__()):
             placements = rawSolution.__getitem__((i, "Placements"))
             coordinates = rawSolution.__getitem__((i, "Coordinates"))
             sides = rawSolution.__getitem__((i, "Sides"))
+            obj = rawSolution.__getitem__(i).objective
+            solveTime = rawSolution.statistics["solveTime"]
+            flatTime = rawSolution.statistics["flatTime"]
 #            print(placements)
 #            print("Empty spaces left: " + str(rawSolution.__getitem__(i).objective) + " of a minimum of " + str(max(instance.n**2 - len(instance.stones)*2,0)))
 #            print("___________________________")
@@ -34,6 +43,6 @@ class MiniZincA(Solver):
                 # That somewhat convoluted operation on sides[i] simply maps 1->2 and 2->-1
                 solution[coordinates[0][i] - 1][coordinates[1][i] - 1] = ((2 - sides[i]) * 2 - 1) * placements[i]
 
-        instance.addSolution(StoneSolution(solution))
+        instance.addSolution(StoneSolution(solution, obj, solveTime, flatTime, self.name))
         return instance
 
