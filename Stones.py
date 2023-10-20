@@ -13,10 +13,7 @@ TOTAL_TIME_BUDGET_PER_SOLVER = 15 * 60
 SOLVERS = [
     MiniZincB("Models/Minizinc/New/Basic dom_w_deg.mzn", "new dom_w_deg", TOTAL_TIME_BUDGET_PER_SOLVER),
     MiniZincB("Models/Minizinc/New/Basic first_fail.mzn", "new first_fail", TOTAL_TIME_BUDGET_PER_SOLVER),
-    MiniZincB("Models/Minizinc/New/Basic max_regret.mzn", "new max_regret", TOTAL_TIME_BUDGET_PER_SOLVER),
     MiniZincB("Models/Minizinc/New/Basic most_constrained.mzn", "new most_constrained", TOTAL_TIME_BUDGET_PER_SOLVER),
-    MiniZincA("Models/Minizinc/Old/Basic dom_w_deg.mzn", "old dom_w_deg", TOTAL_TIME_BUDGET_PER_SOLVER), 
-    MiniZincA("Models/Minizinc/Old/Basic first_fail.mzn", "old first_fail", TOTAL_TIME_BUDGET_PER_SOLVER), 
     ]
 
 BATCHES = [
