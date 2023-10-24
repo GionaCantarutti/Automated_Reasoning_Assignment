@@ -1,0 +1,11 @@
+solver,n,stones,avgTime,avgCost,samples,ran_out_of_time,single_timeout
+with prevention,5,15,0.33808150000000003,1.0,20,False,300
+without prevention,5,15,0.3323223,1.0,20,False,300
+with prevention,10,60,1.2650197,0.0,10,False,300
+without prevention,10,60,1.2314163999999999,0.0,10,False,300
+with prevention,11,100,1.635195,1.0,4,False,300
+without prevention,11,100,1.555635,1.0,4,False,300
+with prevention,12,90,2.0303500000000003,0.0,2,False,300
+without prevention,12,90,299.959745,52.0,2,False,300
+with prevention,15,120,4.3490400000000005,1.0,1,False,300
+without prevention,15,120,3.8876,1.0,1,False,300

@@ -1,0 +1,16 @@
+solver,n,stones,avgTime,avgCost,samples,ran_out_of_time,single_timeout
+indomain_interval,5,15,0.33263780000000004,1.0,20,False,300
+indomain_min,5,15,0.32895785000000005,1.0,20,False,300
+indomain_random,5,15,0.32709635000000004,1.0,20,False,300
+indomain_split,5,15,0.3310007,1.0,20,False,300
+outdomain_max,5,15,0.3292272499999999,1.0,20,False,300
+indomain_interval,10,60,4.5399887,0.0,10,False,300
+indomain_min,10,60,4.5407395,0.0,10,False,300
+indomain_random,10,60,220.70805024999999,37.5,4,True,300
+indomain_split,10,60,220.7082035,43.5,4,True,300
+outdomain_max,10,60,4.5415808,0.0,10,False,300
+indomain_interval,11,100,24.697960000000002,1.0,2,False,300
+indomain_min,11,100,24.54088,1.0,2,False,300
+indomain_random,11,100,-1,-1,0,True,300
+indomain_split,11,100,-1,-1,0,True,300
+outdomain_max,11,100,24.53221,1.0,2,False,300

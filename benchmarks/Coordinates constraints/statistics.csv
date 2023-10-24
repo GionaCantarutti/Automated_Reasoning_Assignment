@@ -1,0 +1,11 @@
+solver,n,stones,avgTime,avgCost,samples,ran_out_of_time,single_timeout
+without coordinates constraints,5,15,0.32674675,1.0,20,False,300
+with coordinates constraints,5,15,0.3270366,1.0,20,False,300
+without coordinates constraints,10,60,4.1813306,0.0,10,False,300
+with coordinates constraints,10,60,1.2088602,0.0,10,False,300
+without coordinates constraints,11,100,24.67265,1.0,4,False,300
+with coordinates constraints,11,100,1.5366374999999999,1.0,4,False,300
+without coordinates constraints,12,90,299.958385,82.0,2,False,300
+with coordinates constraints,12,90,299.95903,52.0,2,False,300
+without coordinates constraints,15,120,157.95704,155.0,1,False,300
+with coordinates constraints,15,120,3.94693,1.0,1,False,300
