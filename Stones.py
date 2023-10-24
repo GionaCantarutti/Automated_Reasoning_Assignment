@@ -10,6 +10,8 @@ from datetime import datetime
 TIMEOUT = 5 * 60
 TOTAL_TIME_BUDGET_PER_SOLVER = 3 * TIMEOUT
 
+BATCH_TUNING = [MiniZincB("Models/Minizinc/Improved coordinates/prevent zigzag.mzn", "best model so far", TOTAL_TIME_BUDGET_PER_SOLVER),]
+
 ZIGZAG_PREVENTION = [
     MiniZincB("Models/Minizinc/Improved coordinates/prevent zigzag.mzn", "with prevention", TOTAL_TIME_BUDGET_PER_SOLVER),
     MiniZincB("Models/Minizinc/Improved coordinates/input_order indomain_min.mzn", "without prevention", TOTAL_TIME_BUDGET_PER_SOLVER),
@@ -21,6 +23,14 @@ COORDINATE_CONSTRAINTS = [
     MiniZincB("Models/Minizinc/Improved coordinates/input_order indomain_min.mzn", "with coordinates constraints", TOTAL_TIME_BUDGET_PER_SOLVER),
 ]
 
+TESTING_CONSTRAINT_CHOICE = [
+    MiniZincB("Models/Minizinc/Stones matrix/Testing constraint choice/indomain_interval.mzn", "indomain_interval", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Stones matrix/Testing constraint choice/indomain_min.mzn", "indomain_min", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Stones matrix/Testing constraint choice/indomain_random.mzn", "indomain_random", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Stones matrix/Testing constraint choice/indomain_split.mzn", "indomain_split", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Stones matrix/Testing constraint choice/outdomain_max.mzn", "outdomain_max", TOTAL_TIME_BUDGET_PER_SOLVER),
+]
+
 PRELIMINARY_BATCH_TEST = [
     MiniZincB("Models/Minizinc/Stones matrix/Testing variable choice/Basic dom_w_deg.mzn", "new dom_w_deg", TOTAL_TIME_BUDGET_PER_SOLVER),
     MiniZincB("Models/Minizinc/Stones matrix/Testing variable choice/Basic first_fail.mzn", "new first_fail", TOTAL_TIME_BUDGET_PER_SOLVER),
@@ -30,17 +40,7 @@ PRELIMINARY_BATCH_TEST = [
     MiniZincA("Models/Minizinc/Old/Basic first_fail.mzn", "old first_fail", TOTAL_TIME_BUDGET_PER_SOLVER),
 ]
 
-TESTING_CONSTRAINT_CHOICE = [
-    MiniZincB("Models/Minizinc/Stones matrix/Testing constraint choice/indomain_interval.mzn", "indomain_interval", TOTAL_TIME_BUDGET_PER_SOLVER),
-    MiniZincB("Models/Minizinc/Stones matrix/Testing constraint choice/indomain_min.mzn", "indomain_min", TOTAL_TIME_BUDGET_PER_SOLVER),
-    MiniZincB("Models/Minizinc/Stones matrix/Testing constraint choice/indomain_random.mzn", "indomain_random", TOTAL_TIME_BUDGET_PER_SOLVER),
-    MiniZincB("Models/Minizinc/Stones matrix/Testing constraint choice/indomain_split.mzn", "indomain_split", TOTAL_TIME_BUDGET_PER_SOLVER),
-    MiniZincB("Models/Minizinc/Stones matrix/Testing constraint choice/outdomain_max.mzn", "outdomain_max", TOTAL_TIME_BUDGET_PER_SOLVER),
-]
-
-SOLVERS = ZIGZAG_PREVENTION
-
-BATCHES = [
+BASIC_BATCHES = [
     TestBatch(
         "Trivial",
         n=5,
@@ -72,6 +72,49 @@ BATCHES = [
         reps=1
     )
 ]
+
+HARD_BATCHES = [
+    TestBatch(
+        "Trivial",
+        n=10,
+        tilecount=60,
+        reps=20
+    ),
+    TestBatch(
+        "Easy",
+        n=18,
+        tilecount=180,
+        reps=10
+    ),
+    TestBatch(
+        "Medium",
+        n=25,
+        tilecount=340,
+        reps=5
+    ),
+    TestBatch(
+        "Hard",
+        n=30,
+        tilecount=470,
+        reps=3
+    ),
+    TestBatch(
+        "Very Hard",
+        n=33,
+        tilecount=560,
+        reps=2
+    ),
+    TestBatch(
+        "Extreme",
+        n=40,
+        tilecount=850,
+        reps=1
+    )
+]
+
+SOLVERS = BATCH_TUNING
+
+BATCHES = HARD_BATCHES
 
 def print_report():
     progress = reps_done/total_reps

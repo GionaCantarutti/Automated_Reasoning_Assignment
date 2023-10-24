@@ -1,0 +1,7 @@
+solver,n,stones,avgTime,avgCost,samples,ran_out_of_time,single_timeout
+best model so far,10,60,1.24848365,0.0,20,False,300
+best model so far,18,180,7.557038,0.0,10,False,300
+best model so far,25,340,29.390976000000002,1.0,5,False,300
+best model so far,30,470,81.96044633333334,0.0,3,False,300
+best model so far,33,560,150.60185,1.0,2,False,300
+best model so far,40,850,133.2382,1082.0,1,False,300
