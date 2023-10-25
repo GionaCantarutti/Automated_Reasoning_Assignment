@@ -1,0 +1,26 @@
+solver,n,stones,avgTime,avgCost,samples,ran_out_of_time,single_timeout
+no restart,10,60,1.25461285,0.0,20,False,300
+constant restart,10,60,2.30238115,0.0,20,False,300
+linear restart,10,60,2.3039049499999997,0.0,20,False,300
+geometric restart,10,60,2.2942532,0.0,20,False,300
+luby restart,10,60,2.3087336,0.0,20,False,300
+no restart,18,180,7.784029999999999,0.0,10,False,300
+constant restart,18,180,20.344136,0.0,10,False,300
+linear restart,18,180,20.512453999999998,0.0,10,False,300
+geometric restart,18,180,20.439339,0.0,10,False,300
+luby restart,18,180,20.463346999999995,0.0,10,False,300
+no restart,25,340,29.136534,1.0,5,False,300
+constant restart,25,340,97.115594,1.0,5,False,300
+linear restart,25,340,141.52356000000003,1.0,5,False,300
+geometric restart,25,340,152.802844,1.4,5,False,300
+luby restart,25,340,93.41020800000001,1.0,5,False,300
+no restart,30,470,79.77146933333334,0.0,3,False,300
+constant restart,30,470,170.31113933333333,204.0,3,False,300
+linear restart,30,470,95.10336,263.3333333333333,3,False,300
+geometric restart,30,470,115.6885945,11.0,2,True,300
+luby restart,30,470,175.57713999999999,188.0,3,False,300
+no restart,33,560,149.96620000000001,1.0,2,False,300
+constant restart,33,560,1.0,0.0,1,True,300
+linear restart,33,560,-1,-1,0,True,300
+geometric restart,33,560,-1,-1,0,True,300
+luby restart,33,560,1.0,0.0,1,True,300

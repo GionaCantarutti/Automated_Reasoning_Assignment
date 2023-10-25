@@ -46,11 +46,17 @@ class MiniZincB(Solver):
 
 
         if rawSolution.__len__() <= 0:
-            instance.addSolution(StoneSolution(solution, None, dt.timedelta(seconds=min(tmo, self.time_budget)), dt.timedelta(seconds=0), self.name))
+            instance.addSolution(StoneSolution(solution, None, dt.timedelta(tmo), dt.timedelta(seconds=0), self.name))
             return instance
         
-        flatTime = rawSolution.statistics["flatTime"]
-        solveTime = rawSolution.statistics["solveTime"]
+        try:
+            flatTime = rawSolution.statistics["flatTime"]
+        except:
+            flatTime = dt.timedelta(seconds=0)
+        try:
+            solveTime = rawSolution.statistics["solveTime"]
+        except:
+            solveTime = dt.timedelta(seconds=0)
 
         assigned = [False for x in range(len(placements))]
 

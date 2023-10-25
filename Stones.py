@@ -8,7 +8,15 @@ import os
 from datetime import datetime
 
 TIMEOUT = 5 * 60
-TOTAL_TIME_BUDGET_PER_SOLVER = 3 * TIMEOUT
+TOTAL_TIME_BUDGET_PER_SOLVER = 4 * TIMEOUT
+
+LNS = [
+    MiniZincB("Models/Minizinc/Improved coordinates/prevent zigzag.mzn", "no restart", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Improved coordinates/constant restart.mzn", "constant restart", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Improved coordinates/linear restart.mzn", "linear restart", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Improved coordinates/geometric restart.mzn", "geometric restart", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Improved coordinates/luby restart.mzn", "luby restart", TOTAL_TIME_BUDGET_PER_SOLVER),
+]
 
 BATCH_TUNING = [MiniZincB("Models/Minizinc/Improved coordinates/prevent zigzag.mzn", "best model so far", TOTAL_TIME_BUDGET_PER_SOLVER),]
 
@@ -112,7 +120,7 @@ HARD_BATCHES = [
     )
 ]
 
-SOLVERS = BATCH_TUNING
+SOLVERS = LNS
 
 BATCHES = HARD_BATCHES
 
@@ -153,7 +161,7 @@ for bi, batch in enumerate(BATCHES):
             print_report()
             print(batch.label + " batch with " + solver.label() + " solver, repetition " + str(i + 1) + "/" + str(batch.repetitions) + " ...\n")
             
-            solved = solver.solveInstance(newInstance, min(solver.tBudget_left(), TIMEOUT))
+            solved = solver.solveInstance(newInstance, TIMEOUT)
             time_spent = max(1, solved.solution.solveTime.seconds + solved.solution.flatTime.seconds)
             solver.spend_time(time_spent)
             elapsed += time_spent

@@ -59,6 +59,10 @@ constraint forall(i in 1..(n^2-1))((Placements[1, i] != 0 /\ Placements[1, i+1] 
 constraint forall(i in 1..(n^2-2))((Placements[1, i] != 0 /\ Placements[1, i+1] != 0 /\ Placements[1, i+2] != 0) -> (
     (Coordinates[2,i] < Coordinates[2,i+1]) -> (Coordinates[2,i+1] = Coordinates[2,i+2])
 ));
+%Allow placements to only go "down" when along a border
+constraint forall(i in 1..(n^2-1))((Placements[1, i] != 0 /\ Placements[1, i+1] != 0) -> (
+    (Coordinates[1,i] > 1 /\ Coordinates[1,i] < n) -> (Coordinates[2,i] = Coordinates[2,i+1])
+));
 %Placements can only go in one sidways direction on each row
 constraint forall(i in 1..(n^2-1))( (Placements[1, i] != 0 /\ Placements[1, i+1] != 0) -> (
     ((Coordinates[2,i] mod 2 = 1) -> Coordinates[1,i] <= Coordinates[1,i+1]) /\
@@ -79,6 +83,8 @@ constraint forall(i in 1..n^2)(Placements[1, i] = 0 -> (Coordinates[1,i] = 1 /\ 
 var int: non_placements = count(Placements[1, 1..n^2], 0);
 
 solve 
+    :: relax_and_reconstruct([Placements[j,i] | i in 1..n^2, j in 1..2], 50)
+    :: restart_constant(5 * n^2)
     :: int_search(Placements, dom_w_deg, indomain_min)
     :: int_search(Coordinates, input_order, indomain_min)
     :: int_search(Coordinates[1,..], input_order, indomain_min)
