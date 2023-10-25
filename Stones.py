@@ -10,6 +10,14 @@ from datetime import datetime
 TIMEOUT = 5 * 60
 TOTAL_TIME_BUDGET_PER_SOLVER = 4 * TIMEOUT
 
+KEEP_CHANCE = [
+    MiniZincB("Models/Minizinc/Improved coordinates/prevent zigzag.mzn", "no restart", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/constant 70.mzn", "constant 70", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/constant 95.mzn", "constant 70", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 70.mzn", "constant 70", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 95.mzn", "constant 70", TOTAL_TIME_BUDGET_PER_SOLVER),
+]
+
 LNS = [
     MiniZincB("Models/Minizinc/Improved coordinates/prevent zigzag.mzn", "no restart", TOTAL_TIME_BUDGET_PER_SOLVER),
     MiniZincB("Models/Minizinc/Improved coordinates/constant restart.mzn", "constant restart", TOTAL_TIME_BUDGET_PER_SOLVER),
@@ -120,7 +128,7 @@ HARD_BATCHES = [
     )
 ]
 
-SOLVERS = LNS
+SOLVERS = KEEP_CHANCE
 
 BATCHES = HARD_BATCHES
 
