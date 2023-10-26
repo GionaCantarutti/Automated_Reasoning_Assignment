@@ -10,12 +10,25 @@ from datetime import datetime
 TIMEOUT = 5 * 60
 TOTAL_TIME_BUDGET_PER_SOLVER = 4 * TIMEOUT
 
+NONPLACEMENT_FIX = [
+    MiniZincB("Models/Minizinc/Improved coordinates/prevent zigzag.mzn", "no restart", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 50 nonplacements fix.mzn", "luby 50 fixed", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 50.mzn", "luby 50 not fixed", TOTAL_TIME_BUDGET_PER_SOLVER),
+]
+
+KEEP_CHANCE_B = [
+    MiniZincB("Models/Minizinc/Improved coordinates/prevent zigzag.mzn", "no restart", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 30.mzn", "luby 30", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 50.mzn", "luby 50", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 90.mzn", "luby 90", TOTAL_TIME_BUDGET_PER_SOLVER),
+]
+
 KEEP_CHANCE = [
     MiniZincB("Models/Minizinc/Improved coordinates/prevent zigzag.mzn", "no restart", TOTAL_TIME_BUDGET_PER_SOLVER),
-    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/constant 70.mzn", "constant 70", TOTAL_TIME_BUDGET_PER_SOLVER),
-    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/constant 95.mzn", "constant 70", TOTAL_TIME_BUDGET_PER_SOLVER),
-    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 70.mzn", "constant 70", TOTAL_TIME_BUDGET_PER_SOLVER),
-    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 95.mzn", "constant 70", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/constant 30.mzn", "constant 30", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/constant 90.mzn", "constant 90", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 30.mzn", "luby 30", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 90.mzn", "luby 90", TOTAL_TIME_BUDGET_PER_SOLVER),
 ]
 
 LNS = [
@@ -128,7 +141,34 @@ HARD_BATCHES = [
     )
 ]
 
-SOLVERS = KEEP_CHANCE
+EXTREME_BATCHES = [
+    TestBatch(
+        "Restricted tiles",
+        n=33,
+        tilecount=548,
+        reps=2
+    ),
+    TestBatch(
+        "Very Hard",
+        n=33,
+        tilecount=600,
+        reps=3
+    ),
+    TestBatch(
+        "Extreme",
+        n=40,
+        tilecount=850,
+        reps=2
+    ),
+    TestBatch(
+        "Uber",
+        n=50,
+        tilecount=1375,
+        reps=2
+    )
+]
+
+SOLVERS = NONPLACEMENT_FIX
 
 BATCHES = HARD_BATCHES
 
