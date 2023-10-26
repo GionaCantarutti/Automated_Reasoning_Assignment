@@ -10,6 +10,7 @@ from datetime import datetime
 TIMEOUT = 5 * 60
 TOTAL_TIME_BUDGET_PER_SOLVER = 4 * TIMEOUT
 
+#Seemingly unfixable, cannot use non-fixed variables in relax_and_reconstruct :(
 NONPLACEMENT_FIX = [
     MiniZincB("Models/Minizinc/Improved coordinates/prevent zigzag.mzn", "no restart", TOTAL_TIME_BUDGET_PER_SOLVER),
     MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 50 nonplacements fix.mzn", "luby 50 fixed", TOTAL_TIME_BUDGET_PER_SOLVER),
@@ -18,9 +19,9 @@ NONPLACEMENT_FIX = [
 
 KEEP_CHANCE_B = [
     MiniZincB("Models/Minizinc/Improved coordinates/prevent zigzag.mzn", "no restart", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 15.mzn", "luby 15", TOTAL_TIME_BUDGET_PER_SOLVER),s
     MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 30.mzn", "luby 30", TOTAL_TIME_BUDGET_PER_SOLVER),
     MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 50.mzn", "luby 50", TOTAL_TIME_BUDGET_PER_SOLVER),
-    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 90.mzn", "luby 90", TOTAL_TIME_BUDGET_PER_SOLVER),
 ]
 
 KEEP_CHANCE = [
@@ -168,9 +169,9 @@ EXTREME_BATCHES = [
     )
 ]
 
-SOLVERS = NONPLACEMENT_FIX
+SOLVERS = KEEP_CHANCE_B
 
-BATCHES = HARD_BATCHES
+BATCHES = EXTREME_BATCHES
 
 def print_report():
     progress = reps_done/total_reps
