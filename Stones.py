@@ -19,7 +19,7 @@ NONPLACEMENT_FIX = [
 
 KEEP_CHANCE_B = [
     MiniZincB("Models/Minizinc/Improved coordinates/prevent zigzag.mzn", "no restart", TOTAL_TIME_BUDGET_PER_SOLVER),
-    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 15.mzn", "luby 15", TOTAL_TIME_BUDGET_PER_SOLVER),s
+    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 15.mzn", "luby 15", TOTAL_TIME_BUDGET_PER_SOLVER),
     MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 30.mzn", "luby 30", TOTAL_TIME_BUDGET_PER_SOLVER),
     MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 50.mzn", "luby 50", TOTAL_TIME_BUDGET_PER_SOLVER),
 ]
