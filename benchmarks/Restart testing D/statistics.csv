@@ -1,0 +1,9 @@
+solver,n,stones,avgTime,avgCost,samples,ran_out_of_time,single_timeout
+no restart,33,600,146.6701495,1.0,2,False,300
+luby 5,33,600,147.9345,1.0,2,False,300
+luby 10,33,600,147.88594999999998,1.0,2,False,300
+luby 15,33,600,146.65775000000002,1.0,2,False,300
+no restart,40,850,156.60245,350.0,2,False,300
+luby 5,40,850,297.79055,104.0,2,False,300
+luby 10,40,850,297.89515,79.0,2,False,300
+luby 15,40,850,297.98,60.0,2,False,300

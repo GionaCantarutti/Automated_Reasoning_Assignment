@@ -83,7 +83,7 @@ constraint forall(i in 1..n^2)(Placements[1, i] = 0 -> (Coordinates[1,i] = 1 /\ 
 var int: non_placements = count(Placements[1, 1..n^2], 0);
 
 solve 
-    :: relax_and_reconstruct([Placements[j,i] | i in 1..n^2, j in 1..2], 15)
+    :: relax_and_reconstruct([Placements[j,i] | i in 1..n^2, j in 1..2], 25)
     :: if n > 33 then
         restart_luby(floor((n^2) / 4))
        else

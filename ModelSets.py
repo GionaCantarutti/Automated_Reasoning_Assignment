@@ -1,7 +1,13 @@
 from MiniZincA import *
 from MiniZincB import *
 
-TOTAL_TIME_BUDGET_PER_SOLVER = 10 * 5 * 60
+TOTAL_TIME_BUDGET_PER_SOLVER = 7 * 5 * 60
+
+KEEP_CHANCE_D = [
+    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 15 conditional.mzn", "luby 15", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 15 full scale.mzn", "luby 15 full scale", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 25 conditional.mzn", "luby 25", TOTAL_TIME_BUDGET_PER_SOLVER),
+]
 
 KEEP_CHANCE_C = [
     MiniZincB("Models/Minizinc/Improved coordinates/prevent zigzag.mzn", "no restart", TOTAL_TIME_BUDGET_PER_SOLVER),

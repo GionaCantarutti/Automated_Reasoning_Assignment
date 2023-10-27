@@ -93,8 +93,8 @@ EXTREME_BATCHES = [
     ),
     TestBatch(
         "Uber",
-        n=50,
-        tilecount=1375,
+        n=45,
+        tilecount=1113,
         reps=2
     )
 ]
@@ -114,8 +114,41 @@ EXTREME_QUICK = [
     ),
     TestBatch(
         "Uber",
-        n=50,
-        tilecount=1375,
+        n=45,
+        tilecount=1113,
         reps=2
+    )
+]
+
+EXTREME_DETAILED = [
+    TestBatch(
+        "Restricted tiles very hard",
+        n=33,
+        tilecount=548,
+        reps=3
+    ),
+    TestBatch(
+        "Very Hard",
+        n=33,
+        tilecount=600,
+        reps=3
+    ),
+    TestBatch(
+        "Restricted tiles extreme",
+        n=40,
+        tilecount=810,
+        reps=3
+    ),
+    TestBatch(
+        "Extreme",
+        n=40,
+        tilecount=880,
+        reps=3
+    ),
+    TestBatch(
+        "Uber",
+        n=45,
+        tilecount=1113,
+        reps=3
     )
 ]
