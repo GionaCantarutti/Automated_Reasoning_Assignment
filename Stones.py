@@ -11,9 +11,9 @@ from ModelSets import *
 
 TIMEOUT = 5 * 60
 
-SOLVERS = KEEP_CHANCE_D
+SOLVERS = FINAL_TESTING
 
-BATCHES = EXTREME_QUICK
+BATCHES = EXAUSTIVE
 
 def print_report():
     progress = reps_done/total_reps

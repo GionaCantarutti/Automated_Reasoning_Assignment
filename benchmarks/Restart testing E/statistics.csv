@@ -1,0 +1,7 @@
+solver,n,stones,avgTime,avgCost,samples,ran_out_of_time,single_timeout
+luby 15,33,600,135.5855,1.0,2,False,300
+luby 15 full scale,33,600,134.1836,1.0,2,False,300
+luby 25,33,600,135.5667,1.0,2,False,300
+luby 15,40,850,293.2224,31.0,2,False,300
+luby 15 full scale,40,850,297.8885,56.0,2,False,300
+luby 25,40,850,297.8644,97.0,2,False,300
