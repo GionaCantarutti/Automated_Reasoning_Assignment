@@ -89,7 +89,7 @@ solve
        else
         restart_none
        endif
-    :: int_search(Placements, afc_count, indomain_min)
+    :: int_search(Placements, afc_max, indomain_min)
     :: int_search(Coordinates, input_order, indomain_min)
     :: int_search(Coordinates[1,..], input_order, indomain_min)
     :: int_search(Coordinates[2,..], input_order, indomain_min)
