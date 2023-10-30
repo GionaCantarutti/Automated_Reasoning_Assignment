@@ -1,0 +1,35 @@
+%instance
+#const n = 5.
+size(n).
+%the two faces of a stone and the count of how many such stones there are
+stone((0,1),1).
+stone((1,0),1).
+stone((1,1),1).
+stone((2,0),1).
+stone((2,2),1).
+stone((6,2),1).
+stone((2,3),1).
+stone((3,5),1).
+stone((5,2),1).
+stone((5,0),1).
+stone((0,0),1).
+stone((5,2),1).
+stone((5,2),1).
+stone((0,2),1).
+stone((6,1),1).
+
+%%%%% RULES %%%%%
+%something is placed at first step
+placed(A, 0).
+%it is impossible for two different stones to be placed at the same time
+A = B :- placed(A, T), placed(B, T).
+%it is impossible to place something that isn't on a stone
+:- placed(A, _), not stone((A, _), _), not stone((_, A), _).
+%even placements are followed by another placement
+placed(B, T+1) :- placed(A, T), T \ 2 = 0.
+%even placements are followed by a placeent of the same tile
+stone((A,B),_), stone((B,A),_) :- placed(A, T), placed(B, T+1), T \ 2 = 0.
+
+%%%%% OPTIMIZE %%%%%
+score(K) :- K = #count {p : placed(_, _)}.
+#maximize{K : score(K)}.
