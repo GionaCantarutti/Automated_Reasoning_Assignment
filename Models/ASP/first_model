@@ -37,7 +37,7 @@ combination (A,B) :- stone((B,A), _).
 %if a stone is placed at an even time then the following placement is reversed
 placed (X, Y, T+1, N2, N1) :- placed (_, _, T, N1, N2), (T\2) = 0, stone((N1, N2), _), reversed (N2, N1), coordinates(X, Y, T).
 %there is at most one placement per time step
-1 { X != X1; Y != Y1; A != A1; B != B1 } 4 :- placed(X, Y, T, A, B), placed(X1, Y1, T1, A1, B1), T = T1.
+X != X1, Y != Y1, A != A1, B != B1 :- placed(X, Y, T, A, B), placed(X1, Y1, T1, A1, B1), T = T1.
 
-#maximize { placed(X, Y, T, N1, N2) : coordinates(X, Y, T), combination(N1, N2) = 1 }.
+#maximize { 1, (X, Y, T, N1, N2) : placed(X, Y, T, N1, N2) , coordinates(X, Y, T), combination(N1, N2) }.
 #show placed/5.
