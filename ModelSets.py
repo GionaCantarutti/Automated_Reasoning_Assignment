@@ -3,6 +3,13 @@ from MiniZincB import *
 
 TOTAL_TIME_BUDGET_PER_SOLVER = 13 * 5 * 60
 
+FINAL_TESTING_B = [
+    MiniZincB("Models/Minizinc/Final models/Best model.mzn", "best model candidate", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 15 conditional.mzn", "dom_w_deg + indomain_min", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Final models/dom_w_deg + indomain_random.mzn", "dom_w_deg + indomain_random", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Final models/input_order + indomain_min.mzn", "input_order + indomain_min", TOTAL_TIME_BUDGET_PER_SOLVER),
+]
+
 FINAL_TESTING = [
     MiniZincB("Models/Minizinc/Improved coordinates/Keep chance/luby 15 conditional.mzn", "dom_w_deg + indomain_min", TOTAL_TIME_BUDGET_PER_SOLVER),
     MiniZincB("Models/Minizinc/Final models/dom_w_deg + indomain_random.mzn", "dom_w_deg + indomain_random", TOTAL_TIME_BUDGET_PER_SOLVER),

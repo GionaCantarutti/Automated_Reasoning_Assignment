@@ -195,11 +195,5 @@ EXAUSTIVE = [
         n=40,
         tilecount=880,
         reps=2
-    ),
-    TestBatch(
-        "Uber",
-        n=42,
-        tilecount=970,
-        reps=2
     )
 ]
