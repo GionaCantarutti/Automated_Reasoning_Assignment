@@ -1,35 +1,43 @@
 %instance
+
 #const n = 5.
+
 size(n).
 %the two faces of a stone and the count of how many such stones there are
-stone((0,1),1).
-stone((1,0),1).
-stone((1,1),1).
-stone((2,0),1).
-stone((2,2),1).
-stone((6,2),1).
-stone((2,3),1).
-stone((3,5),1).
-stone((5,2),1).
-stone((5,0),1).
-stone((0,0),1).
-stone((5,2),1).
-stone((5,2),1).
-stone((0,2),1).
-stone((6,1),1).
+stone ((0,1),1).
+stone ((1,0),1).
+stone ((1,1),1).
+stone ((2,0),1).
+stone ((2, 2),1).
+stone ((6,2),1).
+stone ((2,3),1).
+stone ((3,5),1).
+stone ((5,2),1).
+stone ((5,0),1).
+stone ((0,0),1).
+stone ((5,2),1).
+stone ((5,2),1).
+stone ((0,2),1).
+stone ((6,1),1).
 
 %%%%% RULES %%%%%
-%something is placed at first step
-placed(A, 0).
-%it is impossible for two different stones to be placed at the same time
-A = B :- placed(A, T), placed(B, T).
-%it is impossible to place something that isn't on a stone
-:- placed(A, _), not stone((A, _), _), not stone((_, A), _).
-%even placements are followed by another placement
-placed(B, T+1) :- placed(A, T), T \ 2 = 0.
-%even placements are followed by a placeent of the same tile
-stone((A,B),_), stone((B,A),_) :- placed(A, T), placed(B, T+1), T \ 2 = 0.
+%time goes from 0 to n^2
+time (0..(n**2)).
+% space-time coordinates
+coordinates (1..n, 1..n, 0..(n**2)).
+%if a stone exists, its opposite also exists
+reversed (A, B) :- stone((B, A), _).
+%if a stone exists, its two combinations also exist
+combination (A,B) :- stone ((A,B), _).
+combination (A,B) :- stone((B,A), _).
+%each cell should have at most one stone
+0 { placed (X, Y, T, N1, N2) : time(T), combination(N1, N2) } 1 :- X=1..n, Y=1..n.
+%each stone can only be used as many times as how many copies of it are aviable
+0 {placed (X, Y, T, A, B) : time(T) } N :- stone ((A, B), N), X=1..n, Y=1..n.
+%if a stone is placed at an even time then the following placement is reversed
+placed (X, Y, T+1, N2, N1) :- placed (_, _, T, N1, N2), (T\2) = 0, stone((N1, N2), _), reversed (N2, N1), coordinates(X, Y, T).
+%there is at most one placement per time step
+1 { X != X1; Y != Y1; A != A1; B != B1 } 4 :- placed(X, Y, T, A, B), placed(X1, Y1, T1, A1, B1), T = T1.
 
-%%%%% OPTIMIZE %%%%%
-score(K) :- K = #count {p : placed(_, _)}.
-#maximize{K : score(K)}.
+#maximize { placed(X, Y, T, N1, N2) : coordinates(X, Y, T), combination(N1, N2) = 1 }.
+#show placed/5.
