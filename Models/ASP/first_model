@@ -30,14 +30,20 @@ reversed (A, B) :- stone((B, A), _).
 %if a stone exists, its two combinations also exist
 combination (A,B) :- stone ((A,B), _).
 combination (A,B) :- stone((B,A), _).
+%placed domain
+:- placed(_, _, _, N1, N2), not combination(N1, N2).
+:- placed(X, Y, T, _, _), not coordinates(X, Y, T).
 %each cell should have at most one stone
-0 { placed (X, Y, T, N1, N2) : time(T), combination(N1, N2) } 1 :- X=1..n, Y=1..n.
+T1 = T :- placed(X, Y, T, _, _), placed(X, Y, T1, _, _).
+N1 = N :- placed(X, Y, _, N, _), placed(X, Y, _, N1, _).
+N1 = N :- placed(X, Y, _, _, N), placed(X, Y, _, _, N1).
+%0 { placed (X, Y, T, N1, N2) : time(T), combination(N1, N2) } 1 :- X=1..n, Y=1..n.
 %each stone can only be used as many times as how many copies of it are aviable
-0 {placed (X, Y, T, A, B) : time(T) } N :- stone ((A, B), N), X=1..n, Y=1..n.
+C <= N :- stone ((A, B), N), C = #count {placed (X, Y, T, A, B) : time(T), X=1..n, Y=1..n }.
 %if a stone is placed at an even time then the following placement is reversed
 placed (X, Y, T+1, N2, N1) :- placed (_, _, T, N1, N2), (T\2) = 0, stone((N1, N2), _), reversed (N2, N1), coordinates(X, Y, T).
 %there is at most one placement per time step
-X != X1, Y != Y1, A != A1, B != B1 :- placed(X, Y, T, A, B), placed(X1, Y1, T1, A1, B1), T = T1.
+T = T1 :- placed(X, Y, T, A, B), placed(X, Y, T1, A, B).
 
 #maximize { 1, (X, Y, T, N1, N2) : placed(X, Y, T, N1, N2) , coordinates(X, Y, T), combination(N1, N2) }.
 #show placed/5.

@@ -1,0 +1,29 @@
+solver,n,stones,avgTime,avgCost,samples,ran_out_of_time,single_timeout
+best model candidate A,6,41,0.4666741,0.0,10,False,300
+best model candidate B,6,41,0.44994690000000004,0.0,10,False,300
+dom_w_deg + indomain_random,6,41,0.4545361999999999,0.0,10,False,300
+input_order + indomain_min,6,41,0.451928,0.0,10,False,300
+best model candidate A,10,56,1.2687989,0.0,10,False,300
+best model candidate B,10,56,1.2583541,0.0,10,False,300
+dom_w_deg + indomain_random,10,56,1.3166414,0.0,10,False,300
+input_order + indomain_min,10,56,1.2482755,0.0,10,False,300
+best model candidate A,18,179,4.278917999999999,0.0,10,False,300
+best model candidate B,18,179,4.28743,0.0,10,False,300
+dom_w_deg + indomain_random,18,179,37.141294,1.4,10,False,300
+input_order + indomain_min,18,179,4.298527000000001,0.0,10,False,300
+best model candidate A,25,343,29.90846,1.0,6,False,300
+best model candidate B,25,343,29.659288333333336,1.0,6,False,300
+dom_w_deg + indomain_random,25,343,31.489694999999998,1.0,6,False,300
+input_order + indomain_min,25,343,29.279116666666667,1.0,6,False,300
+best model candidate A,30,495,78.25047725,0.0,4,False,300
+best model candidate B,30,495,80.31542975,0.0,4,False,300
+dom_w_deg + indomain_random,30,495,87.56725474999999,0.0,4,False,300
+input_order + indomain_min,30,495,78.0106645,0.0,4,False,300
+best model candidate A,33,598,56.3978,1.0,3,False,300
+best model candidate B,33,598,55.88570000000001,1.0,3,False,300
+dom_w_deg + indomain_random,33,598,157.7018,1.0,3,False,300
+input_order + indomain_min,33,598,55.56613333333333,1.0,3,False,300
+best model candidate A,40,880,279.66075,0.0,2,False,300
+best model candidate B,40,880,143.9103,0.0,2,False,300
+dom_w_deg + indomain_random,40,880,143.33350000000002,0.0,2,False,300
+input_order + indomain_min,40,880,230.12,0.0,2,False,300
