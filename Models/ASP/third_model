@@ -21,9 +21,13 @@ stone ((0,2),14).
 stone ((6,1),15).
 
 %%%%% RULES %%%%%
+%time
+time(1..(n**2)).
 %placement time = 0 means no placement
 1 { placement(1..n, 1..n, 0..(n**2), A, ID) } 1 :- stone((A, _), ID).
 1 { placement(1..n, 1..n, 0..(n**2), B, ID) } 1 :- stone((_, B), ID).
+%each tile has up to one placement
+3 { T = T1; A = A1; ID = ID1 } 3 :- X=1..n, Y=1..n, placement(X, Y, T, A, ID), placement(X, Y, T1, A1, ID1), stone((A, _), ID), time(T).
 
 %%%% OPTIMIZATION %%%%
 :~ placement(_, _, 0, _, _). [1@1]
