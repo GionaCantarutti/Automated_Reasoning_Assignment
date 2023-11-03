@@ -14,7 +14,8 @@ stone_id(ID) :- stone(_, ID).
 1 { placement(1..n, 1..n, 0..(n**2), A, ID) } 1 :- stone((A, _), ID).
 1 { placement(1..n, 1..n, 0..(n**2), B, ID) } 1 :- stone((_, B), ID).
 %each cell has up to one placement
-3 { T = T1; A = A1; ID = ID1 } 3 :- coordinates(X, Y), placement(X, Y, T, A, ID), placement(X, Y, T1, A1, ID1), stone((A, _), ID), time(T).
+:- { placement(X, Y, _, _, _) } > 1; coordinates(X, Y).
+%3 { T = T1; A = A1; ID = ID1 } 3 :- coordinates(X, Y), placement(X, Y, T, A, ID), placement(X, Y, T1, A1, ID1), stone((A, _), ID), time(T).
 %time-adjacent placements also need to be space-adjecent
 1 {X1 = X + 1; X1 = X - 1; Y1 = Y + 1; Y1 = Y - 1} 1 :- placement(X, Y, T, _, _), placement(X1, Y1, T + 1, _, _), coordinates(X, Y), coordinates(X1, Y1), time(T).
 %placements at even time are followed by the reverse of their stone
@@ -23,8 +24,14 @@ placement(X, Y, T+1, B, ID) :- placement(_, _, T, A, ID), T \ 2 = 0, stone((B, A
 %placements at odd time are followed by a matching number
 A = A1 :- placement(_, _, T, A, _), placement(_, _, T+1, A1, _), T \ 2 = 1, stone_number(A), stone_number(A1), time(T).
 %each stone is only placed once
-1 { X = X1; Y = Y1; T = T1 } 1 :- placement(X, Y, T, _, ID), placement(X1, Y1, T1, _, ID), time(T), coordinates(X, Y), coordinates(X1, Y1), stone_id(ID), T \ 2 = 0.
+:- { placement(_, _, _, _, ID) } > 2; stone_id(ID).
+%3 { X = X1; Y = Y1; T = T1 } 1 :- placement(X, Y, T, _, ID), placement(X1, Y1, T1, _, ID), time(T), coordinates(X, Y), coordinates(X1, Y1), stone_id(ID), T \ 2 = 0.
 %there is at most one placement per time step
+:- { placement(_, _, T, _, _) } > 1; time(T).
+%X = X1 :- placement(X, _, T, _, _), placement(X1, _, T, _, _). 
+%Y = Y1 :- placement(_, Y, T, _, _), placement(_, Y1, T, _, _). 
+%N = N1 :- placement(_, _, T, N, _), placement(_, _, T, N1, _). 
+%ID = ID1 :- placement(_, _, T, _, ID), placement(_, _, T, _, ID1).
 %:- placement(X, _, T, _, _), placement(X1, _, T, _, _), not X = X1, time(T).
 %:- placement(X, Y, T, _, _), placement(X, Y1, T, _, _), not Y = Y1, time(T), X=1..n.
 %:- placement(X, Y, T, N, _), placement(X, Y, T, N1, _), not N = N1, time(T).
