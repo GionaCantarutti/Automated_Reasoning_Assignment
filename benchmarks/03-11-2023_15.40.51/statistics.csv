@@ -1,2 +1,2 @@
 solver,n,stones,avgTime,avgCost,samples,ran_out_of_time,single_timeout
-clingo test,5,15,9.993999666666666,0.0,3,False,60
+clingo test,5,15,13.982098666666667,999999999.0,3,False,60
