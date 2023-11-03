@@ -9,7 +9,7 @@ from datetime import datetime
 from Batches import *
 from ModelSets import *
 
-TIMEOUT = 5 * 60
+TIMEOUT = 1 * 60
 
 SOLVERS = CLINGO
 
