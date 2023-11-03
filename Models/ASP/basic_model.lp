@@ -1,25 +1,25 @@
 %instance
 
-#const n = 5.
+%#const n = 5.
 
 size(n).
-%the two faces of a stone and a unqiue ID to allow duplicates
-stone ((0,1),1).
-stone ((1,0),2).
-stone ((1,1),3).
-stone ((2,0),4).
-stone ((2,2),5).
-stone ((6,2),6).
-stone ((2,3),7).
-stone ((3,5),8).
-stone ((5,2),9).
-stone ((5,0),10).
-stone ((0,0),11).
-stone ((5,2),12).
-stone ((5,2),13).
-stone ((0,2),14).
-stone ((6,1),15).
-
+%%the two faces of a stone and a unqiue ID to allow duplicates
+%stone ((0,1),1).
+%stone ((1,0),2).
+%stone ((1,1),3).
+%stone ((2,0),4).
+%stone ((2,2),5).
+%stone ((6,2),6).
+%stone ((2,3),7).
+%stone ((3,5),8).
+%stone ((5,2),9).
+%stone ((5,0),10).
+%stone ((0,0),11).
+%stone ((5,2),12).
+%stone ((5,2),13).
+%stone ((0,2),14).
+%stone ((6,1),15).
+%
 %%%%% RULES %%%%%
 %time
 time(1..(n**2)).

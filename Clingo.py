@@ -20,8 +20,15 @@ class Clingo(Solver):
        
         control = clg.Control(['--stats'])
 
-        program = self.open_and_read_file()
+        #Set board size
+        control.add('base', [], f"#const n = {instance.n}.")
 
+        #Set instance stones
+        for (i, stone) in enumerate(instance.stones):
+             control.add('base', [], f"stone(({stone[0]},{stone[1]}),{i+1}).")
+
+        #Load program
+        program = self.open_and_read_file()
         control.add('base', [], program)
 
         #Set timeout
