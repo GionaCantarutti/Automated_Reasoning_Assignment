@@ -1,7 +1,12 @@
 from MiniZincA import *
 from MiniZincB import *
+from Clingo import *
 
-TOTAL_TIME_BUDGET_PER_SOLVER = 13 * 5 * 60
+TOTAL_TIME_BUDGET_PER_SOLVER = 3 * 5 * 60
+
+CLINGO = [
+    Clingo("Models/ASP/basic_model.lp", "clingo test", TOTAL_TIME_BUDGET_PER_SOLVER),
+]
 
 FINAL_TESTING_C = [
     MiniZincB("Models/Minizinc/Best model candidate A.mzn", "best model candidate A", TOTAL_TIME_BUDGET_PER_SOLVER),

@@ -18,14 +18,40 @@ class Clingo(Solver):
 
     def solveInstance(self, instance: StoneInstance, tmo):
        
-        control = clg.Control()
+        control = clg.Control(['--stats'])
 
         program = self.open_and_read_file()
 
-        with control.builder() as bld:
-                clg.parse_program(program, lambda stm: bld.add(stm))
+        control.add('base', [], program)
+
+        #Set timeout
+        control.configuration.solve.timeout = tmo * 1000
 
         control.ground([("base", [])])
 
-        #To properly read answer and insert in the instance
-        control.solve(on_model=lambda m: print("Answer: {}".format(m)))
+        instance.addSolution(StoneSolution([[]], 999999999, -1, -1, self.label()))
+
+        control.solve(on_model=lambda m: self.logSolution(instance, m))
+
+        time = control.statistics['summary']['times']['total']
+
+        instance.solution.solveTime = dt.timedelta(seconds=time)
+        instance.solution.flatTime = dt.timedelta(seconds=0)
+
+        return instance
+
+    def logSolution(self, instance, solution):
+
+        objective_value = 0
+        
+        for symbol in solution.symbols(shown=True):
+            if symbol.name == "objective":
+                objective_value = int(symbol.arguments[0])
+                break
+
+        #Check if solution is better than currently logged one
+        if instance.solution.objective > objective_value:
+
+            print(solution)
+
+            instance.solution.objective = objective_value
