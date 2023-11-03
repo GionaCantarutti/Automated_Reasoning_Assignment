@@ -1,4 +1,7 @@
 %%%%% RULES %%%%%
+%stone facts have format stone((N1, N2), ID) where N1 and N2 are the two numbers on the stone and ID is the stone's unique identifier (supposed to be incremental, starting at 1)
+%board size constant is named n
+%%%%% RULES %%%%%
 %basic facts
 size(n).
 time(1..(n**2)).
