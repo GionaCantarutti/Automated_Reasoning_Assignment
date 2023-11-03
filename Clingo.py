@@ -44,7 +44,9 @@ class Clingo(Solver):
 
         objective_value = 0
         
+        solution_string = ""
         for symbol in solution.symbols(shown=True):
+            solution_string += str(symbol) + " "
             if symbol.name == "objective":
                 objective_value = int(symbol.arguments[0])
                 break
@@ -52,6 +54,35 @@ class Clingo(Solver):
         #Check if solution is better than currently logged one
         if instance.solution.objective > objective_value:
 
-            print(solution)
-
             instance.solution.objective = objective_value
+
+            #Split solution string
+            values = []
+            for placement_string in solution_string.split():
+                values.append( placement_string.split('(')[1].strip(')').split(',') )
+
+            #Parse placements
+            placements = []
+            for val in values:
+                placements.append( {
+                    'x': int(val[0]),
+                    'y': int(val[1]),
+                    't': int(val[2]),
+                    'n': int(val[3]),
+                    'ID': int(val[4])
+                })
+
+            #initialize standardized solution
+            std_solution = [[0 for y in range(instance.n)] for x in range(instance.n)]
+
+            for plc in placements:
+                if instance.stones[plc['ID'] - 1][0] == plc['n']:
+                    sign = +1
+                else:
+                    sign = -1
+
+                std_solution[plc['x'] - 1][plc['y'] - 1] = sign * plc['ID']
+
+            instance.solution.placements = std_solution
+
+            
