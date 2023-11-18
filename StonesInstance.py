@@ -17,7 +17,7 @@ class StoneInstance:
     def __init__(self, n: int, stones):
         self.n = n
         self.stones = stones
-        self.solution = None
+        self.solution : StoneSolution = None
 
     def addSolution(self, solution: StoneSolution):
         self.solution = solution

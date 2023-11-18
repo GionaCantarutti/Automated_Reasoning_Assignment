@@ -47,13 +47,11 @@ class Clingo(Solver):
 
         return instance
 
-    def logSolution(self, instance, solution):
+    def logSolution(self, instance : StoneInstance, solution):
 
         solution_string = ""
         for symbol in solution.symbols(shown=True):
             solution_string += str(symbol) + " "
-
-        print(solution_string)
 
         #Split solution string
         values = []
@@ -62,7 +60,10 @@ class Clingo(Solver):
 
         #Parse placements
         placements = []
+        score = 0
         for val in values:
+            if (score < int(val[2])):
+                score = int(val[2])
             placements.append( {
                 'x': int(val[0]),
                 'y': int(val[1]),
@@ -70,19 +71,25 @@ class Clingo(Solver):
                 'n': int(val[3]),
                 'ID': int(val[4])
             })
+            print(solution_string)
 
-        #initialize standardized solution
-        std_solution = [[0 for y in range(instance.n)] for x in range(instance.n)]
+        cost = (instance.n * instance.n) - score
 
-        for plc in placements:
-            if not plc['t'] == 0:
-                if instance.stones[plc['ID'] - 1][0] == plc['n']:
-                    sign = +1
-                else:
-                    sign = -1
+        if (instance.solution.objective > cost):
 
-                std_solution[plc['x'] - 1][plc['y'] - 1] = sign * plc['ID']
+            #initialize standardized solution
+            std_solution = [[0 for y in range(instance.n)] for x in range(instance.n)]
 
-        instance.solution.placements = std_solution
+            for plc in placements:
+                if not plc['t'] == 0:
+                    if instance.stones[plc['ID'] - 1][0] == plc['n']:
+                        sign = +1
+                    else:
+                        sign = -1
+
+                    std_solution[plc['x'] - 1][plc['y'] - 1] = sign * plc['ID']
+
+            instance.solution.placements = std_solution
+            instance.solution.objective = cost
 
             
