@@ -25,7 +25,7 @@ follows((N1, ID, 2), (N, ID, 1)) :- placement(1, 1, 1, N, ID), stone_opposite(N1
 :- follows((ID, N, _), (_, _, _)), not stone_half(ID, N).
 :- follows((_, _, _), (ID, N, _)), not stone_half(ID, N).
 %Same-stone follow pairs are folloed by a different but matching stone. Either that or the sequence ended
-follows((N1, ID2, T+2), (N1, ID1, T+1)), last_stone(N1, ID1, T) :- follows((N1, ID1, T+1), (N2, ID1, T)), stone_half(N1, ID2), ID1 <> ID2, time(T).
+follows((N1, ID2, T+2), (N1, ID1, T+1)), last_stone(N1, ID1, T+1) :- follows((N1, ID1, T+1), (N2, ID1, T)), stone_half(N1, ID2), ID1 <> ID2, time(T).
 %Different-stone follow pairs are followed by a same-stone follow pair
 follows((N2, ID1, T+2), (N1, ID1, T+1)) :- follows((N1, ID1, T+1), (_, ID2, T)), stone_opposite(N2, (N1, ID1)), ID1 <> ID2, time(T).
 
