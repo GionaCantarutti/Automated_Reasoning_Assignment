@@ -13,10 +13,13 @@ stone_opposite(A, (B, ID)) :- stone((A, B), ID).
 stone_half(N, ID) :-  stone((N, _), ID).
 stone_half(N, ID) :-  stone((_, N), ID).
 
+%%%% PLACEMENTS %%%%
 %Each stone half is followed by at most one more stone half
 0 { follows((N1, ID1), (N2, ID2)) : stone_half(N1, ID1) } 1 :- stone_half(N2, ID2).
 %There is at least one placement
-1 { follows((N1, ID1), (N2, ID2)) : stone_half(N1, ID1), stone_half(N2, ID2)}.
+%1 { follows((N1, ID1), (N2, ID2)) : stone_half(N1, ID1), stone_half(N2, ID2)}.
+%The first stone is followed by its other half
+follows((N1, ID), (N, ID)) :- placement(1, 1, 1, N, ID), stone_opposite(N1, (N, ID)).
 %Only stones can be part of a follow
 :- follows((ID, N), (_, _)), not stone_half(ID, N).
 :- follows((_, _), (ID, N)), not stone_half(ID, N).
@@ -25,12 +28,21 @@ follows((N1, ID2), (N1, ID1)), last_stone(N1, ID1) :- follows((N1, ID1), (N2, ID
 %Different-stone follow pairs are followed by a same-stone follow pair
 follows((N2, ID1), (N1, ID1)) :- follows((N1, ID1), (_, ID2)), stone_opposite(N2, (N1, ID1)).
 
-%%%% EASY RENDERING %%%%
-placement(1, 1, 1, N, ID) :- follows((N, ID), (_, _)).
-placement(1, 1, 1, N, ID) :- follows((_, _), (N, ID)).
+%%%% TIME/SPACE COORDINATES %%%%
+%Time/space coordinates of first placement
+placement(1, 1, 1, N, ID) :- follows((_, _), (N, ID)), not follows((N, ID), (_, _)).
+%There is exactly one first stone
+1 { placement(1, 1, 1, N, ID) : stone_half(N, ID) } 1.
+%Time/space adjacency between following placements
+placement(X+1, Y, T+1, N2, ID2), placement(X-1, Y, T+1, N2, ID2), placement(X, Y+1, T+1, N2, ID2), placement(X, Y-1, T+1, N2, ID2) :- follows((N2, ID2), (N1, ID1)), placement(X, Y, T, N1, ID1), coordinates(X, Y), T=1..n**2.
+%Cannot get out of bounds
+:- placement(X, _, _, _, _), X > n.
+:- placement(X, _, _, _, _), X < 1.
+:- placement(_, Y, _, _, _), Y > n.
+:- placement(_, Y, _, _, _), Y < 1.
 
 %%%% OPTIMIZATION %%%%
 %#minimize {1: placement(_, _, 0, _, _)}.
 %:~ placed_stone(0, _). [1@1]
 :~ follows((_, _), (_, _)). [-1@1]
-#show placement/5.
+#show placement/5. 
