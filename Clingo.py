@@ -71,11 +71,12 @@ class Clingo(Solver):
                 'n': int(val[3]),
                 'ID': int(val[4])
             })
-            print(solution_string)
 
         cost = (instance.n * instance.n) - score
 
         if (instance.solution.objective > cost):
+
+            print(solution_string)
 
             #initialize standardized solution
             std_solution = [[0 for y in range(instance.n)] for x in range(instance.n)]
