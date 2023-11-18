@@ -5,7 +5,7 @@ from Clingo import *
 TOTAL_TIME_BUDGET_PER_SOLVER = 3 * 5 * 60
 
 CLINGO = [
-    Clingo("Models/ASP/no_time_model.lp", "clingo test", TOTAL_TIME_BUDGET_PER_SOLVER),
+    Clingo("Models/ASP/no_time_model2.lp", "clingo test", TOTAL_TIME_BUDGET_PER_SOLVER),
 ]
 
 FINAL_TESTING_C = [
