@@ -46,9 +46,9 @@ placement(X+1, Y, T+1, N2, ID2), placement(X-1, Y, T+1, N2, ID2), placement(X, Y
 %#minimize {1: placement(_, _, 0, _, _)}.
 %:~ placed_stone(0, _). [1@1]
 
-%:~ follows((_, _), (_, _)). [-1@1]
+%:~ follows((_, _, _), (_, _, _)). [-1@1]
 %Last stone cannot be over n**2 time (could help the solver understanding when it reached the optimum)
-:- last_stone(_, _, T), T > n**2.
+%:- last_stone(_, _, T), T > n**2.
 #maximize {T: last_stone(_, _, T)}.
 #show placement/5. 
 %#show follows/2.
