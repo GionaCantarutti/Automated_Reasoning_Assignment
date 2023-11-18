@@ -53,6 +53,8 @@ class Clingo(Solver):
         for symbol in solution.symbols(shown=True):
             solution_string += str(symbol) + " "
 
+        print(solution_string)
+
         #Split solution string
         values = []
         for placement_string in solution_string.split():
