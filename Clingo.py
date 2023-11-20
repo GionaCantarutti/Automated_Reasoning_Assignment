@@ -34,7 +34,6 @@ class Clingo(Solver):
 
         #Set timeout
         control.configuration.solve.timeout = tmo * 1000
-        control.configuration.solve.timeout = 0.005
 
         control.ground([("base", [])])
 
