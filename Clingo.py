@@ -53,44 +53,53 @@ class Clingo(Solver):
         for symbol in solution.symbols(shown=True):
             solution_string += str(symbol) + " "
 
-        #Split solution string
-        values = []
-        for placement_string in solution_string.split():
-            values.append( placement_string.split('(')[1].strip(')').split(',') )
+        try:
 
-        #Parse placements
-        placements = []
-        score = 0
-        for val in values:
-            if (score < int(val[2])):
-                score = int(val[2])
-            placements.append( {
-                'x': int(val[0]),
-                'y': int(val[1]),
-                't': int(val[2]),
-                'n': int(val[3]),
-                'ID': int(val[4])
-            })
+            #Split solution string
+            values = []
+            for placement_string in solution_string.split():
+                values.append( placement_string.split('(')[1].strip(')').split(',') )
 
-        cost = (instance.n * instance.n) - score
+            #Parse placements
+            placements = []
+            score = 0
+            for val in values:
+                if (score < int(val[2])):
+                    score = int(val[2])
+                placements.append( {
+                    'x': int(val[0]),
+                    'y': int(val[1]),
+                    't': int(val[2]),
+                    'n': int(val[3]),
+                    'ID': int(val[4])
+                })
 
-        if (instance.solution.objective > cost):
+            cost = (instance.n * instance.n) - score
 
+            if (instance.solution.objective > cost):
+
+                print("Cost so far: " + str(cost))
+
+                #initialize standardized solution
+                std_solution = [[0 for y in range(instance.n)] for x in range(instance.n)]
+
+                for plc in placements:
+                    if not plc['t'] == 0:
+                        if instance.stones[plc['ID'] - 1][0] == plc['n']:
+                            sign = +1
+                        else:
+                            sign = -1
+
+                        std_solution[plc['x'] - 1][plc['y'] - 1] = sign * plc['ID']
+
+                instance.solution.placements = std_solution
+                instance.solution.objective = cost
+
+        except:
+
+            print("Some error occurred while logging solution. Printing the solution string:")
             print(solution_string)
 
-            #initialize standardized solution
-            std_solution = [[0 for y in range(instance.n)] for x in range(instance.n)]
 
-            for plc in placements:
-                if not plc['t'] == 0:
-                    if instance.stones[plc['ID'] - 1][0] == plc['n']:
-                        sign = +1
-                    else:
-                        sign = -1
-
-                    std_solution[plc['x'] - 1][plc['y'] - 1] = sign * plc['ID']
-
-            instance.solution.placements = std_solution
-            instance.solution.objective = cost
 
             

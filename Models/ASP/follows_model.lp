@@ -17,6 +17,8 @@ stone_half(N, ID) :-  stone((_, N), ID).
 %%%% PLACEMENTS %%%%
 %Each stone half is followed by at most one more stone half
 0 { follows((N1, ID1, T+1), (N2, ID2, T)) : stone_half(N1, ID1), time(T) } 1 :- stone_half(N2, ID2).
+%Only the first stone is allowed to not have a predecessor
+:- follows((N1, ID1, T+1), (N2, ID2, T)), T > 1, not follows((N2, ID2, T), (_, _, _)).
 %There is at least one placement
 %1 { follows((N1, ID1), (N2, ID2)) : stone_half(N1, ID1), stone_half(N2, ID2)}.
 %The first stone is followed by its other half
@@ -42,16 +44,14 @@ placement(X+1, Y, T+1, N2, ID2), placement(X-1, Y, T+1, N2, ID2), placement(X, Y
 :- placement(_, Y, _, _, _), Y > n.
 :- placement(_, Y, _, _, _), Y < 1.
 
-%Checking if we can place five stones
-:- follows((-1, -1, T), (_, _, _)), T < 5.
-
 %%%% OPTIMIZATION %%%%
 %#minimize {1: placement(_, _, 0, _, _)}.
 %:~ placed_stone(0, _). [1@1]
 
 %:~ follows((_, _, _), (_, _, _)). [-1@1]
 %Last stone cannot be over n**2 time (could help the solver understanding when it reached the optimum)
-%:- last_stone(_, _, T), T > n**2.
+%:- follows((-1, -1, T), (_, _, _)), T > n**2.
+%:- follows((-1, -1, T), (_, _, _)), T > (n**2) - 1, n \ 2 = 1.
 #maximize {T: follows((-1, -1, T), (_, _, _))}.
 #show placement/5. 
 %#show follows/2.
