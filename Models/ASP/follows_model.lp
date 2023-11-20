@@ -19,6 +19,8 @@ stone_half(N, ID) :-  stone((_, N), ID).
 0 { follows((N1, ID1, T+1), (N2, ID2, T)) : stone_half(N1, ID1), time(T) } 1 :- stone_half(N2, ID2).
 %Only the first stone is allowed to not have a predecessor
 :- follows((N1, ID1, T+1), (N2, ID2, T)), T > 1, not follows((N2, ID2, T), (_, _, _)).
+%There is exactly one final placement
+1 { follows((-1, -1, T+1), (N, ID, T)) : time(T), stone_half(N, ID) } 1.
 %There is at least one placement
 %1 { follows((N1, ID1), (N2, ID2)) : stone_half(N1, ID1), stone_half(N2, ID2)}.
 %The first stone is followed by its other half
