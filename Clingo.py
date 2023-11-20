@@ -2,6 +2,7 @@ from Solver import Solver
 from StonesInstance import StoneInstance, StoneSolution
 import clingo as clg
 import datetime as dt
+import time as tm
 
 class Clingo(Solver):
 
@@ -33,12 +34,35 @@ class Clingo(Solver):
 
         #Set timeout
         control.configuration.solve.timeout = tmo * 1000
+        control.configuration.solve.timeout = 0.005
 
         control.ground([("base", [])])
 
         instance.addSolution(StoneSolution([[]], 999999999, -1, -1, self.label()))
 
-        control.solve(on_model=lambda m: self.logSolution(instance, m))
+        lowest_possible_cost = 0
+        if instance.n % 2 == 1 : lowest_possible_cost = 1
+        lowest_possible_cost = max(lowest_possible_cost, (instance.n ** 2) - (len(instance.stones) * 2))
+
+        #Time before solving. Needed to time the solving in case it gets interrupted early since statistics wouln't be aviable in that case
+        start_time = tm.perf_counter()
+
+        #control.solve(on_model=lambda m: self.logSolution(instance, m))
+        with control.solve(yield_=True) as hnd:
+            for m in hnd:
+
+                self.logSolution(instance, m)
+
+                end_time = tm.perf_counter()
+                time = end_time - start_time
+
+                if ( instance.solution.objective <= lowest_possible_cost or time > tmo):
+
+                    instance.solution.solveTime = dt.timedelta(seconds=time)
+                    instance.solution.flatTime = dt.timedelta(seconds=0)
+
+                    return instance
+
 
         time = control.statistics['summary']['times']['total']
 
