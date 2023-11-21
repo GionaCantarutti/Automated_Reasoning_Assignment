@@ -101,7 +101,7 @@ class Clingo(Solver):
 
             if (instance.solution.objective > cost):
 
-                print("Cost so far: " + str(cost))
+                #print("Cost so far: " + str(cost))
 
                 #initialize standardized solution
                 std_solution = [[0 for y in range(instance.n)] for x in range(instance.n)]
