@@ -43,6 +43,8 @@ placement(X+1, Y, T+1, N2, ID2), placement(X-1, Y, T+1, N2, ID2), placement(X, Y
 %Cannot get out of bounds
 :- placement(X, Y, _, _, _), not coordinates(X, Y).
 :- placement(_, _, T, _, _), not time(T).
+%Placements cannot overlap
+:- placement(X1, Y1, T1, _, _), placement(X2, Y2, T2, _, _), T1 <> T2, X1 = X2, Y1 = Y2.
 
 %%%% OPTIMIZATION %%%%
 %#minimize {1: placement(_, _, 0, _, _)}.
