@@ -1,0 +1,10 @@
+solver,n,stones,avgTime,avgCost,samples,ran_out_of_time,single_timeout
+Clingo follows-based model,5,15,1233.25862525,2.5,4,True,300
+Best MiniZinc model,5,15,0.3530588,1.0,5,False,300
+First MiniZinc model,5,15,0.20776980000000003,1.0,5,False,300
+Clingo follows-based model,7,27,-1,-1,0,True,300
+Best MiniZinc model,7,27,0.6145144,1.0,5,False,300
+First MiniZinc model,7,27,2.0205674,1.0,5,False,300
+Clingo follows-based model,10,56,-1,-1,0,True,300
+Best MiniZinc model,10,56,1.3502296666666667,0.0,3,False,300
+First MiniZinc model,10,56,299.95584,2.0,3,False,300
