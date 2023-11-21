@@ -9,9 +9,9 @@ from datetime import datetime
 from Batches import *
 from ModelSets import *
 
-TIMEOUT = 1 * 60
+TIMEOUT = 5 * 60
 
-SOLVERS = CLINGO
+SOLVERS = CLINGO_COMPARASON
 
 BATCHES = TRIVIAL_BATCHES
 
