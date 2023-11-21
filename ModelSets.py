@@ -5,7 +5,9 @@ from Clingo import *
 TOTAL_TIME_BUDGET_PER_SOLVER = 3 * 5 * 60
 
 CLINGO = [
-    Clingo("Models/ASP/follows_model.lp", "clingo test", TOTAL_TIME_BUDGET_PER_SOLVER),
+    Clingo("Models/ASP/follows_model.lp", "Clingo follows-based model", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincB("Models/Minizinc/Best model candidate B.mzn", "Best MiniZinc model", TOTAL_TIME_BUDGET_PER_SOLVER),
+    MiniZincA("Models/Minizinc/Old/Basic dom_w_deg.mzn", "First MiniZinc model", TOTAL_TIME_BUDGET_PER_SOLVER),
 ]
 
 FINAL_TESTING_C = [

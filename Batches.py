@@ -200,15 +200,21 @@ EXAUSTIVE = [
 
 TRIVIAL_BATCHES = [
     TestBatch(
-        "Trivial",
+        "Very Trivial",
         n=5,
         tilecount=15,
-        reps=3
+        reps=5
+    ),
+    TestBatch(
+        "Trivial",
+        n=7,
+        tilecount=27,
+        reps=5
     ),
     TestBatch(
         "Easy",
-        n=7,
-        tilecount=27,
-        reps=2
-    )
+        n=10,
+        tilecount=56,
+        reps=3
+    ),
 ]
