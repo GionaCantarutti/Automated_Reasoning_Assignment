@@ -1,0 +1,491 @@
+
+#############################################
+Solver Clingo follows-based model on instance of size 4 with stones:
+[[0, 2], [0, 4], [3, 3], [5, 1], [6, 0], [6, 6], [3, 1], [4, 5], [0, 5], [2, 1], [4, 6], [1, 0], [3, 0]]
+
+Solution with cost 0:
+2 5 3 3
+| | | |
+0 0 1 0
+       
+0 0-1 0
+|     |
+4 4-6 6
+
+Took a total of 0.168115, of which 0.168115 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 4 with stones:
+[[4, 3], [4, 1], [0, 3], [6, 4], [5, 5], [1, 1], [1, 5], [3, 2], [3, 2], [0, 2], [4, 3], [0, 1], [2, 4]]
+
+Solution with cost 0:
+4-3 3 1
+    | |
+3-2 2 1
+       
+3 2 2 1
+| | | |
+4 4 0 0
+
+Took a total of 0.302427, of which 0.302427 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 4 with stones:
+[[6, 2], [2, 6], [4, 3], [1, 6], [4, 0], [4, 6], [6, 5], [5, 2], [6, 5], [3, 4], [6, 4], [6, 2], [0, 2]]
+
+Solution with cost 0:
+2 6 2 2
+| | | |
+6 4 0 5
+       
+6 4-0 5
+|     |
+2 2-6 6
+
+Took a total of 0.248288, of which 0.248288 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 4 with stones:
+[[0, 0], [1, 2], [2, 6], [6, 6], [2, 0], [2, 1], [2, 1], [6, 5], [2, 4], [3, 5], [0, 2], [3, 6], [2, 4]]
+
+Solution with cost 0:
+2-1 1-2
+       
+3-5 5 2
+    | |
+3 6 6 0
+| |    
+6 2 2-0
+
+Took a total of 0.140508, of which 0.140508 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 4 with stones:
+[[4, 5], [4, 6], [0, 3], [1, 6], [5, 4], [5, 4], [4, 1], [1, 0], [2, 5], [5, 3], [4, 2], [3, 4], [5, 6]]
+
+Solution with cost 0:
+1-0 4-5
+       
+6 0 4 5
+| | | |
+5 3 3 2
+       
+5-4 4-2
+
+Took a total of 0.141672, of which 0.141672 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 4 with stones:
+[[5, 1], [3, 4], [0, 0], [1, 1], [1, 0], [5, 4], [0, 1], [2, 4], [4, 1], [6, 5], [2, 2], [5, 6], [2, 0]]
+
+Solution with cost 0:
+2-0 0-1
+       
+0 5 5 1
+| | | |
+1 4 6 5
+       
+1-4 6-5
+
+Took a total of 0.28402, of which 0.28402 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 4 with stones:
+[[1, 0], [2, 2], [4, 3], [6, 5], [0, 1], [2, 6], [0, 3], [0, 1], [2, 2], [5, 3], [0, 5], [4, 5], [5, 6]]
+
+Solution with cost 0:
+1 6-5 5
+|     |
+0 0 4 4
+  | |  
+1 1 3 3
+|     |
+0 0-5 5
+
+Took a total of 0.735907, of which 0.735907 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 4 with stones:
+[[2, 4], [5, 3], [1, 0], [5, 6], [4, 0], [3, 0], [6, 4], [3, 5], [2, 1], [1, 2], [5, 0], [1, 5], [5, 0]]
+
+Solution with cost 0:
+6-5 0-5
+       
+3 5 0 5
+| | | |
+0 1 1 3
+       
+0-5 5-3
+
+Took a total of 0.444367, of which 0.444367 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 4 with stones:
+[[3, 1], [5, 4], [0, 6], [4, 4], [0, 5], [0, 6], [0, 0], [6, 4], [6, 6], [4, 6], [5, 6], [2, 0], [5, 3]]
+
+Solution with cost 0:
+4 4 4-6
+| |    
+6 5 5 6
+    | |
+6-0 0 5
+       
+1-3 3-5
+
+Took a total of 0.188685, of which 0.188685 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 4 with stones:
+[[5, 1], [4, 6], [3, 4], [0, 6], [4, 0], [6, 3], [2, 3], [0, 4], [0, 1], [6, 5], [6, 1], [4, 4], [4, 1]]
+
+Solution with cost 0:
+4-1 1-6
+       
+3-4 4 6
+    | |
+0-6 6 5
+       
+0-1 1-5
+
+Took a total of 0.250706, of which 0.250706 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 4 with stones:
+[[5, 3], [0, 0], [3, 6], [3, 2], [1, 3], [4, 6], [0, 3], [0, 6], [1, 4], [0, 5], [6, 0], [4, 3], [1, 5]]
+
+Solution with cost 0:
+2 3 3 5
+| | | |
+3 0 6 1
+       
+3 0 6 1
+| | | |
+5 5 4 4
+
+Took a total of 0.097452, of which 0.097452 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 4 with stones:
+[[5, 5], [4, 2], [5, 5], [0, 6], [1, 6], [0, 6], [5, 4], [0, 5], [1, 5], [3, 6], [6, 1], [4, 0], [5, 1]]
+
+Solution with cost 0:
+2-4 4-0
+       
+1-6 6-0
+       
+1-6 6-0
+       
+4-5 5-0
+
+Took a total of 0.089184, of which 0.089184 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 4 with stones:
+[[5, 1], [6, 6], [2, 1], [2, 4], [5, 3], [1, 1], [5, 2], [5, 0], [4, 4], [2, 3], [6, 4], [4, 6], [1, 0]]
+
+Solution with cost 0:
+0 3 3-2
+| |    
+5 5 5 2
+    | |
+5 2 2 4
+| |    
+1 1 6-4
+
+Took a total of 0.18873, of which 0.18873 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 4 with stones:
+[[3, 0], [4, 3], [2, 2], [5, 4], [6, 3], [6, 5], [3, 6], [1, 0], [5, 2], [6, 2], [6, 1], [2, 0], [4, 2]]
+
+Solution with cost 0:
+4 5-6 6
+|     |
+5 0-1 1
+       
+5 0-3 3
+|     |
+2 2-6 6
+
+Took a total of 0.090629, of which 0.090629 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 4 with stones:
+[[6, 6], [3, 5], [3, 0], [4, 6], [0, 6], [2, 5], [1, 3], [4, 1], [0, 1], [2, 5], [5, 4], [3, 4], [0, 2]]
+
+Solution with cost 0:
+6 3 3-0
+| |    
+4 4 2-0
+       
+4 4-5 5
+|     |
+1 1-3 3
+
+Took a total of 0.097816, of which 0.097816 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 4 with stones:
+[[2, 4], [0, 5], [2, 6], [2, 3], [0, 2], [2, 4], [6, 1], [0, 2], [0, 0], [3, 1], [1, 0], [6, 6], [0, 3]]
+
+Solution with cost 0:
+0 2 2-6
+| |    
+2 3 3 6
+    | |
+2-0 0 1
+       
+5-0 0-1
+
+Took a total of 0.145097, of which 0.145097 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 4 with stones:
+[[0, 5], [1, 2], [2, 6], [3, 5], [6, 1], [5, 2], [2, 0], [4, 0], [4, 2], [6, 6], [6, 3], [2, 3], [4, 6]]
+
+Solution with cost 0:
+6 1 1-2
+| |    
+2 6 6 2
+    | |
+2 6 4 0
+| |    
+3 3 4-0
+
+Took a total of 0.098013, of which 0.098013 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 4 with stones:
+[[2, 3], [6, 6], [3, 0], [6, 1], [2, 0], [0, 3], [3, 5], [1, 2], [3, 3], [6, 5], [1, 6], [5, 1], [3, 6]]
+
+Solution with cost 0:
+5-6 6-3
+       
+3 6 6 3
+| | | |
+2 1 1 5
+       
+2-1 1-5
+
+Took a total of 0.111303, of which 0.111303 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 4 with stones:
+[[0, 1], [1, 1], [1, 5], [2, 1], [0, 1], [4, 3], [6, 1], [6, 0], [2, 3], [3, 4], [5, 2], [4, 1], [3, 3]]
+
+Solution with cost 0:
+1-0 0-1
+       
+1-4 4 1
+    | |
+1 2 3 2
+| |    
+5 5 3-2
+
+Took a total of 0.079048, of which 0.079048 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 4 with stones:
+[[0, 6], [2, 3], [0, 5], [4, 2], [0, 6], [1, 6], [4, 4], [1, 0], [1, 0], [5, 3], [5, 0], [2, 4], [4, 5]]
+
+Solution with cost 0:
+2 2 2 5
+| | | |
+4 4 3 0
+       
+5 5-3 0
+|     |
+0 0-1 1
+
+Took a total of 0.287509, of which 0.287509 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 5 with stones:
+[[3, 1], [5, 3], [1, 0], [2, 5], [4, 0], [5, 2], [5, 0], [0, 5], [3, 4], [5, 5], [1, 0], [1, 0], [5, 2], [5, 5], [4, 1]]
+
+Solution with cost 1:
+1-4 4 1 1
+    | | |
+1-0 0 0 0
+         
+1 2 2 0 0
+| | | | |
+3 5 5 5 5
+         
+3-5 # 2-5
+
+Took a total of 0.897727, of which 0.897727 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 5 with stones:
+[[5, 1], [2, 3], [0, 4], [2, 5], [0, 3], [2, 4], [3, 2], [4, 6], [2, 4], [3, 0], [4, 2], [0, 4], [5, 4], [3, 1], [4, 0]]
+
+Solution with cost 1:
+6-4 4-2 2
+        |
+0-3 5-4 4
+         
+0 3 5-2 2
+| |     |
+4 0 4-2 3
+         
+# 0-4 2-3
+
+Took a total of 24.778474, of which 24.778474 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 5 with stones:
+[[4, 1], [5, 1], [6, 6], [3, 0], [4, 5], [3, 0], [4, 1], [2, 0], [2, 0], [2, 6], [6, 6], [1, 3], [6, 6], [0, 2], [5, 5]]
+
+Solution with cost 3:
+4-1 1 # #
+    |    
+4-5 5 # 6
+        |
+4 2 2-0 6
+| |      
+1 0 0 0 6
+    | | |
+1-3 3 2 2
+
+Took a total of 440.659, of which 440.659 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 5 with stones:
+[[1, 3], [0, 1], [4, 6], [1, 1], [1, 6], [3, 5], [1, 6], [3, 0], [2, 0], [6, 5], [1, 6], [6, 6], [0, 3], [2, 5], [6, 4]]
+
+Solution with cost 1:
+6 6 6 2 2
+| | | | |
+4 4 1 0 5
+         
+0-3 1-0 5
+        |
+0 3-5 6 6
+|     |  
+3 3-1 1 #
+
+Took a total of 13.978311, of which 13.978311 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 5 with stones:
+[[5, 6], [1, 3], [1, 6], [5, 2], [2, 6], [0, 2], [5, 6], [6, 3], [4, 1], [5, 1], [6, 2], [3, 0], [5, 2], [4, 4], [1, 1]]
+
+Solution with cost 1:
+4-1 1 1 1
+    | | |
+3 5 5 3 6
+| |      
+0 6 6-3 6
+        |
+0 6 6 5 5
+| | | |  
+2 2 2 2 #
+
+Took a total of 24.618801, of which 24.618801 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 5 with stones:
+[[5, 1], [4, 6], [0, 1], [4, 6], [1, 4], [4, 3], [1, 3], [6, 0], [3, 4], [6, 1], [2, 3], [5, 0], [4, 2], [2, 6], [6, 6]]
+
+Solution with cost 1:
+1 5 5 3 3
+| | | | |
+0 0 1 1 4
+         
+# 1-4 4 4
+      | |
+4 1 6 6 3
+| | |    
+6 6 2 2-3
+
+Took a total of 34.013816, of which 34.013816 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 5 with stones:
+[[0, 2], [5, 5], [0, 1], [1, 5], [4, 3], [1, 0], [2, 1], [5, 4], [0, 0], [3, 4], [5, 3], [3, 1], [0, 4], [3, 0], [1, 3]]
+
+Solution with cost 1:
+1 4 4 3 3
+| | | | |
+3 3 5 5 1
+         
+5 5 0 0-1
+| | |    
+5 1 4 4-3
+         
+# 1-0 0-3
+
+Took a total of 4.780585, of which 4.780585 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 5 with stones:
+[[2, 5], [1, 6], [5, 3], [4, 2], [4, 0], [2, 2], [0, 4], [3, 5], [4, 5], [3, 4], [3, 2], [0, 1], [4, 3], [4, 2], [0, 2]]
+
+Solution with cost 1:
+4 3 3 6-1
+| | |    
+0 2 5 0-1
+         
+0-2 5 0-4
+    |    
+4-3 3 # 4
+        |
+4-2 2-5 5
+
+Took a total of 10.451958, of which 10.451958 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 5 with stones:
+[[5, 0], [0, 6], [0, 4], [6, 5], [4, 3], [3, 3], [0, 1], [5, 4], [4, 6], [5, 2], [1, 0], [0, 4], [3, 1], [4, 3], [6, 3]]
+
+Solution with cost 1:
+5-4 4 4 4
+    | | |
+0-5 0 0 3
+         
+0 5-6 4-3
+|        
+6 6 6-4 0
+  |     |
+# 3 3-1 1
+
+Took a total of 6.354587, of which 6.354587 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 5 with stones:
+[[1, 0], [5, 5], [5, 5], [6, 5], [1, 2], [5, 1], [2, 6], [5, 1], [5, 3], [0, 6], [2, 0], [1, 2], [6, 2], [6, 6], [3, 1]]
+
+Solution with cost 1:
+6-5 5 6 6
+    | | |
+5-1 1 2 6
+         
+5 6 6-2 #
+| |      
+3 0 0-1 1
+        |
+3-1 1-2 2
+
+Took a total of 12.845148, of which 12.845148 spent solving and 0.0 spent flattening
+
+#############################################
+Solver Clingo follows-based model on instance of size 7 with stones:
+[[5, 3], [5, 6], [4, 6], [3, 6], [3, 4], [3, 4], [1, 1], [5, 4], [0, 0], [6, 5], [2, 4], [1, 4], [2, 2], [4, 4], [1, 5], [6, 3], [2, 6], [1, 5], [3, 5], [3, 4], [2, 6], [2, 0], [3, 4], [2, 0], [4, 1], [6, 2], [4, 2]]
+
+Solution with cost 5:
+5 # # 3 3 4 4
+|     | | | |
+6 # # 6 5 1 3
+             
+6-2 2-6 5-1 3
+            |
+1-5 5-3 3 6 6
+        | |  
+1-4 5-6 4 2 2
+            |
+4 4-5 6-4 # 0
+|            
+3 3-4 4-2 2-0
+
+Took a total of 395.258902, of which 395.258902 spent solving and 0.0 spent flattening

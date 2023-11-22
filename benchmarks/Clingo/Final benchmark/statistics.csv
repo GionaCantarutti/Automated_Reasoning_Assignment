@@ -1,0 +1,4 @@
+solver,n,stones,avgTime,avgCost,samples,ran_out_of_time,single_timeout
+Clingo follows-based model,4,13,0.20947379999999996,0.0,20,False,300
+Clingo follows-based model,5,15,57.3378407,1.2,10,False,300
+Clingo follows-based model,7,27,395.258902,5.0,1,True,300
