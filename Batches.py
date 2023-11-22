@@ -218,3 +218,24 @@ TRIVIAL_BATCHES = [
         reps=3
     ),
 ]
+
+EVEN_MORE_TRIVIAL_BATCHES = [
+    TestBatch(
+        "Very Trivial",
+        n=4,
+        tilecount=13,
+        reps=20
+    ),
+    TestBatch(
+        "Trivial",
+        n=5,
+        tilecount=15,
+        reps=10
+    ),
+    TestBatch(
+        "Easy",
+        n=7,
+        tilecount=27,
+        reps=2
+    ),
+]

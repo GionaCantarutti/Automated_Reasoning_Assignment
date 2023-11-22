@@ -19,7 +19,7 @@ class Clingo(Solver):
 
     def solveInstance(self, instance: StoneInstance, tmo):
        
-        control = clg.Control(['--stats'])
+        control = clg.Control(["--stats"])
 
         #Set board size
         control.add('base', [], f"#const n = {instance.n}.")
@@ -33,7 +33,7 @@ class Clingo(Solver):
         control.add('base', [], program)
 
         #Set timeout
-        control.configuration.solve.timeout = tmo * 1000
+        #control.configuration.solve.timeout = tmo * 1000
 
         control.ground([("base", [])])
 

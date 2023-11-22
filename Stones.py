@@ -11,9 +11,9 @@ from ModelSets import *
 
 TIMEOUT = 5 * 60
 
-SOLVERS = CLINGO_COMPARASON
+SOLVERS = CLINGO_ONLY
 
-BATCHES = TRIVIAL_BATCHES
+BATCHES = EVEN_MORE_TRIVIAL_BATCHES
 
 def print_report():
     progress = reps_done/total_reps
