@@ -6,6 +6,7 @@ TOTAL_TIME_BUDGET_PER_SOLVER = 3 * 5 * 60
 
 SYMMETRY_TESTING = [
     Clingo("Models/ASP/symmetry_breaking.lp", "Clingo symmetry test", TOTAL_TIME_BUDGET_PER_SOLVER),
+    Clingo("Models/ASP/follows_model.lp", "Clingo follows-based model", TOTAL_TIME_BUDGET_PER_SOLVER),
 ]
 
 CLINGO_COMPARASON = [
