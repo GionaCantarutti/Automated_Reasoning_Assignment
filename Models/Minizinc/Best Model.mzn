@@ -2,19 +2,6 @@ include "globals.mzn";
 
 %Grid size
 par int: n;
-%Is symmetry breaking disabled?
-par bool: symm = true;
-%Aviable stones
-%array [1..7,1..7] of int: Stones = [| 2, 2, 3, 5, 0, 0, 0
-%                                    | 2, 2, 1, 2, 0, 0, 0
-%                                    | 3, 1, 2, 0, 0, 0, 0
-%                                    | 5, 2, 0, 2, 0, 0, 0
-%                                    | 0, 0, 0, 0, 0, 0, 0
-%                                    | 0, 0, 0, 0, 0, 0, 0
-%                                    | 0, 0, 0, 0, 0, 0, 0
-%                                    |]; %Values on diagonal should be even, representing twice the amount of desired stones
-                                        %Matrix should be symmetirc wrt the diagonal
-
 array [1..7,1..7] of int: Stones;
 
 %Choice of stones to place in each square, in order
@@ -45,8 +32,6 @@ constraint forall(i in 1..7, j in 1..7)(
 
 %If the board has an odd side length, the last placement is always empty
 constraint (n mod 2 = 1) -> (Placements[1, n^2] = 0);
-%There can be no "gaps" in the placement sequence where no tiles where placed. Negligible impact on performance
-%constraint forall(i in 2..n^2)(Placements[1, i] != 0 -> Placements[1, i-1] != 0);
 %There can never be a placement following a non-placement (implied by previous heuristic)
 constraint forall(i in 1..n^2-1)(Placements[1, i] = 0 -> Placements[1, i+1] = 0);
 %Force placing first tile in top left corner
@@ -74,11 +59,6 @@ constraint (n > 1) -> (Placements[1, 1] <= Placements[1, n^2 - non_placements]);
 constraint non_placements >= max(n^2 - sum(i in 1..7, j in 1..7)(Stones[i,j]), 0);
 %Coordinates of non-placements are irrelevant
 constraint forall(i in 1..n^2)(Placements[1, i] = 0 -> (Coordinates[1,i] = 1 /\ Coordinates[2,i] = 1));
-
-
-%If grid is too large, ignore a portion of it
-%constraint forall(i in (1..n^2), j in 1..2)(Placements[i] != 0 -> Coordinates[j,i] <= sqrt(t)+1);
-%constraint forall(i in (1..n^2), j in 1..2)(Coordinates[j,i] < sqrt(t)+1);
 
 var int: non_placements = count(Placements[1, 1..n^2], 0);
 

@@ -13,7 +13,6 @@
 %%%%%%%% BASIC HELPER FACTS %%%%%%%%
 coordinates(1..n,1..n).
 time(1..n**2).
-stone_id(ID) :- stone(_, ID).
 stone_opposite(B, (A, ID)) :- stone((A, B), ID).
 stone_opposite(A, (B, ID)) :- stone((A, B), ID).
 stone_half(N, ID) :-  stone((N, _), ID).
